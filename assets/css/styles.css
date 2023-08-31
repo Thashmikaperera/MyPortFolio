@@ -1,0 +1,119 @@
+body{
+    overflow-x: hidden;
+    background-color: black;
+}
+header{
+    position: relative;
+    height: 75px;
+    background-color: #0A0B0B;
+}
+header>nav{
+    position: absolute;
+    width: fit-content;
+    right: 2%;
+    padding: 1px;
+    margin-top: 15px;
+}
+
+header>img{
+    width: 80px;
+    aspect-ratio: 1/1;
+    position: absolute;
+}
+
+header>nav>ol>li{
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header>nav>ol>li>a{
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+}
+
+#main{
+    position: relative;
+    width: 100vw;
+    height: 86.5vh;
+    background-color: black;
+}
+
+#divPic{
+    width: 410px;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    overflow: hidden;
+    position: relative;
+    left: 60%;
+    top: 50px;
+}
+
+#homeDiv{
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    width: 80vw;
+}
+
+#HOME{
+    position: absolute;
+    color: #C36446;
+    font-size: 28px;
+}
+#homeDiv>h1{
+    position: absolute;
+    color: white;
+    top: 15%;
+    font-size: 70px;
+}
+
+#homeDiv>h3{
+    position: absolute;
+    color: #C36446;
+    top: 170%;
+    right: 60%;
+    font-size: 50px;
+    width: fit-content;
+    height: fit-content;
+}
+
+#imgDiv{
+    position: absolute;
+    top: 318%;
+    right: 65%;
+    border-bottom: 2px solid white;
+}
+
+#h6{
+    position: relative;
+    color: #7B3107;
+    left: 22%;
+   top: 300px;
+}
+#btnDiv{
+    position: relative;
+    top: 345px;
+    left: 22%;
+}
+
+#btn{
+    background-color: #C36446;
+}
+/*
+#main1{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0A0B0B;
+}
+
+#ABOUT_ME{
+    position: absolute;
+    color: white;
+}
+
+#imgDiv1m*/
+
+
