@@ -250,3 +250,136 @@ header>nav>ol>li>a{
     top: 25%;
 }
 
+#main4{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+#PROJECTS{
+    position: absolute;
+    font-size: 50px;
+    color: white;
+    left: 70px;
+    top: 20px;
+}
+
+#chat{
+    position: absolute;
+    background-color: #272727;
+    width: 700px;
+    height: 170px;
+    left: 400px;
+    top: 195px;
+    border-radius: 30px;
+}
+
+#chatImg{
+    position: absolute;
+    width: 210px;
+    height: 170px;
+    left: 530px;
+    top: -70px;
+    border-radius: 30px;
+}
+
+#chat>h3{
+    position: absolute;
+    left: 30px;
+    color: #C36446;
+}
+
+#chat>h5{
+    position: absolute;
+    width: 450px;
+    left: 60px;
+    top: 40px;
+    color: white;
+}
+
+#chat>div>button{
+    position: absolute;
+    left: 30%;
+    top: 92%;
+    border-radius: 8px;
+}
+
+#bookShop{
+    position: absolute;
+    background-color: #272727;
+    width: 700px;
+    height: 170px;
+    left: 170px;
+    top: 480px;
+    border-radius: 30px;
+}
+
+#bookShopImg{
+    position: absolute;
+    width: 210px;
+    height: 170px;
+    right: 530px;
+    top: -55px;
+    border-radius: 30px;
+}
+
+#bookShop>h3{
+    position: absolute;
+    left: 28%;
+    color: #C36446;
+}
+
+#bookShop>h5{
+    position: absolute;
+    width: 450px;
+    right: 30px;
+    top: 40px;
+    color: white;
+}
+
+#bookShop>div>button{
+    position: absolute;
+    left: 65%;
+    top: 92%;
+    border-radius: 8px;
+}
+
+#game{
+    position: absolute;
+    background-color: #272727;
+    width: 700px;
+    height: 170px;
+    left: 400px;
+    top: 755px;        /*275*/
+    border-radius: 30px;
+}
+
+#gameImg{
+    position: absolute;
+    width: 210px;
+    height: 170px;
+    left: 530px;
+    top: -65px;
+    border-radius: 30px;
+}
+
+#game>h3{
+    position: absolute;
+    left: 30px;
+    color: #C36446;
+}
+
+#game>h5{
+    position: absolute;
+    width: 555px;
+    left: 60px;
+    top: 40px;
+    color: white;
+}
+
+#game>div>button{
+    position: absolute;
+    left: 30%;
+    top: 92%;
+    border-radius: 8px;
+}
