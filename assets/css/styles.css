@@ -370,14 +370,16 @@ header>nav>ol>li>a{
     position: absolute;
     left: 30px;
     color: #C36446;
+    font-size: 25px;
 }
 
 #chat>h5{
     position: absolute;
     width: 450px;
     left: 60px;
-    top: 40px;
+    top: 33px;
     color: white;
+    font-size: 18px;
 }
 
 #chat>div>button{
@@ -408,16 +410,18 @@ header>nav>ol>li>a{
 
 #bookShop>h3{
     position: absolute;
-    left: 25%;
+    left: 26%;
     color: #C36446;
+    font-size: 25px;
 }
 
 #bookShop>h5{
     position: absolute;
     width: 450px;
-    right: 30px;
-    top: 40px;
+    right: 38px;
+    top: 30px;
     color: white;
+    font-size: 20px;
 }
 
 #bookShop>div>button{
@@ -450,14 +454,16 @@ header>nav>ol>li>a{
     position: absolute;
     left: 30px;
     color: #C36446;
+    font-size: 25px;
 }
 
 #game>h5{
     position: absolute;
     width: 555px;
     left: 60px;
-    top: 40px;
+    top: 35px;
     color: white;
+    font-size: 20px;
 }
 
 #game>div>button{
@@ -473,3 +479,85 @@ header>nav>ol>li>a{
     height: 100vh;
     background-color: #0A0B0B;
 }
+
+#ASSIGNMENT{
+    position: absolute;
+    font-size: 50px;
+    color: white;
+    left: 70px;
+    top: 20px;
+}
+
+#main5>section{
+    background-color: #272727;
+    width: 350px;
+    height: 250px;
+    position: absolute;
+    left: 35%;
+    top: 30%;
+}
+
+#main5>section>h3{
+    position: absolute;
+    left: 17%;
+    top: 25%;
+    color: white;
+    font-size: 35px;
+}
+#arrow{
+    width: 45px;
+    aspect-ratio: 1/1;
+    position: absolute;
+    left: 83%;
+    top: 39%;
+}
+#arrow1{
+    width: 45px;
+    aspect-ratio: 1/1;
+    position: absolute;
+    left: 1%;
+    top: 39%;
+}
+
+#main5>section>div>button{
+    background-color: #797C7D;
+    position: absolute;
+    width: 140px;
+    height: 30px;
+    left: 31%;
+    top: 155%;
+    font-size: 17px;
+    border-radius: 7px;
+}
+#ass{
+    background-color: #272727;
+    width:200px ;
+    height: 250px;
+    position: absolute;
+    top: 45%;
+    left: 15%;
+}
+#ass1{
+    background-color: #272727;
+    width:200px ;
+    height: 250px;
+    position: absolute;
+    top: 45%;
+    right: 20%;
+}
+
+#ass>h3{
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    top: 33%;
+    left: 10%;
+}
+#ass1>h3{
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    top: 33%;
+    right: 11%;
+}
+
