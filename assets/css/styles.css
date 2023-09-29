@@ -972,7 +972,6 @@ header>nav>ol>li>a{
     }
 }
 
-/*
 @media all and (max-width: 1024px){
     header{
         z-index: 20;
@@ -1096,7 +1095,7 @@ header>nav>ol>li>a{
         position: relative;
         width: 111.3vw;
         height: 111.3vh;
-        !*left: 5%;*!
+        /*left: 5%;*/
     }
 
     #EDUCATION{
@@ -1107,7 +1106,7 @@ header>nav>ol>li>a{
         top: 60px;
     }
 
-   !* #E1{
+   /* #E1{
         position: absolute;
         background-color: #272727;
         width: 270px;
@@ -1115,7 +1114,7 @@ header>nav>ol>li>a{
         left: 145px;
         top: 200px;
         color: white;
-    }*!
+    }*/
 
     #main3{
         position: relative;
@@ -1510,7 +1509,6 @@ header>nav>ol>li>a{
         color: white;
         opacity: 50%;
     }
-*/
 
 
 
