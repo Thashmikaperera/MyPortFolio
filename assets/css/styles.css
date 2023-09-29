@@ -1,10 +1,23 @@
 body{
+    !important;
     overflow-x: hidden;
     background-color: black;
 }
+
+/*
+html{
+    overflow-x: hidden;
+   !* !important;
+    scroll-behavior: smooth;*!
+}
+*/
+
+
 header{
-    position: relative;
-    height: 75px;
+    z-index: 20;
+    width: 100vw;
+    height: 50px;
+    position: fixed;
     background-color: #0A0B0B;
 }
 header>nav{
@@ -19,7 +32,9 @@ header>img{
     width: 80px;
     aspect-ratio: 1/1;
     position: absolute;
+    top: -30%;
 }
+
 
 header>nav>ol>li{
     text-decoration: none;
@@ -36,7 +51,7 @@ header>nav>ol>li>a{
 #main{
     position: relative;
     width: 100vw;
-    height: 86.5vh;
+    height: 100vh;
 }
 
 #divPic{
@@ -46,13 +61,13 @@ header>nav>ol>li>a{
     overflow: hidden;
     position: relative;
     left: 60%;
-    top: 50px;
+    top: 130px;
 }
 
 #homeDiv{
     position: absolute;
-    top: 5%;
-    left: 10%;
+    top: 17%;
+    left: 5%;
     width: 80vw;
 }
 
@@ -85,11 +100,11 @@ header>nav>ol>li>a{
     border-bottom: 2px solid white;
 }
 
-#h6{
+#homeDiv>h6{
     position: relative;
     color: #7B3107;
     left: 22%;
-   top: 300px;
+    top: 350px;
 }
 #btnDiv{
     position: relative;
@@ -113,40 +128,45 @@ header>nav>ol>li>a{
     font-size: 50px;
     color: white;
     left: 70px;
-    top: 20px;
+    top: 35px;
 }
 
 #imgShadow{
+    width: 620px;
+    height: 620px;
     position: absolute;
     left: 10px;
-    top: 20px;
+    top: 30px;
 }
 
 #myImg{
+    width: 400px;
+    height: 530px;
     position: absolute;
     left: 60px;
-    top: 90px;
+    top: 50px;
 }
 
 #about{
     position: absolute;
     color: white;
     font-size: 24px;
-    left: 50%;
-    top: 25%;
+    left: 32%;
+    top: 37%;
 }
 #down>button{
     background-color: #292929;
     position: absolute;
     border-radius: 10px;
     left: 20%;
+    top: 103%;
     font-size: 23px;
 }
 #main2{
     position: relative;
     width: 100vw;
     height: 100vh;
-    left: 5%;
+    /*left: 5%;*/
 }
 
 #EDUCATION{
@@ -154,7 +174,7 @@ header>nav>ol>li>a{
     font-size: 50px;
     color: white;
     left: 70px;
-    top: 20px;
+    top: 33px;
 }
 
 #E1{
@@ -162,7 +182,7 @@ header>nav>ol>li>a{
     background-color: #272727;
     width: 310px;
     height: 155px;
-    left: 100px;
+    left: 145px;
     top: 200px;
     color: white;
 }
@@ -196,7 +216,7 @@ header>nav>ol>li>a{
     background-color: #272727;
     width: 310px;
     height: 155px;
-    left: 100px;
+    left: 145px;
     top: 470px;
     color: white;
 }
@@ -222,7 +242,7 @@ header>nav>ol>li>a{
     background-color: #272727;
     width: 310px;
     height: 155px;
-    right: 245px;
+    right: 200px;
     top: 370px;
     color: white;
 }
@@ -248,7 +268,7 @@ header>nav>ol>li>a{
     background-color: #272727;
     width: 310px;
     height: 155px;
-    right: 245px;
+    right: 200px;
     top: 125px;
     color: white;
 }
@@ -270,7 +290,7 @@ header>nav>ol>li>a{
     height: 2px;
     position: absolute;
     background-color: white;
-    left: 410px;
+    left: 455px;
     top: 285px;
 }
 #line2{
@@ -278,7 +298,7 @@ header>nav>ol>li>a{
     height: 2px;
     position: absolute;
     background-color: white;
-    left: 410px;
+    left: 455px;
     top: 550px;
 }
 #line3{
@@ -286,7 +306,7 @@ header>nav>ol>li>a{
     height: 352px;
     position: absolute;
     background-color: white;
-    left: 610px;
+    left: 655px;
     top: 200px;
 }
 
@@ -295,7 +315,7 @@ header>nav>ol>li>a{
     height: 2px;
     position: absolute;
     background-color: white;
-    right: 555px;
+    right: 510px;
     top: 200px;
 }
 #line5{
@@ -303,7 +323,7 @@ header>nav>ol>li>a{
     height: 2px;
     position: absolute;
     background-color: white;
-    right: 555px;
+    right: 510px;
     top: 450px;
 }
 
@@ -319,7 +339,7 @@ header>nav>ol>li>a{
     font-size: 50px;
     color: white;
     left: 70px;
-    top: 20px;
+    top: 35px;
 }
 
 #app{
@@ -377,7 +397,7 @@ header>nav>ol>li>a{
     font-size: 50px;
     color: white;
     left: 70px;
-    top: 20px;
+    top: 35px;
 }
 
 #chat{
@@ -518,7 +538,7 @@ header>nav>ol>li>a{
     font-size: 50px;
     color: white;
     left: 70px;
-    top: 20px;
+    top: 35px;
 }
 
 #main5>section{
@@ -552,7 +572,7 @@ header>nav>ol>li>a{
     top: 39%;
 }
 
-#main5>section>div>button{
+#main5>section>div>a>button{
     background-color: #797C7D;
     position: absolute;
     width: 140px;
@@ -605,27 +625,74 @@ header>nav>ol>li>a{
     font-size: 50px;
     color: white;
     left: 70px;
-    top: 20px;
+    top: 35px;
 }
 
 #main6>section{
     width: 500px;
     height: 800px;
-    border: 2px solid black;
-    display: grid;
-
-    grid-template-rows: repeat(4, 1fr);
-
-    grid-template-columns: repeat(3, 1fr);
 
     position: absolute;
     top: 20%;
     left: 25%;
 }
 
-#main6>section>div{
-    border: 2px solid #797C7D;
+#pic1{
+    width: 400px;
+    height: 260px;
+    position: absolute;
+    right: 40%;
+    top: -1px;
 }
+
+#pic2{
+    width: 400px;
+    height: 260px;
+    position: absolute;
+    left: 60%;
+    top: -1px;
+}
+
+#pic3{
+    width: 200px;
+    height: 260px;
+    position: absolute;
+    right: 80%;
+    top: 32.4%;
+}
+
+#pic4{
+    width: 400px;
+    height: 260px;
+    position: absolute;
+    left: 20.1%;
+    top: 32.4%;
+}
+
+#pic5{
+    width: 200px;
+    height: 260px;
+    position: absolute;
+    left: 100%;
+    top: 32.4%;
+}
+
+#pic6{
+    width: 400px;
+    height: 260px;
+    position: absolute;
+    right: 40%;
+    bottom: 2.6%;
+}
+
+#pic7{
+    width: 400px;
+    height: 260px;
+    position: absolute;
+    left: 60%;
+    bottom: 2.6%;
+}
+
 
 #main7{
     position: relative;
@@ -638,7 +705,7 @@ header>nav>ol>li>a{
     font-size: 50px;
     color: white;
     left: 70px;
-    top: 20px;
+    top: 35px;
 }
 
 #form{
@@ -730,8 +797,8 @@ header>nav>ol>li>a{
 #footer>section>h4{
     position: absolute;
     left: 30%;
-    top: -23%;
-    font-size: 30px;
+    top: -18.5%;
+    font-size: 25px;
     color: white;
     opacity: 50%;
 }
@@ -753,4 +820,698 @@ header>nav>ol>li>a{
     font-size: 22px;
     color:#D2D2D2;
     font-family: "Book Antiqua";
+}
+
+@media all and (max-width: 1440px){
+    header>nav{
+        position: absolute;
+        width: fit-content;
+        right: 2%;
+        padding: 1px;
+        margin-top: 15px;
+    }
+
+    header>img{
+        width: 70px;
+        top: -20%;
+        height: 72px;
+        position: absolute;
+    }
+
+    header>nav>ol>li{
+        text-decoration: none;
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    header>nav>ol>li>a{
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+    }
+
+
+
+    #divPic{
+        width: 400px;
+        aspect-ratio: 1/1;
+        border-radius: 100%;
+        position: relative;
+        left: 58%;
+        top: 145px;
+    }
+
+    #homeDiv{
+        position: absolute;
+        top: 18%;
+        left: 5%;
+        width: 80vw;
+    }
+
+    #HOME{
+        position: absolute;
+        color: #C36446;
+        font-size: 28px;
+    }
+    #homeDiv>h1{
+        position: absolute;
+        color: white;
+        top: 15%;
+        font-size: 70px;
+    }
+
+    #homeDiv>h3{
+        position: absolute;
+        color: #C36446;
+        top: 170%;
+        right: 60%;
+        font-size: 50px;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    #imgDiv{
+        position: absolute;
+        top: 318%;
+        right: 65%;
+        border-bottom: 2px solid white;
+    }
+
+    #h6{
+        position: relative;
+        color: #7B3107;
+        left: 22%;
+        top: 350px;
+    }
+    #btnDiv{
+        position: relative;
+        top: 400px;
+        left: 22%;
+    }
+
+    #btn{
+        background-color: #C36446;
+        font-size: 30px;
+    }
+
+    /*#E1{
+        left: 11.6%;
+    }
+
+    #E2{
+        left: 11.6%;
+    }
+
+    #E3{
+        left: 61%;
+    }
+
+    #E4{
+        left: 61%;
+    }
+
+    #line1{
+        left: 33.1%;
+    }
+
+    #line2{
+        left: 33.1%;
+    }
+
+    #line3{
+        left: 47%;
+    }
+
+    #line4{
+        left: 47%;
+    }
+
+    #line5{
+        left: 47%;
+    }*/
+
+    /*#footer>section>h4{
+        top: -15%;
+    }*/
+
+    #line4{
+        width: 200px;
+        height: 2px;
+        position: absolute;
+        background-color: white;
+        right: 583px;
+        top: 200px;
+    }
+    #line5{
+        width: 200px;
+        height: 2px;
+        position: absolute;
+        background-color: white;
+        right: 583px;
+        top: 450px;
+    }
+}
+
+/*
+@media all and (max-width: 1024px){
+    header{
+        z-index: 20;
+        width: 111.5vw;
+        height: 50px;
+        position: fixed;
+        background-color: #0A0B0B;
+    }
+
+    #main{
+        position: relative;
+        width: 111.3vw;
+        height: 111.3vh;
+    }
+
+    #homeDiv{
+        position: absolute;
+        top: 22%;
+        left: 8%;
+        width: 80vw;
+    }
+
+    #homeDiv>h1{
+        position: absolute;
+        color: white;
+        top: 6%;
+        font-size: 58px;
+    }
+
+    #HOME{
+        position: absolute;
+        color: #C36446;
+        font-size: 22px;
+    }
+
+    #homeDiv>h3{
+        position: absolute;
+        color: #C36446;
+        top: 100%;
+        right: 56%;
+        font-size: 38px;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    #imgDiv{
+        position: absolute;
+        top: 200%;
+        right: 60%;
+        border-bottom: 2px solid white;
+    }
+
+    #homeDiv>h6{
+        position: relative;
+        color: #7B3107;
+        top: 268px;
+        left: 22%;
+        font-size: 15px;
+    }
+
+    #btnDiv{
+        position: relative;
+        top: 300px;
+        left: 23%;
+    }
+
+    #btn{
+        background-color: #C36446;
+        font-size: 20px;
+    }
+
+    #main1{
+        position: relative;
+        width: 111.3vw;
+        height: 111.3vh;
+        background-color: #0A0B0B;
+    }
+
+    #ABOUT_ME{
+        position: absolute;
+        font-size: 38px;
+        color: white;
+        left: 70px;
+        top: 60px;
+    }
+
+    #imgShadow{
+        width: 565px;
+        height: 580px;
+        position: absolute;
+        left: 10px;
+        top: 47px;
+    }
+
+    #myImg{
+        width: 360px;
+        height: 490px;
+        position: absolute;
+        left: 60px;
+        top: 70px;
+    }
+
+    #about{
+        position: absolute;
+        color: white;
+        font-size: 22px;
+        left: 33%;
+        top: 40%;
+    }
+
+    #down>button{
+        background-color: #292929;
+        position: absolute;
+        border-radius: 10px;
+        left: 20%;
+        top: 103%;
+        font-size: 19px;
+    }
+
+    #main2{
+        position: relative;
+        width: 111.3vw;
+        height: 111.3vh;
+        !*left: 5%;*!
+    }
+
+    #EDUCATION{
+        position: absolute;
+        font-size: 38px;
+        color: white;
+        left: 70px;
+        top: 60px;
+    }
+
+   !* #E1{
+        position: absolute;
+        background-color: #272727;
+        width: 270px;
+        height: 155px;
+        left: 145px;
+        top: 200px;
+        color: white;
+    }*!
+
+    #main3{
+        position: relative;
+        width: 111.3vw;
+        height: 111.3vh;
+        background-color: #0A0B0B;
+    }
+
+    #SKILLS{
+        position: absolute;
+        font-size: 38px;
+        color: white;
+        left: 70px;
+        top: 60px;
+    }
+
+    #main4{
+        position: relative;
+        width: 111.3vw;
+        height: 165vh;
+    }
+
+    #PROJECTS{
+        position: absolute;
+        font-size: 38px;
+        color: white;
+        left: 70px;
+        top: 60px;
+    }
+
+
+    #chat{
+        position: absolute;
+        background-color: #272727;
+        width: 550px;
+        height: 150px;
+        left: 330px;
+        top: 195px;
+        border-radius: 30px;
+    }
+
+    #chatImg{
+        position: absolute;
+        width: 170px;
+        height: 140px;
+        left: 485px;
+        top: -63px;
+        border-radius: 30px;
+    }
+
+    #chat>h3{
+        position: absolute;
+        left: 30px;
+        color: #C36446;
+        font-size: 21px;
+    }
+
+    #chat>h5{
+        position: absolute;
+        width: 450px;
+        left: 50px;
+        top: 26px;
+        color: white;
+        font-size: 16px;
+    }
+
+    #bookShop{
+        position: absolute;
+        background-color: #272727;
+        width: 550px;
+        height: 150px;
+        left: 250px;
+        top: 450px;
+        border-radius: 30px;
+    }
+
+
+    #bookShopImg{
+        position: absolute;
+        width: 170px;
+        height: 140px;
+        right: 475px;
+        top: -55px;
+        border-radius: 30px;
+    }
+
+    #bookShop>h3{
+        position: absolute;
+        left: 15%;
+        color: #C36446;
+        font-size: 21px;
+    }
+
+    #bookShop>h5{
+        position: absolute;
+        width: 450px;
+        right: -1%;
+        top: 30px;
+        color: white;
+        font-size: 16px;
+    }
+
+    #game{
+        position: absolute;
+        background-color: #272727;
+        width: 550px;
+        height: 150px;
+        left: 330px;
+        top: 700px;
+        border-radius: 30px;
+    }
+
+    #gameImg{
+        position: absolute;
+        width: 170px;
+        height: 140px;
+        left: 485px;
+        top: -63px;
+        border-radius: 30px;
+    }
+
+    #game>h3{
+        position: absolute;
+        left: 30px;
+        color: #C36446;
+        font-size: 21px;
+    }
+
+    #game>h5{
+        position: absolute;
+        width: 555px;
+        left: 60px;
+        top: 25px;
+        color: white;
+        font-size: 16px;
+    }
+
+    #main5{
+        position: relative;
+        width: 111.3vw;
+        height: 111.3vh;
+        background-color: #0A0B0B;
+    }
+
+    #ASSIGNMENT{
+        position: absolute;
+        font-size: 38px;
+        color: white;
+        left: 70px;
+        top: 60px;
+    }
+
+    #main5>section{
+        background-color: #272727;
+        width: 300px;
+        height: 200px;
+        position: absolute;
+        left: 35%;
+        top: 30%;
+    }
+
+    #main5>section>h3{
+        position: absolute;
+        left: 20%;
+        top: 25%;
+        color: white;
+        font-size: 28px;
+    }
+
+    #arrow{
+        width: 40px;
+        aspect-ratio: 1/1;
+        position: absolute;
+        left: 84%;
+        top: 39%;
+    }
+    #arrow1{
+        width: 40px;
+        aspect-ratio: 1/1;
+        position: absolute;
+        left: 2%;
+        top: 39%;
+    }
+
+    #ass{
+        background-color: #272727;
+        width:200px ;
+        height: 180px;
+        position: absolute;
+        top: 45%;
+        left: 15%;
+    }
+
+    #ass1{
+        background-color: #272727;
+        width:200px ;
+        height: 180px;
+        position: absolute;
+        top: 45%;
+        right: 19%;
+    }
+
+    #ass>h3{
+        color: white;
+        font-size: 23px;
+        position: absolute;
+        top: 30%;
+        left: 13%;
+    }
+
+    #ass1>h3{
+        color: white;
+        font-size: 23px;
+        position: absolute;
+        top: 30%;
+        right: 14%;
+    }
+
+    #main6{
+        position: relative;
+        width: 111.3vw;
+        height: 140vh;
+    }
+
+    #GALLERY{
+        position: absolute;
+        font-size: 38px;
+        color: white;
+        left: 70px;
+        top: 60px;
+    }
+
+    #main6>section{
+        width: 350px;
+        height: 600px;
+
+        position: absolute;
+        top: 20%;
+        left: 25%;
+    }
+
+    #pic1{
+        width: 300px;
+        height: 180px;
+        position: absolute;
+        right: 35%;
+        top: 38px;
+    }
+
+    #pic2{
+        width: 300px;
+        height: 180px;
+        position: absolute;
+        left: 65%;
+        top: 38px;
+    }
+
+    #pic3{
+        width: 150px;
+        height: 180px;
+        position: absolute;
+        right: 78%;
+        top: 36.4%;
+    }
+
+    #pic4{
+        width: 300px;
+        height: 180px;
+        position: absolute;
+        left: 22.1%;
+        top: 36.4%;
+    }
+
+    #pic5{
+        width: 150px;
+        height: 180px;
+        position: absolute;
+        left: 107.6%;
+        top: 36.4%;
+    }
+
+    #pic6{
+        width: 300px;
+        height: 180px;
+        position: absolute;
+        right: 35%;
+        bottom: 3.6%;
+    }
+
+    #pic7{
+        width: 300px;
+        height: 180px;
+        position: absolute;
+        left: 65%;
+        bottom: 3.6%;
+    }
+
+    #main7{
+        position: relative;
+        width: 100vw;
+        height: 150vh;
+    }
+
+    #CONTACT_ME{
+        position: absolute;
+        font-size: 38px;
+        color: white;
+        left: 70px;
+        top: 60px;
+    }
+
+    #form{
+        width: 395px;
+        height: 430px;
+        background-color: #1C1A1A;
+        position: absolute;
+        left: 25%;
+        top: 20%;
+        border-radius: 40px;
+    }
+
+
+    #form>div>label{
+        font-size: 20px;
+        color: white;
+    }
+
+
+    #Name{
+        position: absolute;
+        left: 110%;
+        border-radius: 10px;
+        font-size: 14px;
+        opacity: 70%;
+    }
+
+    #email{
+        position: absolute;
+        left: 110%;
+        border-radius: 10px;
+        font-size: 14px;
+        opacity: 70%;
+    }
+
+    #contact{
+        position: absolute;
+        left: 110%;
+        border-radius: 10px;
+        font-size: 14px;
+        opacity: 70%;
+    }
+
+    #message{
+        position: absolute;
+        left: 110%;
+        top: 70%;
+        border-radius: 10px;
+        font-size: 14px;
+        opacity: 70%;
+    }
+
+    #footer{
+        background-color: #181818;
+        position: absolute;
+        width: 111.3vw;
+        height: 40vh;
+        bottom: -922%;
+    }
+
+    #footer>section>img{
+        width: 110px;
+        aspect-ratio: 1/1;
+        position: absolute;
+        left: 10%;
+        top: 20%;
+    }
+
+    #footer>section>h3{
+        position: absolute;
+        left: 6%;
+        top: 50%;
+        color: white;
+        font-size: 25px;
+        font-family: "Lucida Bright";
+    }
+
+    #footer>section>h4{
+        position: absolute;
+        left: 30%;
+        top: -19.5%;
+        font-size: 23px;
+        color: white;
+        opacity: 50%;
+    }
+*/
+
+
+
 }

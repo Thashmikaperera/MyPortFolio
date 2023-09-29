@@ -1,0 +1,518 @@
+body{
+    background-color: black;
+    height: 200vh;
+    width: 100vw;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+h1{
+    position: absolute;
+    color: white;
+    font-size: 35px;
+    left: 44%;
+    top: 6%;
+}
+
+#section1{
+    position: absolute;
+    width: 250px;
+    height: 280px;
+    background-color: #272727;
+    top: 28%;
+    left: 15%;
+}
+
+#section1>h3{
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    left: 11%;
+
+}
+
+#section1>h5{
+    position: absolute;
+    font-size: 20px;
+    color: white;
+    left: 2%;
+    top: 30%;
+    text-align: center;
+    /*height: 40px    ;*/
+    /*width: 30px;*/
+}
+
+#section1>div>button{
+    position: absolute;
+    background-color: #797C7D;
+    font-size: 22px;
+    left: 27%;
+    top: 80%;
+}
+
+#section2{
+    position: absolute;
+    width: 250px;
+    height: 280px;
+    background-color: #272727;
+    top: 28%;
+    left: 40%;
+}
+
+#section2>h3{
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    left: 11%;
+
+}
+
+#section2>h5{
+    position: absolute;
+    font-size: 20px;
+    color: white;
+    left: 34%;
+    top: 30%;
+    text-align: center;
+    /*height: 40px    ;*/
+    /*width: 30px;*/
+}
+
+#section2>div>button{
+    position: absolute;
+    background-color: #797C7D;
+    font-size: 22px;
+    left: 27%;
+    top: 80%;
+}
+
+#section3{
+    position: absolute;
+    width: 250px;
+    height: 280px;
+    background-color: #272727;
+    top: 28%;
+    left: 65%;
+}
+
+#section3>h3{
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    left: 11%;
+
+}
+
+#section3>h5{
+    position: absolute;
+    font-size: 20px;
+    color: white;
+    left: 31%;
+    top: 31%;
+    text-align: center;
+    /*height: 40px    ;*/
+    /*width: 30px;*/
+}
+
+#section3>div>button{
+    position: absolute;
+    background-color: #797C7D;
+    font-size: 22px;
+    left: 27%;
+    top: 80%;
+}
+
+#section4{
+    position: absolute;
+    width: 250px;
+    height: 280px;
+    background-color: #272727;
+    top: 85%;
+    left: 15%;
+}
+
+#section4>h3{
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    left: 11%;
+
+}
+
+#section4>h5{
+    position: absolute;
+    font-size: 20px;
+    color: white;
+    left: 31%;
+    top: 30%;
+    text-align: center;
+    /*height: 40px    ;*/
+    /*width: 30px;*/
+}
+
+#section4>div>button{
+    position: absolute;
+    background-color: #797C7D;
+    font-size: 22px;
+    left: 27%;
+    top: 80%;
+}
+
+#section5{
+    position: absolute;
+    width: 250px;
+    height: 280px;
+    background-color: #272727;
+    top: 85%;
+    left: 40%;
+}
+
+#section5>h3{
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    left: 11%;
+
+}
+
+#section5>h5{
+    position: absolute;
+    font-size: 20px;
+    color: white;
+    left: 31%;
+    top: 30%;
+    text-align: center;
+    /*height: 40px    ;*/
+    /*width: 30px;*/
+}
+
+#section5>div>button{
+    position: absolute;
+    background-color: #797C7D;
+    font-size: 22px;
+    left: 27%;
+    top: 80%;
+}
+
+#section6{
+    position: absolute;
+    width: 250px;
+    height: 280px;
+    background-color: #272727;
+    top: 85%;
+    left: 65%;
+}
+
+#section6>h3{
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    left: 11%;
+
+}
+
+#section6>h5{
+    position: absolute;
+    font-size: 20px;
+    color: white;
+    left: 31%;
+    top: 30%;
+    text-align: center;
+    /*height: 40px    ;*/
+    /*width: 30px;*/
+}
+
+#section6>div>button{
+    position: absolute;
+    background-color: #797C7D;
+    font-size: 22px;
+    left: 27%;
+    top: 80%;
+}
+
+#section7{
+    position: absolute;
+    width: 250px;
+    height: 280px;
+    background-color: #272727;
+    top: 140%;
+    left: 15%;
+}
+
+#section7>h3{
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    left: 11%;
+
+}
+
+#section7>h5{
+    position: absolute;
+    font-size: 20px;
+    color: white;
+    left: 2%;
+    top: 31%;
+    text-align: center;
+    /*height: 40px    ;*/
+    /*width: 30px;*/
+}
+
+#section7>div>button{
+    position: absolute;
+    background-color: #797C7D;
+    font-size: 22px;
+    left: 27%;
+    top: 80%;
+}
+
+#section8{
+    position: absolute;
+    width: 250px;
+    height: 280px;
+    background-color: #272727;
+    top: 140%;
+    left: 40%;
+}
+
+#section8>h3{
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    left: 11%;
+
+}
+
+#section8>h5{
+    position: absolute;
+    font-size: 20px;
+    color: white;
+    left: 34%;
+    top: 31%;
+    text-align: center;
+    /*height: 40px    ;*/
+    /*width: 30px;*/
+}
+
+#section8>div>button{
+    position: absolute;
+    background-color: #797C7D;
+    font-size: 22px;
+    left: 27%;
+    top: 80%;
+}
+
+#section9{
+    position: absolute;
+    width: 250px;
+    height: 280px;
+    background-color: #272727;
+    top: 140%;
+    left: 65%;
+}
+
+#section9>h3{
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    left: 11%;
+
+}
+
+#section9>h5{
+    position: absolute;
+    font-size: 20px;
+    color: white;
+    left: 31%;
+    top: 30%;
+    text-align: center;
+    /*height: 40px    ;*/
+    /*width: 30px;*/
+}
+
+#section9>div>button{
+    position: absolute;
+    background-color: #797C7D;
+    font-size: 22px;
+    left: 27%;
+    top: 80%;
+}
+
+#section10{
+    position: absolute;
+    width: 250px;
+    height: 280px;
+    background-color: #272727;
+    top: 195%;
+    left: 15%;
+}
+
+#section10>h3{
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    left: 11%;
+
+}
+
+#section10>h5{
+    position: absolute;
+    font-size: 20px;
+    color: white;
+    left: 2%;
+    top: 31%;
+    text-align: center;
+    /*height: 40px    ;*/
+    /*width: 30px;*/
+}
+
+#section10>div>button{
+    position: absolute;
+    background-color: #797C7D;
+    font-size: 22px;
+    left: 27%;
+    top: 80%;
+}
+
+#section11{
+    position: absolute;
+    width: 250px;
+    height: 280px;
+    background-color: #272727;
+    top: 195%;
+    left: 40%;
+}
+
+#section11>h3{
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    left: 11%;
+
+}
+
+#section11>h5{
+    position: absolute;
+    font-size: 20px;
+    color: white;
+    left: 31%;
+    top: 30%;
+    text-align: center;
+    /*height: 40px    ;*/
+    /*width: 30px;*/
+}
+
+#section11>div>button{
+    position: absolute;
+    background-color: #797C7D;
+    font-size: 22px;
+    left: 27%;
+    top: 80%;
+}
+
+#section12{
+    position: absolute;
+    width: 250px;
+    height: 280px;
+    background-color: #272727;
+    top: 195%;
+    left: 65%;
+}
+
+#section12>h3{
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    left: 11%;
+
+}
+
+#section12>h5{
+    position: absolute;
+    font-size: 20px;
+    color: white;
+    left: 31%;
+    top: 30%;
+    text-align: center;
+    /*height: 40px    ;*/
+    /*width: 30px;*/
+}
+
+#section12>div>button{
+    position: absolute;
+    background-color: #797C7D;
+    font-size: 22px;
+    left: 27%;
+    top: 80%;
+}
+
+#footer{
+    background-color: #181818;
+    position: absolute;
+    width: 100vw;
+    height: 40vh;
+    bottom: -190%;
+}
+
+
+
+
+
+#footer>section>img{
+    width: 150px;
+    aspect-ratio: 1/1;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+}
+
+#footer>section>h3{
+    position: absolute;
+    left: 7%;
+    top: 50%;
+    color: white;
+    font-size: 28px;
+    font-family: "Lucida Bright";
+}
+
+#footer>section>h4{
+    position: absolute;
+    left: 30%;
+    top: -18.5%;
+    font-size: 25px;
+    color: white;
+    opacity: 50%;
+}
+
+#footer>section>div{
+    position: absolute;
+    left: 70%;
+    top: 35%;
+}
+
+#imgDiv1{
+    border-bottom: 2px solid white;
+}
+
+#footer>section>h6{
+    position: absolute;
+    right: 17.5%;
+    top: 35%;
+    font-size: 22px;
+    color:#D2D2D2;
+    font-family: "Book Antiqua";
+}
+
+
