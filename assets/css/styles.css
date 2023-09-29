@@ -1489,13 +1489,13 @@ header>nav>ol>li>a{
         aspect-ratio: 1/1;
         position: absolute;
         left: 10%;
-        top: 20%;
+        top: 17%;
     }
 
     #footer>section>h3{
         position: absolute;
         left: 6%;
-        top: 50%;
+        top: 44%;
         color: white;
         font-size: 25px;
         font-family: "Lucida Bright";
@@ -1510,6 +1510,13 @@ header>nav>ol>li>a{
         opacity: 50%;
     }
 
-
+    #footer>section>h6{
+        position: absolute;
+        right: 16%;
+        top: 37%;
+        font-size: 18px;
+        color:#D2D2D2;
+        font-family: "Book Antiqua";
+    }
 
 }
