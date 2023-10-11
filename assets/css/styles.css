@@ -15,7 +15,7 @@ html{
 
 header{
     z-index: 20;
-    width: 100vw;
+    width: 1349px;
     height: 50px;
     position: fixed;
     background-color: #0A0B0B;
@@ -50,8 +50,8 @@ header>nav>ol>li>a{
 
 #main{
     position: relative;
-    width: 100vw;
-    height: 100vh;
+    width: 1349px;
+    height: 650px;
 }
 
 #divPic{
@@ -68,7 +68,7 @@ header>nav>ol>li>a{
     position: absolute;
     top: 17%;
     left: 5%;
-    width: 80vw;
+    width: 1050px;
 }
 
 #HOME{
@@ -118,8 +118,8 @@ header>nav>ol>li>a{
 
 #main1{
     position: relative;
-    width: 100vw;
-    height: 100vh;
+    width: 1349px;
+    height: 650px;
     background-color: #0A0B0B;
 }
 
@@ -164,8 +164,8 @@ header>nav>ol>li>a{
 }
 #main2{
     position: relative;
-    width: 100vw;
-    height: 100vh;
+    width: 1349px;
+    height: 650px;
     /*left: 5%;*/
 }
 
@@ -242,7 +242,7 @@ header>nav>ol>li>a{
     background-color: #272727;
     width: 310px;
     height: 155px;
-    right: 200px;
+    right: 184px;
     top: 370px;
     color: white;
 }
@@ -268,7 +268,7 @@ header>nav>ol>li>a{
     background-color: #272727;
     width: 310px;
     height: 155px;
-    right: 200px;
+    right: 184px;
     top: 125px;
     color: white;
 }
@@ -315,7 +315,7 @@ header>nav>ol>li>a{
     height: 2px;
     position: absolute;
     background-color: white;
-    right: 510px;
+    right: 494px;
     top: 200px;
 }
 #line5{
@@ -323,14 +323,14 @@ header>nav>ol>li>a{
     height: 2px;
     position: absolute;
     background-color: white;
-    right: 510px;
+    right: 494px;
     top: 450px;
 }
 
 #main3{
     position: relative;
-    width: 100vw;
-    height: 100vh;
+    width: 1349px;
+    height: 650px;
     background-color: #0A0B0B;
 }
 
@@ -388,8 +388,8 @@ header>nav>ol>li>a{
 
 #main4{
     position: relative;
-    width: 100vw;
-    height: 150vh;
+    width: 1349px;
+    height: 1000px;
 }
 
 #PROJECTS{
@@ -528,8 +528,8 @@ header>nav>ol>li>a{
 
 #main5{
     position: relative;
-    width: 100vw;
-    height: 100vh;
+    width: 1349px;
+    height: 650px;
     background-color: #0A0B0B;
 }
 
@@ -616,8 +616,8 @@ header>nav>ol>li>a{
 
 #main6{
     position: relative;
-    width: 100vw;
-    height: 150vh;
+    width: 1349px;
+    height: 1000px;
 }
 
 #GALLERY{
@@ -696,8 +696,8 @@ header>nav>ol>li>a{
 
 #main7{
     position: relative;
-    width: 100vw;
-    height: 100vh;
+    width: 1349px;
+    height: 650px;
 }
 
 #CONTACT_ME{
@@ -772,8 +772,8 @@ header>nav>ol>li>a{
 #footer{
     background-color: #181818;
     position: absolute;
-    width: 100vw;
-    height: 40vh;
+    width: 1349px;
+    height: 240px;
     bottom: -860%;
 }
 
@@ -822,160 +822,164 @@ header>nav>ol>li>a{
     font-family: "Book Antiqua";
 }
 
-@media all and (max-width: 1440px){
-    header>nav{
-        position: absolute;
-        width: fit-content;
-        right: 2%;
-        padding: 1px;
-        margin-top: 15px;
-    }
+/*@media all and (max-width: 1441px){*/
+/*    header>nav{*/
+/*        position: absolute;*/
+/*        width: fit-content;*/
+/*        right: 2%;*/
+/*        padding: 1px;*/
+/*        margin-top: 15px;*/
+/*    }*/
 
-    header>img{
-        width: 70px;
-        top: -20%;
-        height: 72px;
-        position: absolute;
-    }
+/*    header>img{*/
+/*        width: 70px;*/
+/*        top: -20%;*/
+/*        height: 72px;*/
+/*        position: absolute;*/
+/*    }*/
 
-    header>nav>ol>li{
-        text-decoration: none;
-        display: inline-block;
-        margin-right: 20px;
-    }
+/*    header>nav>ol>li{*/
+/*        text-decoration: none;*/
+/*        display: inline-block;*/
+/*        margin-right: 20px;*/
+/*    }*/
 
-    header>nav>ol>li>a{
-        text-decoration: none;
-        color: white;
-        font-size: 25px;
-    }
+/*    header>nav>ol>li>a{*/
+/*        text-decoration: none;*/
+/*        color: white;*/
+/*        font-size: 25px;*/
+/*    }*/
 
 
 
-    #divPic{
-        width: 400px;
-        aspect-ratio: 1/1;
-        border-radius: 100%;
-        position: relative;
-        left: 58%;
-        top: 145px;
-    }
+/*    #divPic{*/
+/*        width: 400px;*/
+/*        aspect-ratio: 1/1;*/
+/*        border-radius: 100%;*/
+/*        position: relative;*/
+/*        left: 58%;*/
+/*        top: 145px;*/
+/*    }*/
 
-    #homeDiv{
-        position: absolute;
-        top: 18%;
-        left: 5%;
-        width: 80vw;
-    }
+/*    #homeDiv{*/
+/*        position: absolute;*/
+/*        top: 18%;*/
+/*        left: 5%;*/
+/*        width: 80vw;*/
+/*    }*/
 
-    #HOME{
-        position: absolute;
-        color: #C36446;
-        font-size: 28px;
-    }
-    #homeDiv>h1{
-        position: absolute;
-        color: white;
-        top: 15%;
-        font-size: 70px;
-    }
+/*    #HOME{*/
+/*        position: absolute;*/
+/*        color: #C36446;*/
+/*        font-size: 28px;*/
+/*    }*/
+/*    #homeDiv>h1{*/
+/*        position: absolute;*/
+/*        color: white;*/
+/*        top: 15%;*/
+/*        font-size: 70px;*/
+/*    }*/
 
-    #homeDiv>h3{
-        position: absolute;
-        color: #C36446;
-        top: 170%;
-        right: 60%;
-        font-size: 50px;
-        width: fit-content;
-        height: fit-content;
-    }
+/*    #homeDiv>h3{*/
+/*        position: absolute;*/
+/*        color: #C36446;*/
+/*        top: 170%;*/
+/*        right: 60%;*/
+/*        font-size: 50px;*/
+/*        width: fit-content;*/
+/*        height: fit-content;*/
+/*    }*/
 
-    #imgDiv{
-        position: absolute;
-        top: 318%;
-        right: 65%;
-        border-bottom: 2px solid white;
-    }
+/*    #imgDiv{*/
+/*        position: absolute;*/
+/*        top: 318%;*/
+/*        right: 65%;*/
+/*        border-bottom: 2px solid white;*/
+/*    }*/
 
-    #h6{
-        position: relative;
-        color: #7B3107;
-        left: 22%;
-        top: 350px;
-    }
-    #btnDiv{
-        position: relative;
-        top: 400px;
-        left: 22%;
-    }
+/*    #h6{*/
+/*        position: relative;*/
+/*        color: #7B3107;*/
+/*        left: 22%;*/
+/*        top: 350px;*/
+/*    }*/
+/*    #btnDiv{*/
+/*        position: relative;*/
+/*        top: 400px;*/
+/*        left: 22%;*/
+/*    }*/
 
-    #btn{
-        background-color: #C36446;
-        font-size: 30px;
-    }
+/*    #btn{*/
+/*        background-color: #C36446;*/
+/*        font-size: 30px;*/
+/*    }*/
 
-    /*#E1{
-        left: 11.6%;
-    }
+/*    !*#E1{*/
+/*        left: 11.6%;*/
+/*    }*/
 
-    #E2{
-        left: 11.6%;
-    }
+/*    #E2{*/
+/*        left: 11.6%;*/
+/*    }*/
 
-    #E3{
-        left: 61%;
-    }
+/*    #E3{*/
+/*        left: 61%;*/
+/*    }*/
 
-    #E4{
-        left: 61%;
-    }
+/*    #E4{*/
+/*        left: 61%;*/
+/*    }*/
 
-    #line1{
-        left: 33.1%;
-    }
+/*    #line1{*/
+/*        left: 33.1%;*/
+/*    }*/
 
-    #line2{
-        left: 33.1%;
-    }
+/*    #line2{*/
+/*        left: 33.1%;*/
+/*    }*/
 
-    #line3{
-        left: 47%;
-    }
+/*    #line3{*/
+/*        left: 47%;*/
+/*    }*/
 
-    #line4{
-        left: 47%;
-    }
+/*    #line4{*/
+/*        left: 47%;*/
+/*    }*/
 
-    #line5{
-        left: 47%;
-    }*/
+/*    #line5{*/
+/*        left: 47%;*/
+/*    }*!*/
 
-    /*#footer>section>h4{
-        top: -15%;
-    }*/
+/*    !*#footer>section>h4{*/
+/*        top: -15%;*/
+/*    }*!*/
 
-    #line4{
-        width: 200px;
-        height: 2px;
-        position: absolute;
-        background-color: white;
-        right: 583px;
-        top: 200px;
-    }
-    #line5{
-        width: 200px;
-        height: 2px;
-        position: absolute;
-        background-color: white;
-        right: 583px;
-        top: 450px;
-    }
-}
+/*    #line4{*/
+/*        width: 200px;*/
+/*        height: 2px;*/
+/*        position: absolute;*/
+/*        background-color: white;*/
+/*        right: 583px;*/
+/*        top: 200px;*/
+/*    }*/
+/*    #line5{*/
+/*        width: 200px;*/
+/*        height: 2px;*/
+/*        right: 583px;*/
+/*        top: 450px;*/
+/*    }*/
+/*    #E4{*/
+/*        right: 273px;*/
+/*    }*/
+/*    #E3{*/
+/*        right: 273px;*/
+/*    }*/
+/*}*/
 
 @media all and (max-width: 1024px){
     header{
         z-index: 20;
-        width: 111.5vw;
+        width: 1140px;
         height: 50px;
         position: fixed;
         background-color: #0A0B0B;
@@ -983,8 +987,8 @@ header>nav>ol>li>a{
 
     #main{
         position: relative;
-        width: 111.3vw;
-        height: 111.3vh;
+        width: 1140px;
+        height: 629px;
     }
 
     #homeDiv{
@@ -1045,8 +1049,8 @@ header>nav>ol>li>a{
 
     #main1{
         position: relative;
-        width: 111.3vw;
-        height: 111.3vh;
+        width: 1140px;
+        height: 629px;
         background-color: #0A0B0B;
     }
 
@@ -1093,54 +1097,164 @@ header>nav>ol>li>a{
 
     #main2{
         position: relative;
-        width: 111.3vw;
-        height: 111.3vh;
-        /*left: 5%;*/
+        width: 1140px;
+        height: 629px;
     }
 
     #EDUCATION{
         position: absolute;
         font-size: 38px;
-        color: white;
         left: 70px;
         top: 60px;
     }
 
-   /* #E1{
+    #E1{
         position: absolute;
-        background-color: #272727;
         width: 270px;
-        height: 155px;
+        height: 130px;
         left: 145px;
-        top: 200px;
-        color: white;
-    }*/
+        top: 195px;
+    }
+
+    #E1>h3{
+        position: absolute;
+        left: 26%;
+        top: -8%;
+    }
+
+    #E1>h4{
+        position: absolute;
+        left: 8%;
+        top: 11%;
+    }
+
+    #institute{
+        position: absolute;
+        left: 10%;
+        top: 50%;
+    }
+
+    #year{
+        position: absolute;
+        left: 38%;
+        top: 65%;
+    }
+
+    #E2{
+        position: absolute;
+        width: 270px;
+        height: 130px;
+        left: 145px;
+        top: 450px;
+    }
+
+    #scl{
+        position: absolute;
+        left: 14%;
+        top: 48%;
+    }
+
+    #year1{
+        position: absolute;
+        left: 37%;
+        top: 62%;
+    }
+
+    #E3{
+        position: absolute;
+        width: 270px;
+        height: 130px;
+        right: 175px;
+        top: 350px;
+    }
+
+    #scl1{
+        position: absolute;
+        left: 13%;
+        top: 48%;
+    }
+
+    #year2{
+        position: absolute;
+        left: 37%;
+        top: 62%;
+    }
+
+    #E4{
+        position: absolute;
+        width: 270px;
+        height: 130px;
+        right: 175px;
+        top: 120px;
+    }
+
+    #E4>h3{
+        font-size: 13px;
+    }
+
+    #E4>h5{
+        font-size: 12px;
+        position: absolute;
+        top: 43%;
+        left: 17%;
+    }
+
+    #line1{
+        width: 140px;
+        position: absolute;
+        left: 415px;
+        top: 260px;
+    }
+
+    #line2{
+        width: 140px;
+        position: absolute;
+        left: 415px;
+        top: 518px;
+    }
+    #line3{
+        height: 340px;
+        position: absolute;
+        left: 555px;
+        top: 180px;
+    }
+
+    #line4{
+        width: 140px;
+        position: absolute;
+        right: 445px;
+        top: 179px;
+    }
+    #line5{
+        width: 140px;
+        position: absolute;
+        right: 445px;
+        top: 415px;
+    }
+
 
     #main3{
         position: relative;
-        width: 111.3vw;
-        height: 111.3vh;
-        background-color: #0A0B0B;
+        width: 1140px;
+        height: 629px;
     }
 
     #SKILLS{
         position: absolute;
         font-size: 38px;
-        color: white;
         left: 70px;
         top: 60px;
     }
 
     #main4{
         position: relative;
-        width: 111.3vw;
-        height: 165vh;
+        width: 1140px;
+        height: 940px;
     }
 
     #PROJECTS{
         position: absolute;
         font-size: 38px;
-        color: white;
         left: 70px;
         top: 60px;
     }
@@ -1148,7 +1262,6 @@ header>nav>ol>li>a{
 
     #chat{
         position: absolute;
-        background-color: #272727;
         width: 550px;
         height: 150px;
         left: 330px;
@@ -1168,7 +1281,6 @@ header>nav>ol>li>a{
     #chat>h3{
         position: absolute;
         left: 30px;
-        color: #C36446;
         font-size: 21px;
     }
 
@@ -1177,13 +1289,11 @@ header>nav>ol>li>a{
         width: 450px;
         left: 50px;
         top: 26px;
-        color: white;
         font-size: 16px;
     }
 
     #bookShop{
         position: absolute;
-        background-color: #272727;
         width: 550px;
         height: 150px;
         left: 250px;
@@ -1204,7 +1314,6 @@ header>nav>ol>li>a{
     #bookShop>h3{
         position: absolute;
         left: 15%;
-        color: #C36446;
         font-size: 21px;
     }
 
@@ -1213,13 +1322,11 @@ header>nav>ol>li>a{
         width: 450px;
         right: -1%;
         top: 30px;
-        color: white;
         font-size: 16px;
     }
 
     #game{
         position: absolute;
-        background-color: #272727;
         width: 550px;
         height: 150px;
         left: 330px;
@@ -1239,7 +1346,6 @@ header>nav>ol>li>a{
     #game>h3{
         position: absolute;
         left: 30px;
-        color: #C36446;
         font-size: 21px;
     }
 
@@ -1248,27 +1354,23 @@ header>nav>ol>li>a{
         width: 555px;
         left: 60px;
         top: 25px;
-        color: white;
         font-size: 16px;
     }
 
     #main5{
         position: relative;
-        width: 111.3vw;
-        height: 111.3vh;
-        background-color: #0A0B0B;
+        width: 1140px;
+        height: 629px;
     }
 
     #ASSIGNMENT{
         position: absolute;
         font-size: 38px;
-        color: white;
         left: 70px;
         top: 60px;
     }
 
     #main5>section{
-        background-color: #272727;
         width: 300px;
         height: 200px;
         position: absolute;
@@ -1280,7 +1382,6 @@ header>nav>ol>li>a{
         position: absolute;
         left: 20%;
         top: 25%;
-        color: white;
         font-size: 28px;
     }
 
@@ -1300,7 +1401,6 @@ header>nav>ol>li>a{
     }
 
     #ass{
-        background-color: #272727;
         width:200px ;
         height: 180px;
         position: absolute;
@@ -1309,7 +1409,6 @@ header>nav>ol>li>a{
     }
 
     #ass1{
-        background-color: #272727;
         width:200px ;
         height: 180px;
         position: absolute;
@@ -1318,7 +1417,6 @@ header>nav>ol>li>a{
     }
 
     #ass>h3{
-        color: white;
         font-size: 23px;
         position: absolute;
         top: 30%;
@@ -1326,7 +1424,6 @@ header>nav>ol>li>a{
     }
 
     #ass1>h3{
-        color: white;
         font-size: 23px;
         position: absolute;
         top: 30%;
@@ -1335,14 +1432,13 @@ header>nav>ol>li>a{
 
     #main6{
         position: relative;
-        width: 111.3vw;
-        height: 140vh;
+        width: 1140px;
+        height: 700px;
     }
 
     #GALLERY{
         position: absolute;
         font-size: 38px;
-        color: white;
         left: 70px;
         top: 60px;
     }
@@ -1414,14 +1510,13 @@ header>nav>ol>li>a{
 
     #main7{
         position: relative;
-        width: 100vw;
-        height: 150vh;
+        width: 1140px;
+        height: 910px;
     }
 
     #CONTACT_ME{
         position: absolute;
         font-size: 38px;
-        color: white;
         left: 70px;
         top: 60px;
     }
@@ -1429,7 +1524,6 @@ header>nav>ol>li>a{
     #form{
         width: 395px;
         height: 430px;
-        background-color: #1C1A1A;
         position: absolute;
         left: 25%;
         top: 20%;
@@ -1439,7 +1533,6 @@ header>nav>ol>li>a{
 
     #form>div>label{
         font-size: 20px;
-        color: white;
     }
 
 
@@ -1477,10 +1570,9 @@ header>nav>ol>li>a{
     }
 
     #footer{
-        background-color: #181818;
         position: absolute;
-        width: 111.3vw;
-        height: 40vh;
+        width: 1140px;
+        height: 230px;
         bottom: -922%;
     }
 
@@ -1518,5 +1610,51 @@ header>nav>ol>li>a{
         color:#D2D2D2;
         font-family: "Book Antiqua";
     }
+
+}
+
+@media all and (max-width: 768px) {
+    header{
+        z-index: 20;
+        width: 1140px;
+        height: 50px;
+        position: fixed;
+    }
+
+    #main{
+        position: relative;
+        width: 1140px;
+        height: 650px;
+    }
+
+    #homeDiv>h3{
+        position: absolute;
+        top: 100%;
+        right: 42%;
+        font-size: 38px;
+    }
+
+    #imgDiv{
+        position: absolute;
+        top: 185%;
+        right: 46.5%;
+    }
+
+    #homeDiv>h6{
+        position: relative;
+        top: 235px;
+        left: 29.5%;
+    }
+
+    #btnDiv{
+        position: relative;
+        top: 270px;
+        left: 31%;
+    }
+
+}
+
+
+@media all and (max-width: 425px) {
 
 }
