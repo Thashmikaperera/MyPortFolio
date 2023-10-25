@@ -10,11 +10,189 @@ h1{
     position: absolute;
     color: white;
     font-size: 35px;
-    left: 44%;
+    left: 42%;
     top: 6%;
 }
 
-#section1{
+
+.myCard,.myCard1,.myCard2,.myCard3,.myCard4,.myCard5,.myCard6,.myCard7,.myCard8,.myCard9,.myCard10,.myCard11{
+    position: absolute;
+    left: 18%;
+    top: 28%;
+    background-color: transparent;
+    width: 220px;
+    height: 280px;
+    perspective: 1000px;
+}
+
+.title {
+    font-size: 23px;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+}
+
+.innerCard {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.myCard:hover .innerCard,.myCard1:hover .innerCard,.myCard2:hover .innerCard,.myCard3:hover .innerCard,.myCard4:hover .innerCard,.myCard5:hover .innerCard,.myCard6:hover .innerCard,.myCard7:hover .innerCard,.myCard8:hover .innerCard,.myCard9:hover .innerCard,.myCard10:hover .innerCard,.myCard11:hover .innerCard{
+    transform: rotateY(180deg);
+}
+
+.frontSide,
+.backSide {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 1rem;
+    color: white;
+    box-shadow: 0 0 0.3em rgba(255, 255, 255, 0.5);
+    font-weight: 700;
+}
+
+.frontSide,
+.frontSide::before {
+    background: linear-gradient(43deg, rgb(65, 88, 208) 0%, rgb(200, 80, 192) 46%, rgb(255, 204, 112) 100%);
+}
+
+.backSide,
+.backSide::before {
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+}
+
+.backSide {
+    transform: rotateY(180deg);
+}
+
+.frontSide::before,
+.backSide::before {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: '';
+    width: 110%;
+    height: 110%;
+    position: absolute;
+    z-index: -1;
+    border-radius: 1em;
+    filter: blur(20px);
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0.3;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.3;
+    }
+}
+
+.myCard1{
+    position: absolute;
+    left: 43%;
+}
+
+.myCard2{
+    position: absolute;
+    left: 67%;
+}
+
+.myCard3{
+    position: absolute;
+    left: 18%;
+    top: 85%;
+}
+
+.myCard4{
+    position: absolute;
+    left: 43%;
+    top: 85%;
+}
+
+.myCard5{
+    position: absolute;
+    left: 67%;
+    top: 85%;
+}
+
+.myCard6{
+    position: absolute;
+    left: 18%;
+    top: 145%;
+}
+
+.myCard7{
+    position: absolute;
+    left: 43%;
+    top: 145%;
+}
+
+.myCard8{
+    position: absolute;
+    left: 67%;
+    top: 145%;
+}
+
+.myCard9{
+    position: absolute;
+    left: 18%;
+    top: 205%;
+}
+
+.myCard10{
+    position: absolute;
+    left: 43%;
+    top: 205%;
+}
+
+.myCard11{
+    position: absolute;
+    left: 67%;
+    top: 205%;
+}
+
+button {
+    position: absolute;
+    top: 80%;
+    font-size: 10px;
+    padding: 0.5em 2em;
+    border: transparent;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+    background: dodgerblue;
+    color: white;
+    border-radius: 4px;
+}
+
+button:hover {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(30,144,255,1) 0%, rgba(0,212,255,1) 100%);
+}
+
+button:active {
+    transform: translate(0em, 0.2em);
+}
+
+/*#section1{
     position: absolute;
     width: 250px;
     height: 280px;
@@ -39,18 +217,21 @@ h1{
     left: 2%;
     top: 30%;
     text-align: center;
-    /*height: 40px    ;*/
-    /*width: 30px;*/
+    !*height: 40px    ;*!
+    !*width: 30px;*!
 }
+
 
 #section1>div>button{
     position: absolute;
     background-color: #797C7D;
-    font-size: 22px;
-    left: 27%;
+    font-size: 15px;
+    left: 33%;
     top: 80%;
 }
+*/
 
+/*
 #section2{
     position: absolute;
     width: 250px;
@@ -76,15 +257,15 @@ h1{
     left: 34%;
     top: 30%;
     text-align: center;
-    /*height: 40px    ;*/
-    /*width: 30px;*/
+    !*height: 40px    ;*!
+    !*width: 30px;*!
 }
 
 #section2>div>button{
     position: absolute;
     background-color: #797C7D;
-    font-size: 22px;
-    left: 27%;
+    font-size: 15px;
+    left: 33%;
     top: 80%;
 }
 
@@ -113,15 +294,15 @@ h1{
     left: 31%;
     top: 31%;
     text-align: center;
-    /*height: 40px    ;*/
-    /*width: 30px;*/
+    !*height: 40px    ;*!
+    !*width: 30px;*!
 }
 
 #section3>div>button{
     position: absolute;
     background-color: #797C7D;
-    font-size: 22px;
-    left: 27%;
+    font-size: 15px;
+    left: 33%;
     top: 80%;
 }
 
@@ -150,15 +331,15 @@ h1{
     left: 31%;
     top: 30%;
     text-align: center;
-    /*height: 40px    ;*/
-    /*width: 30px;*/
+    !*height: 40px    ;*!
+    !*width: 30px;*!
 }
 
 #section4>div>button{
     position: absolute;
     background-color: #797C7D;
-    font-size: 22px;
-    left: 27%;
+    font-size: 15px;
+    left: 33%;
     top: 80%;
 }
 
@@ -187,15 +368,15 @@ h1{
     left: 31%;
     top: 30%;
     text-align: center;
-    /*height: 40px    ;*/
-    /*width: 30px;*/
+    !*height: 40px    ;*!
+    !*width: 30px;*!
 }
 
 #section5>div>button{
     position: absolute;
     background-color: #797C7D;
-    font-size: 22px;
-    left: 27%;
+    font-size: 15px;
+    left: 33%;
     top: 80%;
 }
 
@@ -224,15 +405,15 @@ h1{
     left: 31%;
     top: 30%;
     text-align: center;
-    /*height: 40px    ;*/
-    /*width: 30px;*/
+    !*height: 40px    ;*!
+    !*width: 30px;*!
 }
 
 #section6>div>button{
     position: absolute;
     background-color: #797C7D;
-    font-size: 22px;
-    left: 27%;
+    font-size: 15px;
+    left: 33%;
     top: 80%;
 }
 
@@ -261,15 +442,15 @@ h1{
     left: 2%;
     top: 31%;
     text-align: center;
-    /*height: 40px    ;*/
-    /*width: 30px;*/
+    !*height: 40px    ;*!
+    !*width: 30px;*!
 }
 
 #section7>div>button{
     position: absolute;
     background-color: #797C7D;
-    font-size: 22px;
-    left: 27%;
+    font-size: 15px;
+    left: 33%;
     top: 80%;
 }
 
@@ -298,15 +479,15 @@ h1{
     left: 34%;
     top: 31%;
     text-align: center;
-    /*height: 40px    ;*/
-    /*width: 30px;*/
+    !*height: 40px    ;*!
+    !*width: 30px;*!
 }
 
 #section8>div>button{
     position: absolute;
     background-color: #797C7D;
-    font-size: 22px;
-    left: 27%;
+    font-size: 15px;
+    left: 33%;
     top: 80%;
 }
 
@@ -335,15 +516,15 @@ h1{
     left: 31%;
     top: 30%;
     text-align: center;
-    /*height: 40px    ;*/
-    /*width: 30px;*/
+    !*height: 40px    ;*!
+    !*width: 30px;*!
 }
 
 #section9>div>button{
     position: absolute;
     background-color: #797C7D;
-    font-size: 22px;
-    left: 27%;
+    font-size: 15px;
+    left: 33%;
     top: 80%;
 }
 
@@ -372,15 +553,15 @@ h1{
     left: 2%;
     top: 31%;
     text-align: center;
-    /*height: 40px    ;*/
-    /*width: 30px;*/
+    !*height: 40px    ;*!
+    !*width: 30px;*!
 }
 
 #section10>div>button{
     position: absolute;
     background-color: #797C7D;
-    font-size: 22px;
-    left: 27%;
+    font-size: 15px;
+    left: 33%;
     top: 80%;
 }
 
@@ -409,15 +590,15 @@ h1{
     left: 31%;
     top: 30%;
     text-align: center;
-    /*height: 40px    ;*/
-    /*width: 30px;*/
+    !*height: 40px    ;*!
+    !*width: 30px;*!
 }
 
 #section11>div>button{
     position: absolute;
     background-color: #797C7D;
-    font-size: 22px;
-    left: 27%;
+    font-size: 15px;
+    left: 33%;
     top: 80%;
 }
 
@@ -446,41 +627,38 @@ h1{
     left: 31%;
     top: 30%;
     text-align: center;
-    /*height: 40px    ;*/
-    /*width: 30px;*/
+    !*height: 40px    ;*!
+    !*width: 30px;*!
 }
 
 #section12>div>button{
     position: absolute;
     background-color: #797C7D;
-    font-size: 22px;
-    left: 27%;
+    font-size: 15px;
+    left: 33%;
     top: 80%;
 }
+*/
 
 #footer{
     background-color: #181818;
     position: absolute;
-    width: 100vw;
-    height: 40vh;
-    bottom: -190%;
+    width: 1349px;
+    height: 230px;
+    bottom: -205%;
 }
 
-
-
-
-
 #footer>section>img{
-    width: 150px;
+    width: 100px;
     aspect-ratio: 1/1;
     position: absolute;
-    left: 10%;
-    top: 10%;
+    left: 11%;
+    top: 20%;
 }
 
 #footer>section>h3{
     position: absolute;
-    left: 7%;
+    left: 6%;
     top: 50%;
     color: white;
     font-size: 28px;
@@ -489,8 +667,8 @@ h1{
 
 #footer>section>h4{
     position: absolute;
-    left: 30%;
-    top: -18.5%;
+    left: 33%;
+    top: -20.5%;
     font-size: 25px;
     color: white;
     opacity: 50%;
@@ -498,7 +676,7 @@ h1{
 
 #footer>section>div{
     position: absolute;
-    left: 70%;
+    left: 77%;
     top: 35%;
 }
 
@@ -508,9 +686,9 @@ h1{
 
 #footer>section>h6{
     position: absolute;
-    right: 17.5%;
+    right: 10.5%;
     top: 35%;
-    font-size: 22px;
+    font-size: 20px;
     color:#D2D2D2;
     font-family: "Book Antiqua";
 }
@@ -518,20 +696,12 @@ h1{
 
 
 @media all and (max-width: 1024px) {
-   /* body{
-        background-color: red;
-        height: 200vh;
-        width: 1000px;
-        overflow-x: hidden;
-        margin: 0;
-    }*/
-
     h1{
         font-size: 32px;
         left: 39%;
     }
 
-    #section1{
+    /*#section1{
         width: 210px;
         height: 250px;
         left: 15%;
@@ -744,7 +914,7 @@ h1{
     #section10>h5{
         font-size: 18px;
         top: 32%;
-        left: 30%;
+        left: 50px;
     }
 
     #section10>div>button{
@@ -797,17 +967,22 @@ h1{
         font-size: 14px;
         left: 32%;
         top: 75%;
+    }*/
+    .myCard,.myCard1,.myCard2,.myCard3,.myCard4,.myCard5,.myCard6,.myCard7,.myCard8,.myCard9,.myCard10,.myCard11{
+        width: 210px;
+        height: 250px;
     }
 
     #footer{
         width: 1024px;
         height: 220px;
-        bottom: -190%;
+        bottom: -210%;
     }
 
     #footer>section>img{
-        width: 100px;
+        width: 90px;
         top: 20%;
+        left: 10%;
     }
 
     #footer>section>h3{
@@ -843,3 +1018,501 @@ h1{
     }
 }
 
+@media all and (max-width: 768px) {
+    h1{
+        font-size: 28px;
+        left: 38%;
+        top: 6%;
+    }
+
+    /*#section1,#section2,#section3,#section4,#section5,#section6,#section7,#section8,#section9,#section10,#section11,#section12{
+        width: 180px;
+        height: 230px;
+    }
+
+    #section1>h3,#section2>h3,#section3>h3,#section4>h3,#section5>h3,#section6>h3,#section7>h3,#section8>h3,#section9>h3,#section10>h3,#section11>h3,#section12>h3{
+        font-size: 20px;
+        left: 15%;
+    }
+
+    #section1>h5,#section2>h5,#section3>h5,#section4>h5,#section5>h5,#section6>h5,#section7>h5,#section8>h5,#section9>h5,#section10>h5,#section11>h5,#section12>h5{
+        font-size: 15px;
+    }
+
+    #section1>div>button,#section2>div>button,#section3>div>button,#section4>div>button,#section5>div>button,#section6>div>button,#section7>div>button,#section8>div>button,#section9>div>button,#section10>div>button,#section11>div>button,#section12>div>button{
+        font-size: 12px;
+        top: 70%;
+    }
+*/
+    .myCard,.myCard1,.myCard2,.myCard3,.myCard4,.myCard5,.myCard6,.myCard7,.myCard8,.myCard9,.myCard10,.myCard11{
+        width: 150px;
+        height: 230px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    button{
+        font-size: 8px;
+    }
+
+    #footer{
+        width: 768px;
+        height: 200px;
+        bottom: -200%;
+    }
+
+    #footer>section>img{
+        width: 85px;
+        left: 13%;
+        top: 21%;
+    }
+
+    #footer>section>h3{
+        left: 7%;
+        font-size: 22px;
+    }
+
+    #footer>section>h4{
+        left: 28%;
+        top: -20.4%;
+        font-size: 21px;
+    }
+
+    #footer>section>div{
+        left: 71%;
+        top: 33%;
+    }
+
+    #footer>section>h6{
+        right: 10.5%;
+        top: 38%;
+        font-size: 15px;
+    }
+
+
+}
+
+@media all and (max-width: 425px) {
+    h1{
+        font-size: 25px;
+        left: 30%;
+    }
+
+    /*#section1,#section2,#section3,#section4,#section5,#section6,#section7,#section8,#section9,#section10,#section11,#section12{
+        width: 135px;
+        height: 200px;
+    }
+
+    #section1{
+        top: 22%;
+        left: 18%;
+    }
+
+    #section2{
+        top: 22%;
+        left: 52%;
+    }
+
+    #section3{
+        left: 18%;
+        top: 65%;
+    }
+
+    #section4{
+        left: 52%;
+        top: 65%;
+    }
+
+    #section5{
+        left: 18%;
+        top: 109%;
+    }
+
+    #section6{
+        left: 52%;
+        top: 109%;
+    }
+
+    #section7{
+        left: 18%;
+        top: 153%;
+    }
+
+    #section8{
+        left: 52%;
+        top: 153%;
+    }
+
+    #section9{
+        left: 18%;
+        top: 197%;
+    }
+
+    #section10{
+        left: 52%;
+        top: 197%;
+    }
+
+    #section11{
+        left: 18%;
+        top: 240%;
+    }
+
+    #section12{
+        left: 52%;
+        top: 240%;
+    }
+
+    #section1>h3,#section2>h3,#section3>h3,#section4>h3,#section5>h3,#section6>h3,#section7>h3,#section8>h3,#section9>h3,#section10>h3,#section11>h3,#section12>h3{
+        font-size: 18px;
+        left: 9%;
+    }
+
+    #section1>h5,#section2>h5,#section3>h5,#section4>h5,#section5>h5,#section6>h5,#section7>h5,#section8>h5,#section9>h5,#section10>h5,#section11>h5,#section12>h5{
+        font-size: 13px;
+    }
+
+    #section1>div>button,#section2>div>button,#section3>div>button,#section4>div>button,#section5>div>button,#section6>div>button,#section7>div>button,#section8>div>button,#section9>div>button,#section10>div>button,#section11>div>button,#section12>div>button{
+        font-size: 11px;
+        left: 28%;
+        top: 72%;
+    }*/
+    .myCard,.myCard1,.myCard2,.myCard3,.myCard4,.myCard5,.myCard6,.myCard7,.myCard8,.myCard9,.myCard10,.myCard11{
+        width: 130px;
+        height: 200px;
+    }
+
+    .myCard1{
+        position: absolute;
+        left: 53%;
+    }
+
+    .myCard2{
+        position: absolute;
+        left: 18%;
+        top: 70%;
+    }
+
+    .myCard3{
+        position: absolute;
+        left: 53%;
+        top: 70%;
+    }
+
+    .myCard4{
+        position: absolute;
+        left: 18%;
+        top: 113%;
+    }
+
+    .myCard5{
+        position: absolute;
+        left: 53%;
+        top: 113%;
+    }
+
+    .myCard6{
+        position: absolute;
+        left: 18%;
+        top: 156%;
+    }
+
+    .myCard7{
+        position: absolute;
+        left: 53%;
+        top: 156%;
+    }
+
+    .myCard8{
+        position: absolute;
+        left: 18%;
+        top: 199.5%;
+    }
+
+    .myCard9{
+        position: absolute;
+        left: 53%;
+        top: 199.5%;
+    }
+
+    .myCard10{
+        position: absolute;
+        left: 18%;
+        top: 243%;
+    }
+
+    .myCard11{
+        position: absolute;
+        left: 53%;
+        top: 243%;
+    }
+
+    .title{
+        font-size: 16px;
+    }
+
+    button{
+        font-size: 8px;
+    }
+
+    #footer{
+        width: 425px;
+        height: 150px;
+        bottom: -215%;
+    }
+
+    #footer>section>img{
+        width: 50px;
+        left: 10%;
+        top: 23%;
+    }
+
+    #imgDiv1>a>img{
+        width: 25px;
+        aspect-ratio: 1/1;
+    }
+
+    #footer>section>h3{
+        left: 4%;
+        top: 48%;
+        font-size: 12px;
+    }
+
+    #footer>section>h4{
+        left: 25%;
+        top: -18.5%;
+        font-size: 15px;
+    }
+
+    #footer>section>div{
+        left: 63%;
+        top: 32%;
+    }
+
+    #footer>section>h6{
+        position: absolute;
+        right: 13%;
+        top: 40%;
+        font-size: 10px;
+    }
+
+}
+
+
+@media all and (max-width: 375px) {
+    h1{
+        left: 28%;
+    }
+
+    /*#section1,#section2,#section3,#section4,#section5,#section6,#section7,#section8,#section9,#section10,#section11,#section12{
+        width: 120px;
+        height: 180px;
+    }
+
+    #section1>h3,#section2>h3,#section3>h3,#section4>h3,#section5>h3,#section6>h3,#section7>h3,#section8>h3,#section9>h3,#section10>h3,#section11>h3,#section12>h3{
+        font-size: 16px;
+    }
+
+    #section1>h5,#section2>h5,#section3>h5,#section4>h5,#section5>h5,#section6>h5,#section7>h5,#section8>h5,#section9>h5,#section10>h5,#section11>h5,#section12>h5{
+        font-size: 11px;
+    }
+
+    #section1>div>button,#section2>div>button,#section3>div>button,#section4>div>button,#section5>div>button,#section6>div>button,#section7>div>button,#section8>div>button,#section9>div>button,#section10>div>button,#section11>div>button,#section12>div>button{
+        font-size: 9px;
+        left: 29%;
+        top: 70%;
+    }
+*/
+    .myCard,.myCard1,.myCard2,.myCard3,.myCard4,.myCard5,.myCard6,.myCard7,.myCard8,.myCard9,.myCard10,.myCard11{
+        width: 120px;
+        height: 180px;
+    }
+
+    button{
+        font-size: 8px;
+    }
+
+    #footer{
+        width: 375px;
+        height: 130px;
+        bottom: -205%;
+    }
+
+    #footer>section>img{
+        width: 45px;
+        left: 11%;
+    }
+
+    #imgDiv1>a>img{
+        width: 20px;
+    }
+
+    #footer>section>h4{
+        left: 20%;
+        top: -22%;
+    }
+
+    #footer>section>div{
+        left: 65%;
+    }
+
+    #footer>section>h6{
+        right: 10.9%;
+        top: 38%;
+        font-size: 9px;
+    }
+}
+
+@media all and (max-width: 320px) {
+    h1{
+        font-size: 24px;
+        left: 26%;
+    }
+
+    /*#section1,#section2,#section3,#section4,#section5,#section6,#section7,#section8,#section9,#section10,#section11,#section12{
+        width: 180px;
+        height: 140px;
+        left: 23%;
+    }
+
+    #section1{
+        top: 20%;
+    }
+
+    #section2{
+        top: 50%;
+    }
+
+    #section3{
+        top: 80%;
+    }
+
+    #section4{
+        top: 110%;
+    }
+
+    #section5{
+        top: 140%;
+    }
+
+    #section6{
+        top: 170%;
+    }
+
+    #section7{
+        top: 200%;
+    }
+
+    #section8{
+        top: 230%;
+    }
+
+    #section9{
+        top: 260%;
+    }
+
+    #section10{
+        top: 290%;
+    }
+
+    #section11{
+        top: 320%;
+    }
+
+    #section12{
+        top: 350%;
+    }
+
+    #section1>h3,#section2>h3,#section3>h3,#section4>h3,#section5>h3,#section6>h3,#section7>h3,#section8>h3,#section9>h3,#section10>h3,#section11>h3,#section12>h3{
+        font-size: 18px;
+        left: 20%;
+    }
+
+    #section1>h5,#section2>h5,#section3>h5,#section4>h5,#section5>h5,#section6>h5,#section7>h5,#section8>h5,#section9>h5,#section10>h5,#section11>h5,#section12>h5{
+        font-size: 13px;
+        top: 23%;
+    }
+
+    #section1>div>button,#section2>div>button,#section3>div>button,#section4>div>button,#section5>div>button,#section6>div>button,#section7>div>button,#section8>div>button,#section9>div>button,#section10>div>button,#section11>div>button,#section12>div>button{
+        font-size: 10px;
+        left: 35%;
+        top: 75%;
+    }*/
+    .myCard,.myCard1,.myCard2,.myCard3,.myCard4,.myCard5,.myCard6,.myCard7,.myCard8,.myCard9,.myCard10,.myCard11{
+        width: 180px;
+        height: 120px;
+        left: 22.5%;
+        top: 21%;
+    }
+
+    .myCard1{
+        top: 48%;
+    }
+
+    .myCard2{
+        top: 75%;
+    }
+
+    .myCard3{
+        top: 102%;
+    }
+
+    .myCard4{
+        top: 129%;
+    }
+
+    .myCard5{
+        top: 156%;
+    }
+
+    .myCard6{
+        top: 183%;
+    }
+
+    .myCard7{
+        top: 210%;
+    }
+
+    .myCard8{
+        top: 237%;
+    }
+
+    .myCard9{
+        top: 264%;
+    }
+
+    .myCard10{
+        top: 291%;
+    }
+
+    .myCard11{
+        top: 318%;
+    }
+
+    #footer{
+        width: 320px;
+        height: 130px;
+        bottom: -273%;
+    }
+
+    #footer>section>img{
+        left: 13%;
+    }
+
+    #footer>section>h4{
+        left: 15%;
+        top: -22%;
+    }
+
+    #footer>section>div{
+        left: 61%;
+        top: 34%;
+    }
+
+    #footer>section>h6{
+        right: 11%;
+        top: 40%;
+    }
+}

@@ -12,7 +12,6 @@ html{
 }
 */
 
-
 header{
     z-index: 20;
     width: 1348px;
@@ -82,31 +81,134 @@ header>nav>ol>li>a{
     top: 15%;
     font-size: 70px;
 }
+/*----------------Name Animation---------------------*/
+.accessibility-animation {
+    display: inline-block;
+}
+.middle-letters, .end-letters, .alternate-middle-letters {
+    display: inline-block;
+    overflow: hidden;
+    height: 1.5em;
+}
 
+.end-letters {
+    color: white;
+}
+
+.middle-letters, .alternate-middle-letters {
+    color: white;
+    opacity: 50%;
+}
+
+.middle-letters {
+    animation: accessibility-middle-letters-animation 6s infinite;
+    animation-delay: -3s;
+    max-width: 0;
+}
+
+.alternate-middle-letters {
+    animation: accessibility-alternate-middle-letters-animation 6s infinite;
+    animation-delay: -3s;
+    max-width: 0;
+}
+
+
+@keyframes accessibility-middle-letters-animation {
+    0% {
+        max-width: 500px;
+    }
+
+    25% {
+        max-width: 0;
+    }
+
+    75% {
+        max-width: 0;
+    }
+
+    90% {
+        max-width: 500px;
+    }
+
+    100% {
+        max-width: 500px;
+    }
+}
+
+@keyframes accessibility-alternate-middle-letters-animation {
+    0% {
+        max-width: 0;
+    }
+
+    25% {
+        max-width: 0;
+    }
+
+    50% {
+        max-width: 500px;
+    }
+
+    75% {
+        max-width: 0;
+    }
+
+    100% {
+        max-width: 0;
+    }
+}
+
+
+/*--------------Job Roll Animation---------------*/
+.container {
+    position: absolute;
+    top: 240%;
+    left: 9%;
+    font-size: 40px;
+    font-weight: bold;
+    color: #C36446;
+    text-shadow: 1px 1px 2px #7B3107;
+}
+
+.letters
+{
+    animation : text 3s ease-in-out 0s forwards;
+}
+
+
+@keyframes text
+{
+    0%
+    {
+        letter-spacing : -50px;
+    }
+}
+
+/*
 #homeDiv>h3{
     position: absolute;
     color: #C36446;
-    top: 170%;
+    top: 100px;
     right: 60%;
     font-size: 50px;
     width: fit-content;
     height: fit-content;
 }
+*/
 
 #imgDiv{
     position: absolute;
-    top: 318%;
-    right: 65%;
+    top: 325%;
+    right: 68%;
     border-bottom: 2px solid white;
 }
 
 #homeDiv>h6{
     position: relative;
     color: #7B3107;
-    left: 22%;
-    top: 350px;
+    left: 19%;
+    top: 310px;
 }
-#btnDiv{
+/*#btnDiv{
     position: relative;
     top: 345px;
     left: 22%;
@@ -114,6 +216,52 @@ header>nav>ol>li>a{
 
 #btn{
     background-color: #C36446;
+}*/
+
+/* === removing default button style ===*/
+.button1 {
+    position: absolute;
+    left: 16%;
+    top: 350px;
+    margin: 0;
+    background: transparent;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+}
+
+/* button styling */
+.button1 {
+    --border-right: 6px;
+    --text-stroke-color: rgba(255,255,255,0.6);
+    --animation-color: white;
+    --fs-size: 1.3em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+/* this is the text, when you hover on button */
+.hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+}
+/* hover */
+.button:hover .hover-text {
+    width: 105%;
+    filter: drop-shadow(0 0 23px var(--animation-color))
 }
 
 #main1{
@@ -154,6 +302,7 @@ header>nav>ol>li>a{
     left: 32%;
     top: 37%;
 }
+/*
 #down>button{
     background-color: #292929;
     position: absolute;
@@ -162,6 +311,74 @@ header>nav>ol>li>a{
     top: 103%;
     font-size: 23px;
 }
+*/
+
+.button {
+    --main-focus: #2d8cf0;
+    --font-color: #323232;
+    --bg-color-sub: #dedede;
+    --bg-color:  #292929;
+    --main-color:  #dedede;
+    position: relative;
+    left: 15%;
+    width: 190px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--main-color);
+    box-shadow: 4px 4px var(--main-color);
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    overflow: hidden;
+    font-size: 15px;
+}
+
+.button, .button__icon, .button__text {
+    transition: all 0.3s;
+}
+
+.button .button__text {
+    transform: translateX(22px);
+    color: #dedede;
+    font-weight: 600;
+}
+
+.button .button__icon {
+    position: absolute;
+    left: 25%;
+    transform: translateX(109px);
+    height: 100%;
+    width: 25px;
+    background-color:  #292929;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button .svg {
+    width: 20px;
+    fill: var(--main-color);
+}
+
+.button:hover {
+    background: var(--bg-color);
+}
+
+.button:hover .button__text {
+    color: #dedede;
+}
+
+.button:hover .button__icon {
+    width: 148px;
+    transform: translateX(0);
+}
+
+.button:active {
+    transform: translate(3px, 3px);
+    box-shadow: 0px 0px var(--main-color);
+}
+
 #main2{
     position: relative;
     width: 1349px;
@@ -177,6 +394,130 @@ header>nav>ol>li>a{
     top: 33px;
 }
 
+
+.Ecard,.Ecard1,.Ecard2,.Ecard3 {
+    position: absolute;
+    width: 310px;
+    height: 155px;
+    left: 145px;
+    top: 200px;
+    background: #272727;
+    transition: all 0.4s;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
+    font-size: 25px;
+    font-weight: 900;
+}
+
+#institute{
+    position: absolute;
+    left: 10%;
+    top: 40%;
+    font-size: 15px;
+}
+
+#year{
+    position: absolute;
+    left: 35%;
+    top: 55%;
+    font-size: 15px;
+}
+
+.second-content>h4{
+    position: absolute;
+    top: 8%;
+    font-size: 20px;
+}
+
+.Ecard:hover,.Ecard1:hover,.Ecard2:hover,.Ecard3:hover{
+    border-radius: 15px;
+    cursor: pointer;
+    transform: scale(1.2);
+    box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
+    background: #C36446;
+}
+
+.first-content {
+    height: 100%;
+    width: 100%;
+    transition: all 0.4s;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    opacity: 1;
+    border-radius: 15px;
+}
+
+.Ecard:hover .first-content,.Ecard1:hover .first-content,.Ecard2:hover .first-content,.Ecard3:hover .first-content {
+    height: 0px;
+    opacity: 0;
+}
+
+.second-content {
+    height: 0%;
+    width: 100%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    transition: all 0.4s;
+    transform: rotate(90deg) scale(-1);
+}
+
+.Ecard:hover .second-content ,.Ecard1:hover .second-content,.Ecard2:hover .second-content,.Ecard3:hover .second-content{
+    opacity: 1;
+    height: 100%;
+    font-size: 1.8rem;
+    transform: rotate(0deg);
+}
+
+.Ecard1{
+    position: absolute;
+    top: 470px;
+}
+
+.Ecard1> .second-content>h5{
+    position: relative;
+    top: 10px;
+}
+
+#scl,#scl1{
+    font-size: 20px;
+    position: absolute;
+    left: 3%;
+    top: 15%;
+}
+
+#year1,#year2{
+    font-size: 17px;
+    position: absolute;
+    left: 36%;
+    top: 40%;
+}
+
+.Ecard2{
+    position: absolute;
+    left: 63.4%;
+    top: 130px;
+}
+
+.Ecard3{
+    position: absolute;
+    left: 63.4%;
+    top: 370px;
+}
+
+.Ecard3>.first-content>span{
+    font-size: 17px;
+}
+
+.Ecard3>.second-content>span{
+    font-size: 16px;
+}
+
+/*
 #E1{
     position: absolute;
     background-color: #272727;
@@ -284,6 +625,7 @@ header>nav>ol>li>a{
     top: 48%;
     left: 15%;
 }
+*/
 
 #line1{
    width: 200px;
@@ -730,6 +1072,8 @@ header>nav>ol>li>a{
 }
 
 #Name{
+    height: 20px;
+    width: 240px;
     position: absolute;
     left: 110%;
     border-radius: 10px;
@@ -738,6 +1082,8 @@ header>nav>ol>li>a{
 }
 
 #email{
+    height: 20px;
+    width: 240px;
     position: absolute;
     left: 110%;
     border-radius: 10px;
@@ -746,6 +1092,8 @@ header>nav>ol>li>a{
 }
 
 #contact{
+    height: 20px;
+    width: 240px;
     position: absolute;
     left: 110%;
     border-radius: 10px;
@@ -756,6 +1104,8 @@ header>nav>ol>li>a{
 #message{
     position: absolute;
     left: 110%;
+    top: 70%;
+    width: 240px;
     border-radius: 10px;
     font-size: 15px;
     opacity: 70%;
@@ -765,7 +1115,7 @@ header>nav>ol>li>a{
 #form>button{
     position: absolute;
     left: 75%;
-    top: 87%;
+    top: 92%;
     border-radius: 5px;
 }
 
@@ -1044,9 +1394,15 @@ header>nav>ol>li>a{
         font-size: 22px;
     }
 
-    #homeDiv>h3{
+   /* #homeDiv>h3{
         top: 100%;
         right: 56%;
+        font-size: 38px;
+    }*/
+
+    .container {
+        top: 148%;
+        left: 11.5%;
         font-size: 38px;
     }
 
@@ -1067,7 +1423,10 @@ header>nav>ol>li>a{
     }
 
     #btn{
-        font-size: 20px;
+        left: 20%;
+        top: 280px;
+        font-size: 17px;
+        width: 120px;
     }
 
     #main1{
@@ -1101,10 +1460,26 @@ header>nav>ol>li>a{
         top: 42%;
     }
 
-    #down>button{
+    /*#down>button{
         left: 15%;
         top: 100%;
         font-size: 17px;
+    }*/
+    .button {
+        left: 15%;
+        width: 150px;
+        height: 30px;
+        font-size: 11px;
+    }
+
+    .button .button__text {
+        position: absolute;
+        left: 1%;
+    }
+
+    .button .button__icon {
+        left: 10%;
+        width: 20px;
     }
 
     #main2{
@@ -1118,7 +1493,7 @@ header>nav>ol>li>a{
         top: 60px;
     }
 
-    #E1{
+    /*#E1{
         width: 248px;
         height: 120px;
         left: 145px;
@@ -1206,6 +1581,75 @@ header>nav>ol>li>a{
         font-size: 12px;
         top: 43%;
         left: 17%;
+    }*/
+
+    .Ecard,.Ecard1,.Ecard2,.Ecard3 {
+        width: 248px;
+        height: 120px;
+        left: 145px;
+        top: 200px;
+        font-size: 22px;
+    }
+
+    .Ecard1{
+        position: absolute;
+        left: 14.2%;
+        top: 406px;
+    }
+
+    #institute{
+        position: absolute;
+        left: 7%;
+        top: 40%;
+        font-size: 13px;
+    }
+
+    .second-content>h4{
+        position: absolute;
+        top: 8%;
+        font-size: 17px;
+    }
+
+    #year{
+        position: absolute;
+        left: 35%;
+        top: 55%;
+        font-size: 13px;
+    }
+
+    .Ecard2{
+        position: absolute;
+        left: 59.8%;
+        top: 125px;
+    }
+
+
+    #scl,#scl1{
+        font-size: 15px;
+        position: absolute;
+        left: 7%;
+        top: 11%;
+    }
+
+    #year1,#year2{
+        font-size: 15px;
+        position: absolute;
+        left: 36%;
+        top: 35%;
+    }
+
+    .Ecard3{
+        position: absolute;
+        left: 59.8%;
+        top: 340px;
+    }
+
+    .Ecard3>.first-content>span{
+        font-size: 15px;
+    }
+
+    .Ecard3>.second-content>span{
+        font-size: 14px;
     }
 
     #line1{
@@ -1625,28 +2069,40 @@ header>nav>ol>li>a{
         font-size: 44px;
     }
 
-    #homeDiv>h3{
+    /*#homeDiv>h3{
         top: 95%;
         right: 47.3%;
         font-size: 32px;
+    }*/
+
+    .container {
+        top: 140%;
+        left: 10.5%;
+        font-size: 32px;
+    }
+
+    #wp,#fb,#git,#insta,#linkedin{
+        width: 30px;
     }
 
     #imgDiv{
-        top: 168%;
-        right: 49%;
+        top: 185%;
+        right: 52.5%;
     }
 
     #homeDiv>h6{
-        top: 210px;
+        top: 201px;
         left: 22.5%;
     }
 
-    #btnDiv{
+    /*#btnDiv{
         top: 230px;
         left: 25%;
-    }
+    }*/
 
     #btn{
+        left: 20.3%;
+        top: 220px;
         font-size: 17px;
     }
 
@@ -1680,12 +2136,12 @@ header>nav>ol>li>a{
         left: 40%;
         top: 42%;
     }
-    #down>button{
+    /*#down>button{
         border-radius: 8px;
         left: 15%;
         top: 105%;
         font-size: 15px;
-    }
+    }*/
 
     #main2{
         width: 768px;
@@ -1698,7 +2154,7 @@ header>nav>ol>li>a{
         top: 48px;
     }
 
-    #E1{
+    /*#E1{
         width: 205px;
         height: 120px;
         left: 130px;
@@ -1793,8 +2249,72 @@ header>nav>ol>li>a{
         font-size: 11px;
         top: 42%;
         left: 9%;
+    }*/
+
+    .Ecard,.Ecard1,.Ecard2,.Ecard3 {
+        width: 205px;
+        height: 120px;
+        left: 130px;
+        top: 190px;
+        font-size: 22px;
     }
 
+    .Ecard1{
+        left: 16.9%;
+        top: 404px;
+    }
+
+    #institute{
+        text-align: center;
+        left: 3%;
+        top: 30%;
+        font-size: 13px;
+    }
+
+    .second-content>h4{
+        top: 8%;
+        font-size: 14px;
+    }
+
+    #year{
+        left: 37%;
+        top: 62%;
+        font-size: 12px;
+    }
+
+    .Ecard2{
+        left: 59%;
+        top: 120px;
+    }
+
+
+    #scl,#scl1{
+        text-align: center;
+        font-size: 15px;
+        left: -1%;
+        top: 11%;
+    }
+
+    #year1,#year2{
+        font-size: 15px;
+        left: 34%;
+        top: 50%;
+    }
+
+    .Ecard3{
+        left: 59%;
+        top: 340px;
+    }
+
+    .Ecard3>.first-content>span{
+        font-size: 15px;
+    }
+
+    .Ecard3>.second-content>span{
+        position: absolute;
+        left: 11%;
+        font-size: 12px;
+    }
 
     #line1{
         width: 59px;
@@ -2192,11 +2712,17 @@ header>nav>ol>li>a{
         font-size: 35px;
     }
 
-    #homeDiv>h3{
+    /*#homeDiv>h3{
         top: 90%;
         right: 35%;
         font-size: 25px;
         width: 200px;
+    }*/
+
+    .container {
+        top: 120%;
+        left: 14.3%;
+        font-size: 26px;
     }
 
     #wp,#fb,#git,#linkedin,#insta{
@@ -2214,12 +2740,13 @@ header>nav>ol>li>a{
         left: 27.8%;
         top: 155px;
     }
-    #btnDiv{
+    /*#btnDiv{
         top: 170px;
         left: 29%;
-    }
+    }*/
 
     #btn{
+        top: 150px;
         font-size: 13px;
     }
 
@@ -2255,11 +2782,27 @@ header>nav>ol>li>a{
         left: 20%;
         top: 50%;
     }
-    #down>button{
+    /*#down>button{
         border-radius: 7px;
         left: 12%;
         top: 100%;
         font-size: 13px;
+    }*/
+    .button {
+        left: 15%;
+        width: 120px;
+        height: 25px;
+        font-size: 11px;
+    }
+
+    .button .button__text {
+        position: absolute;
+        left: -10%;
+    }
+
+    .button .button__icon {
+        left: -9%;
+        width: 15px;
     }
 
     #main2{
@@ -2273,7 +2816,7 @@ header>nav>ol>li>a{
         top: 42px;
     }
 
-    #E1{
+    /*#E1{
         left: 150px;
         top: 540px;
     }
@@ -2290,6 +2833,30 @@ header>nav>ol>li>a{
 
     #E4{
         left: 150px;
+        top: 400px;
+    }
+*/
+
+    .Ecard,.Ecard1,.Ecard2,.Ecard3 {
+        width: 205px;
+        height: 120px;
+        left: 35.2%;
+        top: 540px;
+        font-size: 22px;
+    }
+
+    .Ecard1{
+        left: 35.2%;
+        top: 120px;
+    }
+
+    .Ecard2{
+        left: 35.2%;
+        top: 260px;
+    }
+
+    .Ecard3{
+        left: 35.2%;
         top: 400px;
     }
 
@@ -2707,6 +3274,12 @@ header>nav>ol>li>a{
         margin-top: -8px;
     }
 
+    /*.btn{
+        position: absolute;
+        right: 1.5%;
+        display: flex;
+    }*/
+
     #main{
         width: 375px;
         height: 564px;
@@ -2720,16 +3293,28 @@ header>nav>ol>li>a{
         left: 14%;
     }
 
-    #homeDiv>h3{
+    /*#homeDiv>h3{
         right: 37%;
+    }*/
+
+    .container {
+        top: 120%;
+        left: 14%;
+        font-size: 24px;
     }
 
     #imgDiv{
-        right: 46%;
+        width: 143px;
+        right: 47%;
+    }
+
+    #imgDiv>a>img{
+        width: 25px;
     }
 
     #homeDiv>h6{
-        left: 25%;
+        top: 145px;
+        left: 27%;
     }
     #btnDiv{
         left: 26.5%;
@@ -2756,12 +3341,13 @@ header>nav>ol>li>a{
         left: 20%;
         top: 50%;
     }
-    #down>button{
+    /*#down>button{
         border-radius: 7px;
         left: 12%;
         top: 100%;
         font-size: 13px;
-    }
+    }*/
+
 
     #main2{
         width: 425px;
@@ -2772,7 +3358,7 @@ header>nav>ol>li>a{
         font-size: 28px;
     }
 
-    #E1{
+    /*#E1{
         left: 105px;
     }
 
@@ -2786,6 +3372,22 @@ header>nav>ol>li>a{
 
     #E4{
         left: 105px;
+    }*/
+
+    .Ecard {
+        left: 24.8%;
+    }
+
+    .Ecard1{
+        left: 24.8%;
+    }
+
+    .Ecard2{
+        left: 24.8%;
+    }
+
+    .Ecard3{
+        left: 24.8%;
     }
 
     #line1{
@@ -3141,32 +3743,43 @@ header>nav>ol>li>a{
         top: 2%;
     }
 
-    #homeDiv>h3{
+   /* #homeDiv>h3{
         font-size: 21px;
         top: 350%;
         right: 40%;
+    }*/
+
+    .container {
+        top: 490%;
+        left: 11%;
+        font-size: 21px;
     }
 
-    #wp,#fb,#git,#linkedin,#insta{
+    #imgDiv>a>img{
         width: 22px;
     }
 
     #imgDiv{
-        width: 127px;
-        right: 56%;
-        top: 600%;
+        width: 126px;
+        right: 55%;
+        top: 660%;
     }
 
     #homeDiv>h6{
         position: absolute;
         font-size: 10px;
         left: 21%;
-        top: 650%;
+        top: 695%;
     }
 
-    #btnDiv{
+    /*#btnDiv{
         top: 220px;
         left: 21.8%;
+    }*/
+
+    #btn{
+        top: 210px;
+        left: 14.5%;
     }
 
     #main1{
@@ -3193,10 +3806,16 @@ header>nav>ol>li>a{
         left: 22%;
         top: 43%;
     }
-    #down>button{
+    /*#down>button{
         left: 14%;
         top: 110%;
         font-size: 12px;
+    }*/
+    .button {
+        top: 20px;
+        width: 123px;
+        height: 25px;
+        font-size: 11px;
     }
 
     #main2{
@@ -3208,7 +3827,7 @@ header>nav>ol>li>a{
         font-size: 24px;
     }
 
-    #E1{
+    /*#E1{
         width: 160px;
         height: 140px;
         left: 100px;
@@ -3300,6 +3919,52 @@ header>nav>ol>li>a{
         font-size: 10px;
         top: 53%;
         left: 9%;
+    }*/
+
+    .Ecard,.Ecard1,.Ecard2,.Ecard3 {
+        width: 160px;
+        height: 140px;
+        left: 31.4%;
+        top: 660px;
+        font-size: 22px;
+    }
+
+    .Ecard1{
+        left: 31.4%;
+        top: 140px;
+    }
+
+    #institute{
+        text-align: center;
+        left: 4%;
+        top: 50%;
+        font-size: 9px;
+    }
+
+    .second-content>h4{
+        text-align: center;
+        top: 8%;
+        font-size: 14px;
+    }
+
+    #year{
+        left: 34%;
+        top: 60%;
+        font-size: 10px;
+    }
+
+    .Ecard2{
+        left: 31.4%;
+        top: 310px;
+    }
+
+    #year1,#year2{
+        left: 29%;
+    }
+
+    .Ecard3{
+        left: 31.4%;
+        top: 482px;
     }
 
     #line1{

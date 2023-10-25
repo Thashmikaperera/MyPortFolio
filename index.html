@@ -12,12 +12,13 @@
 
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
 <header>
         <img src="../MyPortFolio/assets/images/tp-sudu-version.ico " alt="logo">
     <nav>
+
         <ol>
             <li><a href="#main">Home</a></li>
 
@@ -51,8 +52,16 @@
 
         <div id="homeDiv">
             <h5 id="HOME">Hello I'm</h5>
-            <h1>Thashmika Perera</h1>
-            <h3>UI/UX Designer</h3>
+
+            <h1 class="accessibility-animation">
+                <span class="end-letters">Thash</span><span class="middle-letters">mika</span><span class="alternate-middle-letters"></span><span class="end-letters">Perera</span>
+            </h1>
+
+            <!--<h3>UI/UX Designer</h3>-->
+            <div
+                class="container"><span class="letters">UI/UX Designer</span>
+            </div>
+
             <div id="imgDiv">
                 <a href="https://web.whatsapp.com//+94757206813" ><img src="assets/images/icons8-whatsapp-96%20(1)%201.png" id="wp" alt=""></a>
                 <a href="https://www.facebook.com/profile.php?id=100090919167542"><img src="assets/images/icons8-facebook-96%20(1)%203.png" id="fb" alt=""></a>
@@ -62,9 +71,14 @@
             </div>
 
             <h6 id="h6">FOLLOW ME</h6>
-            <div id="btnDiv" >
+            <!--<div id="btnDiv" >
                 <button id="btn">Hire me</button>
-            </div>
+            </div>-->
+
+            <button id="btn" class="button1" data-text="Awesome">
+                <span class="actual-text">&nbsp;Hire Me&nbsp;</span>
+                <span aria-hidden="true" class="hover-text">&nbsp;Hire Me&nbsp;</span>
+            </button>
         </div>
 
     </section>
@@ -81,35 +95,87 @@
             <h4>Address:-No.52/40,Modarawila,Panadura</h4>
             <h4>Gmail:-pthashmika@gmail.com</h4>
             <h4>Contact:-+94 75 720 6813</h4>
-            <div id="down">
+            <!--<div id="down">
                 <button>Download My CV</button>
-            </div>
+            </div>-->
+
+
+            <button class="button" type="button">
+                <span class="button__text">Download My CV</span>
+                <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" id="bdd05811-e15d-428c-bb53-8661459f9307" data-name="Layer 2" class="svg"><path d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"></path><path d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"></path><path d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"></path></svg></span>
+            </button>
+
+
+
+
         </div>
 
     </section>
 </main>
 <main id="main2">
     <h1 id="EDUCATION">EDUCATION</h1>
-        <div id="E1">
-            <h3>Student of IJSE</h3>
+
+
+    <!--<div id="E1">
+                <h3>Student of IJSE</h3>
+                <h4>BSc (Hons) In Computer Science</h4>
+                <h5 id="institute">Institute of Java Software Engineering</h5>
+                <h5 id="year">2021(now)</h5>
+            </div>-->
+    <div class="Ecard">
+        <div class="first-content">
+            <span>Student of IJSE</span>
+        </div>
+        <div class="second-content">
             <h4>BSc (Hons) In Computer Science</h4>
             <h5 id="institute">Institute of Java Software Engineering</h5>
             <h5 id="year">2021(now)</h5>
         </div>
-        <div id="E2">
+    </div>
+
+    <!-- <div id="E2">
             <h3>G.C.E Ordinary Level <br>Examination</h3>
             <h5 id="scl">Agamathi Balika Maha Vidyalaya</h5>
             <h5 id="year1">2007-2018</h5>
+        </div>-->
+    <div class="Ecard1">
+        <div class="first-content">
+            <span>G.C.E Ordinary Level Examination</span>
         </div>
-        <div id="E3">
-            <h3>G.C.E Advanced Level <br>Examination</h3>
-            <h5 id="scl1">Agamathi Balika Maha Vidyalaya</h5>
-            <h5 id="year2">2018-2021</h5>
+        <div class="second-content">
+            <h4 id="scl">Agamathi Balika Maha Vidyalaya</h4>
+            <h4 id="year1">2007-2018</h4>
         </div>
-        <div id="E4">
+    </div>
+
+    <!-- <div id="E3">
+                <h3>G.C.E Advanced Level <br>Examination</h3>
+                <h5 id="scl1">Agamathi Balika Maha Vidyalaya</h5>
+                <h5 id="year2">2018-2021</h5>
+            </div>-->
+    <div class="Ecard2">
+        <div class="first-content">
+            <span>G.C.E Advanced Level Examination</span>
+        </div>
+        <div class="second-content">
+            <h4 id="scl1">Agamathi Balika Maha Vidyalaya</h4>
+            <h4 id="year2">2007-2018</h4>
+        </div>
+    </div>
+
+    <!--<div id="E4">
             <h3>INSTITUTE OF HUMAN RESOURCE ADVANCEMENT,<br> UNIVERSITY OF COLOMBO</h3>
             <h5>SHORT COURSE IN ENGLISH <br>LANGUAGE FOR SCHOOL <br>LEAVERS- NO 3  (2023)</h5>
+        </div>-->
+    <div class="Ecard3">
+        <div class="first-content">
+            <span>INSTITUTE OF HUMAN RESOURCE ADVANCEMENT,<br> UNIVERSITY OF COLOMBO</span>
         </div>
+        <div class="second-content">
+            <span>SHORT COURSE IN ENGLISH <br>LANGUAGE FOR SCHOOL <br>LEAVERS- NO 3  (2023)</span>
+        </div>
+    </div>
+
         <div id="line1"></div>
         <div id="line2"></div>
         <div id="line3"></div>
@@ -195,6 +261,7 @@
     <div id="ass">
         <H3>Assignment 01</H3>
     </div>
+
     <div id="ass1">
         <H3>Assignment 03</H3>
     </div>
