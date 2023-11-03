@@ -3,19 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <title>My PortFolio</title>
-    <link rel="icon" type="image/x-icon" href="../MyPortFolio/assets/images/tp-sudu-version.ico">
+    <link rel="icon" type="image/x-icon" href="../MyPortFolio/assets/images/logo.jpg">
     <meta name="keywords" content="MyPortFolio">
     <meta name="description" content="Home,About me,Project,Assignment,Gallery,Contact me">
     <meta name="author" content="Thashmika Perera">
     <!--<meta http-equiv="refresh" content="30">-->
     <meta name="viewport" content="height=device-height,width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 <body>
-<header>
+<header >
+    <div class="logo"><img src="../MyPortFolio/assets/images/logo.png " alt="logo"></div>
+    <ul class="navlist">
+        <li><a href="#main" class="active">Home</a></li>
+        <li><a href="#main1" class="active">About Me</a></li>
+        <li><a href="#main2" class="active">Education</a></li>
+        <li><a href="#main3" class="active">Skills</a></li>
+        <li><a href="#main4" class="active">Project</a></li>
+        <li><a  id="assignment1" href="#main5" class="active">Assignment</a></li>
+        <li><a href="#main6" class="active">Gallery</a></li>
+        <li><a id="con" href="#main7" class="active">Contact Me</a></li>
+    </ul>
+    <div id="menu-icon" class="bx bx-menu"></div>
+</header>
+<!--<header>
         <img src="../MyPortFolio/assets/images/tp-sudu-version.ico " alt="logo">
     <nav>
 
@@ -45,12 +61,12 @@
         </li>
         </ol>
     </nav>
-</header>
+</header>-->
 <main id="main">
-    <section>
+    <section >
         <div id="divPic"><img src="../MyPortFolio/assets/images/myImg.png"  alt="My Picture"></div>
 
-        <div id="homeDiv">
+        <div id="homeDiv" >
             <h5 id="HOME">Hello I'm</h5>
 
             <h1 class="accessibility-animation">
@@ -85,7 +101,7 @@
 </main>
 <main id="main1">
     <section>
-        <h1 id="ABOUT_ME">ABOUT ME</h1>
+        <h1 id="ABOUT_ME" >ABOUT ME</h1>
         <img id="imgShadow" src="assets/images/f186f055-3e3c-4567-8cf6-c4b48d3cf0c9-removebg-preview%202.png" alt="" >
         <img id="myImg" src="assets/images/About%20me(my%20pic).png"  alt="">
 
@@ -213,25 +229,25 @@
 
 <main id="main4">
     <h1 id="PROJECTS">PROJECTS</h1>
-    <div id="chat">
+    <div id="chat" >
         <h3>CHATBOOM Chat App</h3>
         <img id="chatImg" src="../MyPortFolio/assets/images/ChatBoom.png" width="200" alt="200">
         <h5>The Chat Application is a simple and lightweight desktop-based chat system implemented in Java. It enables
             users to communicate with each other by sending text messages and images in real-time.
         </h5>
         <div>
-            <button>GitHub</button>
+            <a href="https://github.com/Thashmikaperera/chat_Application"><button class="button2">GitHub</button></a>
         </div>
     </div>
     <div id="bookShop">
-        <h3>Luminex Bookshop</h3>
+        <h3 >Luminex Bookshop</h3>
         <img id="bookShopImg" src="../MyPortFolio/assets/images/bookshop%20Login.png" width="200" alt="">
         <h5>fefdfnjkbkdbc khdbckbkhb jii xgcchhbuhyb vuvugvguv
             dfdfrfhj bchcdbchdbc bdkcbgkdhfv dsdcsftbhmkmk
             hjdbgchdgcgyd njnojncoljbibjbiybjlknc ldihcfi hvojnjvhfiuho
         </h5>
         <div>
-            <button>GitHub</button>
+            <a href="https://github.com/Thashmikaperera/Bookshop-Management-System/tree/master"><button class="button3">GitHub</button></a>
         </div>
     </div>
     <div id="game">
@@ -243,7 +259,7 @@
             hjdbgchdgcgyd njnojncoljbibjbiybjlknc ldihcfihvo jnjvhfiuho
         </h5>
         <div>
-            <button>GitHub</button>
+            <button class="button4">GitHub</button>
         </div>
     </div>
 </main>
@@ -254,9 +270,15 @@
         <!--        <a href="Assignment.html">ASS</a>-->
         <img id="arrow" src="assets/images/icons8-arrow-100%20(1).png" alt="">
         <img id="arrow1" src="assets/images/icons8-arrow-100.png" alt="">
-        <div>
-            <a href="Assignment.html"><button>View Assignment</button></a>
-        </div>
+        <a href="Assignment.html">
+            <button class="learn-more">
+                <span class="circle" aria-hidden="true">
+                    <span class="icon arrow"></span>
+                </span>
+                <span class="button-text">View Assignment</span>
+            </button>
+        </a>
+
     </section>
     <div id="ass">
         <H3>Assignment 01</H3>
@@ -280,37 +302,43 @@
 </main>
 <main id="main7">
     <h1 id="CONTACT_ME">CONTACT ME</h1>
-    <section>
-<!--        <h3>Name:-</h3>-->
-<!--        <h3>Email Address:-</h3>-->
-<!--        <h3>Contact No:-</h3>-->
-<!--        <h3>Message:-</h3>-->
-        <form id="form">
-            <div>
-                <label for="Name">Name:-</label>
-                <input type="text" id="Name" placeholder="Enter Your Name" name="Name"><br><br><br>
 
-                <label for="email">Email :-</label>
-                <input type="email" id="email" placeholder="Enter Your Email" name="email"><br><br><br>
+    <div class="form-container">
+        <form class="form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input required="" placeholder="Enter Your Name" name="name" id="name" type="text">
 
-                <label for="contact">Contact No :-</label>
-                <input type="tel" id="contact" placeholder="+94 XX XXX XXXX" name="contact"><br><br><br>
-
-                <label for="message">Message :-</label><br>
-                <textarea name="message" placeholder="Message" id="message" cols="30" rows="10"></textarea><br><br><br>
             </div>
-
-            <button type="Send">Send</button>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input required="" placeholder="Enter Your E-mail Address" name="email" id="email" type="text">
+            </div>
+            <div class="form-group">
+                <label for="address">Address</label>
+                <input required="" placeholder="Enter Your Address" name="address" id="address" type="text">
+            </div>
+            <div class="form-group">
+                <label for="phone">Contact No:-</label>
+                <input required="" placeholder="+94 xx xxx xx xx" name="contact" id="phone" type="text">
+            </div>
+            <div class="form-group">
+                <label for="message">How Can I Help You?</label>
+                <textarea required="" cols="50" rows="10" id="message" name="message"> </textarea>
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input required="" placeholder="Subject" name="subject" id="subject" type="text">
+            </div>
+            <button type="button" onclick="sendEmail()" class="form-submit-btn">Submit</button>
         </form>
-    </section>
-<!--    <div>-->
-<!--        <button>Send</button>-->
-<!--    </div>-->
+    </div>
+
 </main>
 <footer id="footer">
     <section>
         <h3>Thashmika Perera</h3>
-        <img src="assets/images/tp-sudu-version.ico" alt="">
+        <img src="assets/images/logo.png" alt="">
 
         <div id="imgDiv1">
             <a href="https://web.whatsapp.com//+94757206813" ><img src="assets/images/icons8-whatsapp-96%20(1)%201.png" id="wp1" alt=""></a>
@@ -324,6 +352,10 @@
         <h4>Copyright © 2023 All rights reserved</h4>
     </section>
 </footer>
-<script src="assets/fontawesome/js/all.min.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
 </body>
 </html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Item Form</title>
+    <link rel="stylesheet" href="assets/css/item.css">
+</head>
+<body>
+<header>
+    <div id="div1"></div>
+    <img src="assets/img/logo.png" alt="logo">
+    <nav>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="customer.html">Customer</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="item.html">Item</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="order.html">Order</a>
+            </li>
+        </ul>
+        <ul id="ol1" class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Sign Up</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Log Out</a>
+            </li>
+        </ul>
+        <hr>
+    </nav>
+</header>
+<div id="divItem"></div>
+<h3 id="items">Items</h3>
+<nav class="navbar bg-body-tertiary">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img id="imgItem" src="assets/img/icons8-item-90.png" alt="Bootstrap" width="20" height="24">
+        </a>
+    </div>
+</nav>
+<div id="itemSearch"></div>
+<div id="it1" class="input-group flex-nowrap">
+    <span class="input-group-text">Item Code :-</span><br>
+    <input id="itS1" type="text" class="form-control" placeholder="i001" aria-label="Username" aria-describedby="addon-wrapping">
+</div>
+
+<div id="it2" class="input-group flex-nowrap">
+    <span class="input-group-text">Description :-</span><br>
+    <input id="itS2" type="text" class="form-control" placeholder="Pen" aria-label="Username" aria-describedby="addon-wrapping">
+</div>
+
+<div id="it3" class="input-group flex-nowrap">
+    <span class="input-group-text">Price :-</span><br>
+    <input id="itS3" type="text" class="form-control" placeholder="20.00" aria-label="Username" aria-describedby="addon-wrapping">
+</div>
+
+<div id="it4" class="input-group flex-nowrap">
+    <span class="input-group-text">Qty :-</span><br>
+    <input id="itS4" type="text" class="form-control" placeholder="12" aria-label="Username" aria-describedby="addon-wrapping">
+</div>
+
+<button id="deleteBtn" type="button" class="btn btn-danger">Delete</button>
+<button id="UpdateBtn" type="button" class="btn btn-primary">Update</button>
+<button id="saveBtn" type="button" class="btn btn-info">Save</button>
+
+
+
+
+
+<table id="table" class="table">
+    <thead>
+    <tr>
+        <th scope="col">No</th>
+        <th scope="col">Code</th>
+        <th scope="col">Description</th>
+        <th scope="col">Qty</th>
+        <th scope="col">Price</th>
+    </tr>
+    </thead>
+    <tbody id="tbody">
+    <tr>
+        <th scope="row">1</th>
+        <td>i001</td>
+        <td>pen</td>
+        <td>500</td>
+        <td>20</td>
+    </tr>
+    <tr>
+        <th scope="row">2</th>
+        <td>i002</td>
+        <td>pencil</td>
+        <td>100</td>
+        <td>15</td>
+    </tr>
+    <tr>
+        <th scope="row">3</th>
+        <td>i003</td>
+        <td>book</td>
+        <td>1000</td>
+        <td>420</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

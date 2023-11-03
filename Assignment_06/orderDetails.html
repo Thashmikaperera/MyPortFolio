@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View Order Details</title>
+    <link rel="stylesheet" href="assets/css/orderDetails.css">
+</head>
+<body>
+<header>
+    <div id="div1"></div>
+    <img src="assets/img/logo.png" alt="logo">
+    <nav>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="customer.html">Customer</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="item.html">Item</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="order.html">Order</a>
+            </li>
+        </ul>
+        <ul id="ol1" class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Sign Up</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Log Out</a>
+            </li>
+        </ul>
+        <hr>
+    </nav>
+</header>
+<div id="divDetails"></div>
+<h3 id="Details">Order Details</h3>
+<nav class="navbar bg-body-tertiary">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img id="imgDetails" src="assets/img/icons8-order-100.png" alt="Bootstrap" width="20" height="24">
+        </a>
+    </div>
+</nav>
+<nav id="search" class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+        <form class="d-flex" role="search">
+            <input id="searchbar" class="form-control me-2" type="search" placeholder="Search Order ID" aria-label="Search">
+            <button id="btnSearch" class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+
+<table id="table" class="table">
+    <thead>
+    <tr>
+        <th scope="col">No</th>
+        <th scope="col">Order ID</th>
+        <th scope="col">Order Date</th>
+        <th scope="col">Item Code</th>
+        <th scope="col">Customer ID</th>
+        <th scope="col">Qty</th>
+        <th scope="col">Price</th>
+        <th scope="col">Discount</th>
+        <th scope="col">Sub Total</th>
+    </tr>
+    </thead>
+    <tbody id="tbody">
+    <tr>
+        <th scope="row">1</th>
+        <td>o001</td>
+        <td>09/10/2023</td>
+        <td>i001</td>
+        <td>c001</td>
+        <td>15</td>
+        <td>200.00</td>
+        <td>50</td>
+        <td>150.00</td>
+    </tr>
+    <tr>
+        <th scope="row">2</th>
+        <td>o002</td>
+        <td>09/10/2023</td>
+        <td>i003</td>
+        <td>c005</td>
+        <td>20</td>
+        <td>300.00</td>
+        <td>50</td>
+        <td>250.00</td>
+    </tr>
+    <tr>
+        <th scope="row">3</th>
+        <td>o003</td>
+        <td>09/10/2023</td>
+        <td>i001</td>
+        <td>c002</td>
+        <td>25</td>
+        <td>500.00</td>
+        <td>100</td>
+        <td>400.00</td>
+    </tr>
+    <tr>
+        <th scope="row">4</th>
+        <td>o004</td>
+        <td>09/10/2023</td>
+        <td>i004</td>
+        <td>c003</td>
+        <td>25</td>
+        <td>1000.00</td>
+        <td>100</td>
+        <td>900.00</td>
+    </tr>
+    <tr>
+        <th scope="row">5</th>
+        <td>o005</td>
+        <td>09/10/2023</td>
+        <td>i002</td>
+        <td>c001</td>
+        <td>50</td>
+        <td>5000.00</td>
+        <td>200</td>
+        <td>4800.00</td>
+    </tr>
+    <tr>
+        <th scope="row">6</th>
+        <td>o006</td>
+        <td>09/10/2023</td>
+        <td>i003</td>
+        <td>c001</td>
+        <td>50</td>
+        <td>4000.00</td>
+        <td>300</td>
+        <td>3700.00</td>
+    </tr>
+    <tr>
+        <th scope="row">7</th>
+        <td>o007</td>
+        <td>09/10/2023</td>
+        <td>i001</td>
+        <td>c002</td>
+        <td>50</td>
+        <td>4000.00</td>
+        <td>100</td>
+        <td>3900.00</td>
+    </tr>
+    <tr>
+        <th scope="row">8</th>
+        <td>o008</td>
+        <td>09/10/2023</td>
+        <td>i002</td>
+        <td>c003</td>
+        <td>50</td>
+        <td>4000.00</td>
+        <td>100</td>
+        <td>3900.00</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

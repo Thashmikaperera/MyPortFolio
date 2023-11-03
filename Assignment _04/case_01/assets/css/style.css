@@ -1,0 +1,41 @@
+section{
+    /*background-color: seagreen;*/
+    position: relative;
+    height: fit-content;
+
+}
+
+section>div{
+    width:250px;
+    height:50px;
+    background-color: purple;
+    color: white;
+    position: relative;
+    margin: 10px 0px;
+    right: 150px;
+    transition-property: right;
+    transition-duration: 1s;
+    cursor: pointer;
+    border-radius: 8px 8px 8px 8px;
+}
+section>div>h3{
+    height: max-content;
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+section>div>div{
+    height:fit-content;
+    position: absolute;
+    top: 0;
+    left: 200px;
+    bottom: 0;
+    right: 50px;
+    margin: auto;
+}
+section>div:hover{
+    right: 10px;
+}

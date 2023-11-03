@@ -15,7 +15,7 @@ h1{
 }
 
 
-.myCard,.myCard1,.myCard2,.myCard3,.myCard4,.myCard5,.myCard6,.myCard7,.myCard8,.myCard9,.myCard10,.myCard11{
+.myCard,.myCard1,.myCard2,.myCard3,.myCard4,.myCard5,.myCard6,.myCard7,.myCard8/*,.myCard9,.myCard10,.myCard11*/{
     position: absolute;
     left: 18%;
     top: 28%;
@@ -32,6 +32,80 @@ h1{
     margin: 0;
 }
 
+/* <reset-style> ============================ */
+a {
+    text-decoration: none;
+}
+/* <main-style> ============================ */
+.menu__link,.menu__link1,.menu__link2,.menu__link3,.menu__link4,.menu__link5,.menu__link6,.menu__link7,.menu__link8/*,.menu__link9,.menu__link10,.menu__link11 */{
+    position: relative;
+    top: 10%;
+    color: #fff;
+    line-height: 2;
+    position: relative;
+}
+
+.menu__link1{
+    top: 17%;
+}
+
+.menu__link2{
+    top: 7%;
+}
+
+.menu__link3{
+    top: 7%;
+}
+
+.menu__link4{
+    top: 17%;
+}
+
+.menu__link5{
+    top: 15%;
+}
+
+.menu__link6{
+    top: 17%;
+}
+
+.menu__link7{
+    top: 15%;
+}
+
+.menu__link8{
+    top: 17%;
+}
+
+/*.menu__link9{
+    top: 20%;
+}
+
+.menu__link10{
+    top: 17%;
+}
+
+.menu__link11{
+    top: 19%;
+}*/
+
+.menu__link::before,.menu__link1::before,.menu__link2::before,.menu__link3::before,.menu__link4::before,.menu__link5::before,.menu__link6::before,.menu__link7::before,.menu__link8::before/*,.menu__link9::before,.menu__link10::before,.menu__link11::before*/{
+    content: '';
+    width: 0;
+    height: 2px;
+    border-radius: 2px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -.25rem;
+    right: 0;
+    transition: right .4s, width .4s, left .4s;
+}
+
+.menu__link:hover::before,.menu__link1:hover::before,.menu__link2:hover::before,.menu__link3:hover::before,.menu__link4:hover::before,.menu__link5:hover::before,.menu__link6:hover::before,.menu__link7:hover::before,.menu__link8:hover::before/*,.menu__link9:hover::before,.menu__link10:hover::before,.menu__link11:hover::before*/{
+    width: 100%;
+    left: 0;
+}
+
 .innerCard {
     position: relative;
     width: 100%;
@@ -42,7 +116,7 @@ h1{
     cursor: pointer;
 }
 
-.myCard:hover .innerCard,.myCard1:hover .innerCard,.myCard2:hover .innerCard,.myCard3:hover .innerCard,.myCard4:hover .innerCard,.myCard5:hover .innerCard,.myCard6:hover .innerCard,.myCard7:hover .innerCard,.myCard8:hover .innerCard,.myCard9:hover .innerCard,.myCard10:hover .innerCard,.myCard11:hover .innerCard{
+.myCard:hover .innerCard,.myCard1:hover .innerCard,.myCard2:hover .innerCard,.myCard3:hover .innerCard,.myCard4:hover .innerCard,.myCard5:hover .innerCard,.myCard6:hover .innerCard,.myCard7:hover .innerCard,.myCard8:hover .innerCard/*,.myCard9:hover .innerCard,.myCard10:hover .innerCard,.myCard11:hover .innerCard*/{
     transform: rotateY(180deg);
 }
 
@@ -91,6 +165,8 @@ h1{
     border-radius: 1em;
     filter: blur(20px);
     animation: animate 5s linear infinite;
+    text-decoration: none;
+
 }
 
 @keyframes animate {
@@ -153,7 +229,7 @@ h1{
     top: 145%;
 }
 
-.myCard9{
+/*.myCard9{
     position: absolute;
     left: 18%;
     top: 205%;
@@ -169,27 +245,48 @@ h1{
     position: absolute;
     left: 67%;
     top: 205%;
+}*/
+*{
+    list-style: none;
+    scroll-behavior: smooth;
+    text-decoration: none;
 }
 
-button {
-    position: absolute;
-    top: 80%;
-    font-size: 10px;
-    padding: 0.5em 2em;
-    border: transparent;
-    box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
-    background: dodgerblue;
+.backSide>ul>li>a{
+    color: black;
+    position: relative;
+    left: -12%;
+
+}
+
+.backSide>ul>li>a:hover{
     color: white;
-    border-radius: 4px;
+    position: relative;
+    left: -8%;
 }
 
-button:hover {
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(30,144,255,1) 0%, rgba(0,212,255,1) 100%);
+#As1{
+    position: relative;
+    left: -25%;
+    top: 20px;
 }
 
-button:active {
-    transform: translate(0em, 0.2em);
+.As3{
+    position: relative;
+    left: -5%;
+    top: 15px;
+}
+
+.As4{
+    position: relative;
+    left: -5%;
+    top: 12px;
+}
+
+.As5{
+    position: relative;
+    left: -5%;
+    top: 12px;
 }
 
 /*#section1{
@@ -645,7 +742,7 @@ button:active {
     position: absolute;
     width: 1349px;
     height: 230px;
-    bottom: -205%;
+    bottom: -140%;
 }
 
 #footer>section>img{
@@ -968,15 +1065,40 @@ button:active {
         left: 32%;
         top: 75%;
     }*/
-    .myCard,.myCard1,.myCard2,.myCard3,.myCard4,.myCard5,.myCard6,.myCard7,.myCard8,.myCard9,.myCard10,.myCard11{
+    .myCard,.myCard1,.myCard2,.myCard3,.myCard4,.myCard5,.myCard6,.myCard7,.myCard8/*,.myCard9,.myCard10,.myCard11*/{
         width: 210px;
         height: 250px;
     }
 
+    .menu__link{
+        top: 8%;
+    }
+
+    .menu__link1{
+        top: 16%;
+    }
+
+    .menu__link2{
+        top: 5%;
+    }
+
+    .menu__link3{
+        top: 5%;
+    }
+
+    .menu__link4{
+        top: 16%;
+    }
+
+    .menu__link5{
+        top: 14%;
+    }
+
+
     #footer{
         width: 1024px;
         height: 220px;
-        bottom: -210%;
+        bottom: -145%;
     }
 
     #footer>section>img{
@@ -1044,7 +1166,7 @@ button:active {
         top: 70%;
     }
 */
-    .myCard,.myCard1,.myCard2,.myCard3,.myCard4,.myCard5,.myCard6,.myCard7,.myCard8,.myCard9,.myCard10,.myCard11{
+    .myCard,.myCard1,.myCard2,.myCard3,.myCard4,.myCard5,.myCard6,.myCard7,.myCard8/*,.myCard9,.myCard10,.myCard11*/{
         width: 150px;
         height: 230px;
     }
@@ -1053,14 +1175,55 @@ button:active {
         font-size: 20px;
     }
 
-    button{
-        font-size: 8px;
+    a{
+        font-size: 13px;
+    }
+
+    .As{
+        position: relative;
+        left: -5%;
+    }
+
+    .menu__link{
+        top: 5%;
+    }
+
+    .menu__link1{
+        top: 16%;
+    }
+
+    .menu__link2{
+        top: 4%;
+    }
+
+    .menu__link3{
+        top: 3%;
+    }
+
+    .menu__link6{
+        top: 14%;
+    }
+
+    .menu__link7{
+        top: 14%;
+    }
+
+    .menu__link8{
+        top: 16%;
+    }
+
+    .As3{
+        left: -10%;
+    }
+
+    .As4{
+        left: -10%;
     }
 
     #footer{
         width: 768px;
         height: 200px;
-        bottom: -200%;
+        bottom: -135%;
     }
 
     #footer>section>img{
@@ -1179,7 +1342,7 @@ button:active {
         left: 28%;
         top: 72%;
     }*/
-    .myCard,.myCard1,.myCard2,.myCard3,.myCard4,.myCard5,.myCard6,.myCard7,.myCard8,.myCard9,.myCard10,.myCard11{
+    .myCard,.myCard1,.myCard2,.myCard3,.myCard4,.myCard5,.myCard6,.myCard7,.myCard8/*,.myCard9,.myCard10,.myCard11*/{
         width: 130px;
         height: 200px;
     }
@@ -1227,11 +1390,11 @@ button:active {
 
     .myCard8{
         position: absolute;
-        left: 18%;
+        left: 37%;
         top: 199.5%;
     }
 
-    .myCard9{
+    /*.myCard9{
         position: absolute;
         left: 53%;
         top: 199.5%;
@@ -1247,20 +1410,78 @@ button:active {
         position: absolute;
         left: 53%;
         top: 243%;
-    }
+    }*/
 
     .title{
         font-size: 16px;
     }
 
-    button{
-        font-size: 8px;
+    .menu__link{
+        top: 4%;
+    }
+
+    .menu__link1{
+        top: 15%;
+    }
+
+    .menu__link2{
+        top: 1%;
+    }
+
+    .menu__link3{
+        top: 1%;
+    }
+
+    .menu__link4{
+        top: 15%;
+    }
+
+    .menu__link5{
+        top: 13%;
+    }
+
+    .menu__link6{
+        top: 15%;
+    }
+
+    .menu__link7{
+        top: 13%;
+    }
+
+    .menu__link8{
+        top: 15%;
+    }
+
+    /*.menu__link9{
+        top: 15%;
+    }
+
+    .menu__link10{
+        top: 12%;
+    }
+
+    .menu__link11{
+        top: 14%;
+    }*/
+
+    .As3{
+        top: 3%;
+        left: -12%;
+    }
+
+    .As4{
+        top: 3%;
+        left: -12%;
+    }
+
+    .As5{
+        left: -10%;
     }
 
     #footer{
         width: 425px;
         height: 150px;
-        bottom: -215%;
+        bottom: -172%;
     }
 
     #footer>section>img{
@@ -1306,6 +1527,15 @@ button:active {
         left: 28%;
     }
 
+    .title{
+        font-size: 14px;
+    }
+
+    .backSide>.title{
+        position: relative;
+        top: 12px;
+    }
+
     /*#section1,#section2,#section3,#section4,#section5,#section6,#section7,#section8,#section9,#section10,#section11,#section12{
         width: 120px;
         height: 180px;
@@ -1325,19 +1555,64 @@ button:active {
         top: 70%;
     }
 */
-    .myCard,.myCard1,.myCard2,.myCard3,.myCard4,.myCard5,.myCard6,.myCard7,.myCard8,.myCard9,.myCard10,.myCard11{
+    .myCard,.myCard1,.myCard2,.myCard3,.myCard4,.myCard5,.myCard6,.myCard7,.myCard8/*,.myCard9,.myCard10,.myCard11*/{
         width: 120px;
         height: 180px;
     }
 
-    button{
-        font-size: 8px;
+    a{
+        font-size: 11px;
+    }
+
+    .menu__link{
+        top: 1%;
+    }
+
+    .menu__link1{
+        top: 13%;
+    }
+
+    .menu__link2{
+        top: -3%;
+    }
+
+    .menu__link3{
+        top: -3%;
+    }
+
+    .menu__link4{
+        top: 14%;
+    }
+
+    .menu__link5{
+        top: 11%;
+    }
+
+    .menu__link6{
+        top: 14%;
+    }
+
+    .menu__link7{
+        top: 11%;
+    }
+
+    .menu__link8{
+        top: 14%;
+    }
+
+    .As{
+        left: -8%;
+    }
+
+    #As1{
+        top: 15px;
+        left: -38%;
     }
 
     #footer{
         width: 375px;
         height: 130px;
-        bottom: -205%;
+        bottom: -162%;
     }
 
     #footer>section>img{
@@ -1440,46 +1715,54 @@ button:active {
         left: 35%;
         top: 75%;
     }*/
-    .myCard,.myCard1,.myCard2,.myCard3,.myCard4,.myCard5,.myCard6,.myCard7,.myCard8,.myCard9,.myCard10,.myCard11{
-        width: 180px;
-        height: 120px;
+    .myCard,.myCard1,.myCard2,.myCard3,.myCard4,.myCard5,.myCard6,.myCard7,.myCard8/*,.myCard9,.myCard10,.myCard11*/{
+        width: 185px;
+        height: 170px;
         left: 22.5%;
         top: 21%;
     }
 
+    .backSide>ul>li>a{
+        font-size: 13px;
+    }
+
+    .backSide>.title{
+        font-size: 12px;
+    }
+
     .myCard1{
-        top: 48%;
+        top: 57%;
     }
 
     .myCard2{
-        top: 75%;
+        top: 93%;
     }
 
     .myCard3{
-        top: 102%;
+        top: 130%;
     }
 
     .myCard4{
-        top: 129%;
+        top: 167%;
     }
 
     .myCard5{
-        top: 156%;
+        top: 204%;
     }
 
     .myCard6{
-        top: 183%;
+        top: 241%;
     }
 
     .myCard7{
-        top: 210%;
+        top: 278%;
     }
 
     .myCard8{
-        top: 237%;
+        top: 315%;
     }
 
-    .myCard9{
+    /*.myCard9{
         top: 264%;
     }
 
@@ -1489,12 +1772,81 @@ button:active {
 
     .myCard11{
         top: 318%;
+    }*/
+
+    .As{
+        top: 8px;
+        left: -3%;
     }
+
+    .As3{
+        top: 8px;
+        left: -9%;
+    }
+
+    .As4{
+        top: 8px;
+        left: -9%;
+    }
+
+    .As5{
+        top: 8px;
+        left: -7%;
+    }
+
+    .menu__link{
+        top: 6%;
+    }
+
+    .menu__link1{
+        top: 14%;
+    }
+
+    .menu__link2{
+        top: -1%;
+    }
+
+    .menu__link3{
+        top: -1%;
+    }
+
+    .menu__link4{
+        top: 14%;
+    }
+
+    .menu__link5{
+        top: 14%;
+    }
+
+    .menu__link6{
+        top: 14%;
+    }
+
+    .menu__link7{
+        top: 11%;
+    }
+
+    .menu__link8{
+        top: 14%;
+    }
+
+    /*.menu__link9{
+        top: 17%;
+    }
+
+    .menu__link10{
+        top: 17%;
+    }
+
+    .menu__link11{
+        top: 17%;
+    }*/
+
 
     #footer{
         width: 320px;
         height: 130px;
-        bottom: -273%;
+        bottom: -277%;
     }
 
     #footer>section>img{

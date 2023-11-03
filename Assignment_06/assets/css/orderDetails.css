@@ -1,0 +1,109 @@
+header{
+    z-index: 20;
+    width: 100vw;
+    height: 50px;
+    position: fixed;
+}
+header>nav{
+    position: absolute;
+    width: fit-content;
+    left: 2.5%;
+    top: -49%;
+    padding: 1px;
+    margin-top: 15px;
+}
+
+header>img{
+    width: 35px;
+    aspect-ratio: 1/1;
+    position: absolute;
+    top: 2%;
+    left: 1.3%;
+}
+
+header>nav>hr{
+    width: 1363px;
+    position: absolute;
+    left: -12%;
+    top: 50%;
+}
+
+header>nav>ul>li{
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header>nav>ul>li>a{
+    text-decoration: none;
+    color: #86CEC7;
+    font-size: 20px;
+}
+
+#ol1>li>a{
+    position: relative;
+    top: -41px;
+    left: 1100px;
+    color: black;
+}
+
+
+#div1{
+    width: 40px;
+    height: 35px;
+    background-color: #86CEC7;
+    position: absolute;
+    top: 3%;
+    left: 1%;
+}
+
+#divDetails{
+    width: 1280px;
+    height: 37px;
+    background-color: #1D7874;
+    opacity: 80%;
+    position: absolute;
+    top: 12%;
+    left: 3%;
+}
+
+#Details{
+    position: absolute;
+    top: 10%;
+    left: 6%;
+}
+
+#imgDetails{
+    position: absolute;
+    top: 12.8%;
+    left: 4%;
+}
+
+#search{
+    position: absolute;
+    top: 20%;
+    right: 3.2%;
+}
+
+#searchbar{
+    width: 300px;
+    height: 30px;
+}
+
+#btnSearch{
+    width: 100px;
+    height: 30px;
+    background-color: #86CEC7;
+}
+
+.table{
+    width: 1200px;
+    height: 300px;
+    position: absolute;
+    top: 30%;
+    left: 7%;
+}
+
+#tbody>tr{
+    text-align: center;
+}

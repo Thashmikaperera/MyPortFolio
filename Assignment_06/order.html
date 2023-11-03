@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Form</title>
+    <link rel="stylesheet" href="assets/css/order.css">
+</head>
+<body>
+<header>
+    <div id="div1"></div>
+    <img src="assets/img/logo.png" alt="logo">
+    <nav>
+        <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="customer.html">Customer</a></li>
+            <li><a href="item.html">Item</a></li>
+            <li><a href="order.html">Order</a></li>
+        </ol>
+        <ol id="ol1">
+            <li><a href="#sign_up">Sign up</a></li>
+            <li><a href="#log_out">Log Out</a></li>
+        </ol>
+        <hr>
+    </nav>
+</header>
+<div id="divOrder"></div>
+<h3 id="orders">Place Order</h3>
+<nav class="navbar bg-body-tertiary">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img id="imgOrder" src="assets/img/icons8-order-100.png" alt="Bootstrap" width="20" height="24">
+        </a>
+    </div>
+</nav>
+<div id="orderDiv1"></div>
+<div id="orderDiv2"></div>
+<div id="orderDiv3"></div>
+<div id="orderDiv4"></div>
+<div id="orderDiv5"></div>
+<h3 id="invoice">Invoice Details</h3>
+<h3 id="invoice1">Select Item</h3>
+<div id="or1" class="input-group flex-nowrap">
+    <span class="input-group-text" >Order Id :-</span><br>
+    <input type="text" class="form-control" placeholder="D001" aria-label="Username" aria-describedby="addon-wrapping">
+</div>
+
+<div id="or2" class="input-group flex-nowrap">
+    <span class="input-group-text">Date :-</span><br>
+    <input type="text" class="form-control" placeholder="DD/MM/YYYY" aria-label="Username" aria-describedby="addon-wrapping">
+</div>
+
+<div id="or3" class="input-group flex-nowrap">
+    <span class="input-group-text">Customer ID :-</span><br>
+    <input type="text" class="form-control" placeholder="C001" aria-label="Username" aria-describedby="addon-wrapping">
+</div>
+
+<div id="or4" class="input-group flex-nowrap">
+    <span class="input-group-text">Customer Name :-</span><br>
+    <input type="text" class="form-control" placeholder="Thashi" aria-label="Username" aria-describedby="addon-wrapping">
+</div>
+
+<div id="or5" class="input-group flex-nowrap">
+    <span class="input-group-text">Address :-</span><br>
+    <input type="text" class="form-control" placeholder="Panadura" aria-label="Username" aria-describedby="addon-wrapping">
+</div>
+
+<div id="or6" class="input-group flex-nowrap">
+    <span class="input-group-text">Contact :-</span><br>
+    <input type="text" class="form-control" placeholder="xx xxx xxxx" aria-label="Username" aria-describedby="addon-wrapping">
+</div>
+
+<div class="d-grid gap-2 col-6 mx-auto">
+    <button id="viewBtn" class="btn btn-primary" type="button">View Order Details</button>
+</div>
+
+<div id="or7" class="input-group flex-nowrap">
+    <span class="input-group-text">Item Code :-</span><br>
+    <input type="text" class="form-control" placeholder="P001" aria-label="Username" aria-describedby="addon-wrapping">
+</div>
+
+<div id="or8" class="input-group flex-nowrap">
+    <span class="input-group-text">Item Name :-</span><br>
+    <input type="text" class="form-control" placeholder="Pen" aria-label="Username" aria-describedby="addon-wrapping">
+</div>
+
+<div id="or9" class="input-group flex-nowrap">
+    <span class="input-group-text">Qty On Hand :-</span><br>
+    <input type="text" class="form-control" placeholder="12" aria-label="Username" aria-describedby="addon-wrapping">
+</div>
+
+<div id="or10" class="input-group flex-nowrap">
+    <span class="input-group-text">Order Quantity :-</span><br>
+    <input type="text" class="form-control" placeholder="5" aria-label="Username" aria-describedby="addon-wrapping">
+</div>
+
+<div id="or11" class="input-group flex-nowrap">
+    <span class="input-group-text">Price :-</span><br>
+    <input id="orInput" type="text" class="form-control" placeholder="1000.00" aria-label="Username"  aria-describedby="addon-wrapping">
+</div>
+
+<div class="d-grid gap-2 col-6 mx-auto">
+    <button id="addBtn" class="btn btn-primary" type="button">Add Item</button>
+</div>
+
+<div id="or12" class="input-group flex-nowrap">
+    <span class="input-group-text">Cash :-</span><br>
+    <input type="text" class="form-control" placeholder="5000.00" aria-label="Username"  aria-describedby="addon-wrapping">
+</div>
+
+<div id="or13" class="input-group flex-nowrap">
+    <span class="input-group-text">Discount :-</span><br>
+    <input type="text" class="form-control" placeholder="10" aria-label="Username"  aria-describedby="addon-wrapping">
+</div>
+
+<div id="or14" class="input-group flex-nowrap">
+    <span class="input-group-text">Balance :-</span><br>
+    <input id="balance" type="text" class="form-control" placeholder="500.00" aria-label="Username"  aria-describedby="addon-wrapping">
+</div>
+
+<div class="d-grid gap-2 col-6 mx-auto">
+    <button id="purchase" class="btn btn-primary" type="button">Purchase</button>
+</div>
+
+<table id="table" class="table">
+    <thead>
+    <tr>
+        <th scope="col">No</th>
+        <th scope="col">Code</th>
+        <th scope="col">Description</th>
+        <th scope="col">Qty</th>
+        <th scope="col">Total</th>
+    </tr>
+    </thead>
+    <tbody id="tbody">
+    <tr>
+        <th scope="row">1</th>
+        <td>o001</td>
+        <td>Book</td>
+        <td>20</td>
+        <td>10 000</td>
+    </tr>
+    <tr>
+        <th scope="row">2</th>
+        <td>o002</td>
+        <td>Pen</td>
+        <td>50</td>
+        <td>2000</td>
+    </tr>
+    <tr>
+        <th scope="row">3</th>
+        <td>o003</td>
+        <td>Pencil</td>
+        <td>50</td>
+        <td>3000</td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

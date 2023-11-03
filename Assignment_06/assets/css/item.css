@@ -1,0 +1,186 @@
+header{
+    z-index: 20;
+    width: 100vw;
+    height: 50px;
+    position: fixed;
+}
+header>nav{
+    position: absolute;
+    width: fit-content;
+    left: 2.5%;
+    top: -49%;
+    padding: 1px;
+    margin-top: 15px;
+}
+
+header>img{
+    width: 35px;
+    aspect-ratio: 1/1;
+    position: absolute;
+    top: 2%;
+    left: 1.3%;
+}
+
+header>nav>hr{
+    width: 1363px;
+    position: absolute;
+    left: -12%;
+    top: 50%;
+}
+
+header>nav>ul>li{
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header>nav>ul>li>a{
+    text-decoration: none;
+    color: #86CEC7;
+    font-size: 20px;
+}
+
+#ol1>li>a{
+    position: relative;
+    top: -41px;
+    left: 1100px;
+    color: black;
+}
+
+
+#div1{
+    width: 40px;
+    height: 35px;
+    background-color: #86CEC7;
+    position: absolute;
+    top: 3%;
+    left: 1%;
+}
+
+#divItem{
+    width: 1280px;
+    height: 37px;
+    background-color: #1D7874;
+    opacity: 80%;
+    position: absolute;
+    top: 12%;
+    left: 3%;
+}
+
+#items{
+    position: absolute;
+    top: 10%;
+    left: 6%;
+}
+
+#imgItem{
+    position: absolute;
+    top: 12.9%;
+    left: 4%;
+}
+
+#itemSearch{
+    width: 800px;
+    height: 250px;
+    border-radius: 20px;
+    background-color: #86CEC7;
+    opacity: 80%;
+    position: absolute;
+    top: 20%;
+    left: 7%;
+}
+
+#it1{
+    position: absolute;
+    top: 25%;
+    left: 12%;
+    font-size: 22px;
+}
+
+#itS1{
+    width: 200px;
+    height: 20px;
+    position: absolute;
+    left: 15%;
+}
+
+#it2{
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    font-size: 22px;
+}
+
+#itS2{
+    width: 200px;
+    height: 20px;
+    position: absolute;
+    left: 15%;
+}
+
+#it3{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    font-size: 22px;
+}
+
+#itS3{
+    width: 200px;
+    height: 20px;
+    position: absolute;
+    left: 26%;
+}
+
+#it4{
+    position: absolute;
+    top: 40%;
+    left: 12%;
+    font-size: 22px;
+}
+
+#itS4{
+    width: 200px;
+    height: 20px;
+    position: absolute;
+    left: 22%;
+}
+
+#deleteBtn{
+    width: 90px;
+    height: 30px;
+    position: absolute;
+    top: 48%;
+    right: 18%;
+    background-color: red;
+}
+
+#UpdateBtn{
+    width: 90px;
+    height: 30px;
+    position: absolute;
+    top: 38%;
+    right: 18%;
+    background-color: #165BAA;
+}
+
+#saveBtn{
+    width: 90px;
+    height: 30px;
+    position: absolute;
+    top: 28%;
+    right: 18%;
+    background-color: #FFA4B6;
+}
+
+.table{
+    width: 1000px;
+    height: 150px;
+    position: absolute;
+    top: 65%;
+    left: 15%;
+}
+
+#tbody>tr{
+    text-align: center;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Form</title>
+    <link rel="stylesheet" href="assets/css/customer.css">
+</head>
+<body>
+<header>
+    <div id="div1"></div>
+    <img src="assets/img/logo.png" alt="logo">
+    <nav>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="customer.html">Customer</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="item.html">Item</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="order.html">Order</a>
+            </li>
+        </ul>
+        <ul id="ol1" class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Sign Up</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Log Out</a>
+            </li>
+        </ul>
+        <hr>
+    </nav>
+</header>
+<div id="divCustomer"></div>
+<h3 id="customers">Customers</h3>
+<nav class="navbar bg-body-tertiary">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img id="imgCus" src="assets/img/icons8-customers-96.png" alt="Bootstrap" width="20" height="24">
+        </a>
+    </div>
+</nav>
+
+<div id="cusSearch"></div>
+<div id="cu1" class="input-group flex-nowrap">
+    <span class="input-group-text">Customer ID :-</span><br>
+    <input id="cuS1" type="text" class="form-control" placeholder="C001" aria-label="Username" aria-describedby="addon-wrapping">
+</div>
+
+<div id="cu2" class="input-group flex-nowrap">
+    <span class="input-group-text">Customer Name :-</span><br>
+    <input id="cuS2" type="text" class="form-control" placeholder="Thashi" aria-label="Username" aria-describedby="addon-wrapping">
+</div>
+
+<div id="cu3" class="input-group flex-nowrap">
+    <span class="input-group-text">Contact :-</span><br>
+    <input id="cuS3" type="text" class="form-control" placeholder="xx xxx xxxx" aria-label="Username" aria-describedby="addon-wrapping">
+</div>
+
+<div id="cu4" class="input-group flex-nowrap">
+    <span class="input-group-text">Address :-</span><br>
+    <input id="cuS4" type="text" class="form-control" placeholder="Panadura" aria-label="Username" aria-describedby="addon-wrapping">
+</div>
+
+<button id="deleteBtn" type="button" class="btn btn-danger">Delete</button>
+<button id="UpdateBtn" type="button" class="btn btn-primary">Update</button>
+<button id="saveBtn" type="button" class="btn btn-info">Save</button>
+
+
+
+<table id="table" class="table">
+    <thead>
+    <tr>
+        <th scope="col">No</th>
+        <th scope="col">Id</th>
+        <th scope="col">Name</th>
+        <th scope="col">Address</th>
+        <th scope="col">Contact</th>
+    </tr>
+    </thead>
+    <tbody id="tbody">
+    <tr>
+        <th scope="row">1</th>
+        <td>c001</td>
+        <td>Thashi</td>
+        <td>Panadura</td>
+        <td>0757206813</td>
+    </tr>
+    <tr>
+        <th scope="row">2</th>
+        <td>c002</td>
+        <td>madushani</td>
+        <td>Galle</td>
+        <td>0754677808</td>
+    </tr>
+    <tr>
+        <th scope="row">3</th>
+        <td>c003</td>
+        <td>Dananja</td>
+        <td>Haputhale</td>
+        <td>0705253486</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,48 @@
+body{
+    background-color: darkorchid;
+}
+div{
+    width: 200px;
+    aspect-ratio: 1/1;
+    background-color: gray;
+    border-radius: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    /*border: 5px solid white;
+    border-top-color: red;*/
+}
+div>h2{
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+div::before{
+    content: "";
+    border: 5px solid white;
+    position: absolute;
+    border-radius: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-top-color: red;
+    /*width: 100px;
+    aspect-ratio: 1/1;*/
+}
+
+div:hover::before{
+    transform: rotate(360deg);
+    transition-duration: 2s;
+
+}

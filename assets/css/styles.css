@@ -1,16 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    !important;
+    overflow-x: hidden;
+    background-color: black;
+    /*!important;
+    overflow-x: hidden;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;*/
+}
+
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border-bottom: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 10%;
+}
+
+header.sticky{
+    background-color: black;
+    border-bottom: 3px solid #0A0B0B;
+    padding: 12px 10%;
+}
+
+.logo{
+    font-size: 26px;
+    font-weight: 90;
+    letter-spacing: 1px;
+}
+
+.logo>img{
+    width: 60px;
+}
+
+.navlist{
+    display: flex;
+}
+
+#con,#assignment1{
+    color: white;
+}
+
+#con:hover,#assignment1:hover{
+    color: #C36446;
+    text-shadow:0 0 10px rgba(195, 100, 70, 0.6),
+    0 0 20px rgba(195, 100, 70, 0.6),
+    0 0 30px rgba(195, 100, 70, 0.6),
+    0 0 40px rgba(195, 100, 70, 0.6),
+    0 0 70px rgba(195, 100, 70, 0.6),
+    0 0 80px rgba(195, 100, 70, 0.6),
+    0 0 100px rgba(195, 100, 70, 0.6),
+    0 0 150px rgba(195, 100, 70, 0.6);
+}
+
+.navlist a{
+    font-weight: 500;
+    padding: 10px 20px;
+    font-size: 1rem;
+
+    list-style: none;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.navlist a:hover{
+    color: #C36446;
+    text-shadow:0 0 10px rgba(195, 100, 70, 0.6),
+    0 0 20px rgba(195, 100, 70, 0.6),
+    0 0 30px rgba(195, 100, 70, 0.6),
+    0 0 40px rgba(195, 100, 70, 0.6),
+    0 0 70px rgba(195, 100, 70, 0.6),
+    0 0 80px rgba(195, 100, 70, 0.6),
+    0 0 100px rgba(195, 100, 70, 0.6),
+    0 0 150px rgba(195, 100, 70, 0.6);
+}
+
+.navlist a.active{
+    color:  #C36446;
+}
+
+#menu-icon{
+    font-size: 1.8rem;
+    z-index: 10001;
+    cursor: pointer;
+    margin-left: 25px;
+    background-color:  #C36446;
+    border-radius: 3px;
+    color: white;
+    display: none;
+}
+/*
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #0A0B0B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.9%;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    z-index: 999;
+}
+
+header .navbar{
+    position: absolute;
+    left: 32%;
+}
+
+header .logo{
+    position: relative;
+    width: 90px;
+}
+
+.navbar>a {
+    position: relative;
+    display: inline-block;
+    font-size: 23px;
+    color: white;
+    margin-left: 1.5rem;
+    text-decoration: none;
+}
+
+.navbar>a:hover{
+    color: #C36446;
+}
+
+#menuBtn{
+    display: none;
+    position: relative;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    header{
+        width: 768px;
+    }
+
+    #menuBtn{
+        display: block;
+    }
+
+    .toggle-btn.active::before{
+        content: '\f00d';
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #0A0B0B;
+        padding: 0.5%;
+        transform: scale(0);
+        transition: .8s;
+        transform-origin: top center;
+        overflow: hidden;
+    }
+
+    header .navbar.active{
+        transform: scale(1);
+    }
+
+    header .navbar>a{
+        display: block;
+        margin: 0.8rem 0;
+        left: 110%;
+        transition: .5s;
+        transition-delay: calc(.1s * var(--i));
+    }
+
+    header .navbar.active>a{
+        left: 0;
+    }
+}
+
+@media (max-width: 425px) {
+    header.navbar>a{
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 375px) {
+    header.navbar>a{
+       padding: 0.2%;
+    }
+}*/
+
+/*
+
 body{
     !important;
     overflow-x: hidden;
     background-color: black;
 }
 
-/*
+!*
 html{
     overflow-x: hidden;
     !important;
     scroll-behavior: smooth;
 }
-*/
+*!
 
 header{
     z-index: 20;
@@ -46,6 +255,7 @@ header>nav>ol>li>a{
     color: white;
     font-size: 22px
 }
+*/
 
 #main{
     width: 1348px;
@@ -73,6 +283,7 @@ header>nav>ol>li>a{
 #HOME{
     position: absolute;
     color: #C36446;
+    top: 35px;
     font-size: 28px;
 }
 #homeDiv>h1{
@@ -161,7 +372,7 @@ header>nav>ol>li>a{
 /*--------------Job Roll Animation---------------*/
 .container {
     position: absolute;
-    top: 240%;
+    top: 500%;
     left: 9%;
     font-size: 40px;
     font-weight: bold;
@@ -197,7 +408,7 @@ header>nav>ol>li>a{
 
 #imgDiv{
     position: absolute;
-    top: 325%;
+    top: 650%;
     right: 68%;
     border-bottom: 2px solid white;
 }
@@ -206,7 +417,7 @@ header>nav>ol>li>a{
     position: relative;
     color: #7B3107;
     left: 19%;
-    top: 310px;
+    top: 285px;
 }
 /*#btnDiv{
     position: relative;
@@ -259,7 +470,7 @@ header>nav>ol>li>a{
     -webkit-text-stroke: 1px var(--animation-color);
 }
 /* hover */
-.button:hover .hover-text {
+.button1:hover .hover-text {
     width: 105%;
     filter: drop-shadow(0 0 23px var(--animation-color))
 }
@@ -273,10 +484,10 @@ header>nav>ol>li>a{
 
 #ABOUT_ME{
     position: absolute;
-    font-size: 50px;
+    font-size: 40px;
     color: white;
-    left: 70px;
-    top: 35px;
+    left: 90px;
+    top: 60px;
 }
 
 #imgShadow{
@@ -321,6 +532,7 @@ header>nav>ol>li>a{
     --main-color:  #dedede;
     position: relative;
     left: 15%;
+    top: 120px;
     width: 190px;
     height: 40px;
     cursor: pointer;
@@ -388,10 +600,10 @@ header>nav>ol>li>a{
 
 #EDUCATION{
     position: absolute;
-    font-size: 50px;
+    font-size: 40px;
     color: white;
-    left: 70px;
-    top: 33px;
+    left: 90px;
+    top: 60px;
 }
 
 
@@ -411,22 +623,22 @@ header>nav>ol>li>a{
 
 #institute{
     position: absolute;
-    left: 10%;
-    top: 40%;
+    left: 6%;
+    top: 38%;
     font-size: 15px;
 }
 
 #year{
     position: absolute;
     left: 35%;
-    top: 55%;
+    top: 60%;
     font-size: 15px;
 }
 
 .second-content>h4{
     position: absolute;
-    top: 8%;
-    font-size: 20px;
+    top: 15%;
+    font-size: 18px;
 }
 
 .Ecard:hover,.Ecard1:hover,.Ecard2:hover,.Ecard3:hover{
@@ -484,17 +696,17 @@ header>nav>ol>li>a{
 }
 
 #scl,#scl1{
-    font-size: 20px;
+    font-size: 18px;
     position: absolute;
     left: 3%;
-    top: 15%;
+    top: 27%;
 }
 
 #year1,#year2{
     font-size: 17px;
     position: absolute;
-    left: 36%;
-    top: 40%;
+    left: 34%;
+    top: 50%;
 }
 
 .Ecard2{
@@ -678,10 +890,10 @@ header>nav>ol>li>a{
 
 #SKILLS{
     position: absolute;
-    font-size: 50px;
+    font-size: 40px;
     color: white;
-    left: 70px;
-    top: 35px;
+    left: 90px;
+    top: 60px;
 }
 
 #app{
@@ -693,7 +905,7 @@ header>nav>ol>li>a{
 #progress{
     position: absolute;
     top: 4%;
-    left: 100%;
+    left: 220%;
     list-style: none;
     margin-bottom: 45px;
 }
@@ -736,10 +948,10 @@ header>nav>ol>li>a{
 
 #PROJECTS{
     position: absolute;
-    font-size: 50px;
+    font-size: 40px;
     color: white;
-    left: 70px;
-    top: 35px;
+    left: 90px;
+    top: 60px;
 }
 
 #chat{
@@ -763,6 +975,7 @@ header>nav>ol>li>a{
 
 #chat>h3{
     position: absolute;
+    top: 10%;
     left: 30px;
     color: #C36446;
     font-size: 25px;
@@ -772,17 +985,115 @@ header>nav>ol>li>a{
     position: absolute;
     width: 450px;
     left: 60px;
-    top: 33px;
+    top: 55px;
     color: white;
     font-size: 18px;
 }
 
-#chat>div>button{
+/*#chat>div>button{
     position: absolute;
     left: 30%;
     top: 92%;
     border-radius: 8px;
+}*/
+.button2,.button3,.button4 {
+    --color: white;
+    padding: 0.8em 1.7em;
+    background-color: transparent;
+    border-radius: .3em;
+    position: relative;
+    margin-top: 21.5%;
+    margin-left: 45%;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 400;
+    font-size: 13px;
+    border: 1px solid;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: white;
+    z-index: 1;
 }
+
+.button3{
+    margin-top: 150px;
+    margin-left: 60%;
+}
+
+.button4{
+    margin-top: -4px;
+    margin-left: 18%;
+}
+
+.button2::before, .button2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: white;
+    transition: 1s ease;
+}
+.button3::before, .button3::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: white;
+    transition: 1s ease;
+}
+.button4::before, .button4::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: white;
+    transition: 1s ease;
+}
+
+.button2::before,.button3::before,.button4::before {
+    top: -1em;
+    left: -1em;
+}
+
+.button2::after, .button3::after, .button4::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+}
+
+.button2:hover::before, .button2:hover::after {
+    height: 410px;
+    width: 410px;
+}
+.button3:hover::before, .button3:hover::after {
+    height: 410px;
+    width: 410px;
+}
+.button4:hover::before, .button4:hover::after {
+    height: 410px;
+    width: 410px;
+}
+
+.button2:hover, .button3:hover, .button4:hover {
+    color: rgb(10, 25, 30);
+}
+
+.button2:active, .button3:active, .button4:active {
+    filter: brightness(.8);
+}
+
 
 #bookShop{
     position: absolute;
@@ -805,7 +1116,8 @@ header>nav>ol>li>a{
 
 #bookShop>h3{
     position: absolute;
-    left: 26%;
+    top: 8%;
+    left: 27%;
     color: #C36446;
     font-size: 25px;
 }
@@ -814,7 +1126,7 @@ header>nav>ol>li>a{
     position: absolute;
     width: 450px;
     right: 38px;
-    top: 30px;
+    top: 45px;
     color: white;
     font-size: 20px;
 }
@@ -841,12 +1153,13 @@ header>nav>ol>li>a{
     width: 210px;
     height: 170px;
     left: 530px;
-    top: -65px;
+    top: -90px;
     border-radius: 30px;
 }
 
 #game>h3{
     position: absolute;
+    top: 10%;
     left: 30px;
     color: #C36446;
     font-size: 25px;
@@ -856,7 +1169,7 @@ header>nav>ol>li>a{
     position: absolute;
     width: 555px;
     left: 60px;
-    top: 35px;
+    top: 50px;
     color: white;
     font-size: 20px;
 }
@@ -877,10 +1190,10 @@ header>nav>ol>li>a{
 
 #ASSIGNMENT{
     position: absolute;
-    font-size: 50px;
+    font-size: 40px;
     color: white;
-    left: 70px;
-    top: 35px;
+    left: 90px;
+    top: 60px;
 }
 
 #main5>section{
@@ -894,10 +1207,10 @@ header>nav>ol>li>a{
 
 #main5>section>h3{
     position: absolute;
-    left: 17%;
-    top: 25%;
+    left: 18%;
+    top: 40%;
     color: white;
-    font-size: 35px;
+    font-size: 30px;
 }
 #arrow{
     width: 45px;
@@ -914,23 +1227,104 @@ header>nav>ol>li>a{
     top: 39%;
 }
 
-#main5>section>div>a>button{
-    background-color: #797C7D;
-    position: absolute;
-    width: 140px;
-    height: 30px;
-    left: 31%;
-    top: 155%;
-    font-size: 17px;
-    border-radius: 7px;
+.learn-more {
+    position: relative;
+    top: 140%;
+    left: 22%;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
 }
+
+.learn-more {
+    width: 12rem;
+    height: auto;
+}
+
+.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #282936;
+    border-radius: 1.625rem;
+}
+
+.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+}
+
+.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+}
+
+.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+}
+
+.learn-more .button-text {
+    width: 170px;
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 6%;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #282936;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.learn-more:hover .circle {
+    width: 115%;
+}
+
+.learn-more:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+}
+
+.learn-more:hover .button-text {
+    color: #fff;
+}
+
 #ass{
     background-color: #272727;
     width:200px ;
     height: 250px;
     position: absolute;
     top: 45%;
-    left: 15%;
+    left: 16%;
 }
 #ass1{
     background-color: #272727;
@@ -945,15 +1339,15 @@ header>nav>ol>li>a{
     color: white;
     font-size: 25px;
     position: absolute;
-    top: 33%;
-    left: 10%;
+    top: 40%;
+    left: 6%;
 }
 #ass1>h3{
     color: white;
     font-size: 25px;
     position: absolute;
-    top: 33%;
-    right: 11%;
+    top: 40%;
+    right: 6%;
 }
 
 #main6{
@@ -964,10 +1358,10 @@ header>nav>ol>li>a{
 
 #GALLERY{
     position: absolute;
-    font-size: 50px;
+    font-size: 40px;
     color: white;
-    left: 70px;
-    top: 35px;
+    left: 90px;
+    top: 60px;
 }
 
 #main6>section{
@@ -1044,79 +1438,127 @@ header>nav>ol>li>a{
 
 #CONTACT_ME{
     position: absolute;
-    font-size: 50px;
+    font-size: 40px;
     color: white;
-    left: 70px;
-    top: 35px;
+    left: 90px;
+    top: 60px;
 }
 
-#form{
+.form-container {
     width: 480px;
-    height: 500px;
-    background-color: #1C1A1A;
-    position: absolute;
-    left: 25%;
-    top: 30%;
-    border-radius: 40px;
-}
-
-#form>div{
-    position: absolute;
-    left: 7%;
-    top: 10%;
-}
-
-#form>div>label{
-    font-size: 23px;
+    background: linear-gradient(#212121, #212121) padding-box,
+    linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
+    border: 3px solid transparent;
+    padding: 32px 24px;
+    font-size: 14px;
+    font-family: inherit;
     color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    background-size: 200% 100%;
+    animation: gradient 5s ease infinite;
+    position: absolute;
+    left: 23%;
+    top: 25%;
 }
 
-#Name{
-    height: 20px;
-    width: 240px;
-    position: absolute;
-    left: 110%;
-    border-radius: 10px;
-    font-size: 15px;
-    opacity: 70%;
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
-#email{
-    height: 20px;
-    width: 240px;
-    position: absolute;
-    left: 110%;
-    border-radius: 10px;
-    font-size: 15px;
-    opacity: 70%;
+.form-container button:active {
+    scale: 0.95;
 }
 
-#contact{
-    height: 20px;
-    width: 240px;
-    position: absolute;
-    left: 110%;
-    border-radius: 10px;
-    font-size: 15px;
-    opacity: 70%;
+.form-container .form {
+    position: relative;
+    left: 6%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-#message{
-    position: absolute;
-    left: 110%;
-    top: 70%;
-    width: 240px;
-    border-radius: 10px;
-    font-size: 15px;
-    opacity: 70%;
+.form-container .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
 }
 
+.form-container .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #717171;
+    font-weight: 600;
+    font-size: 20px;
+}
 
-#form>button{
-    position: absolute;
-    left: 75%;
-    top: 92%;
-    border-radius: 5px;
+.form-container .form-group input {
+    width: 85%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    color: #fff;
+    font-family: inherit;
+    background-color: transparent;
+    border: 1px solid #414141;
+}
+
+.form-container .form-group textarea {
+    width: 85%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    resize: none;
+    color: #fff;
+    height: 96px;
+    border: 1px solid #414141;
+    background-color: transparent;
+    font-family: inherit;
+}
+
+.form-container .form-group input::placeholder {
+    opacity: 0.5;
+}
+
+.form-container .form-group input:focus {
+    outline: none;
+    border-color: #e81cff;
+}
+
+.form-container .form-group textarea:focus {
+    outline: none;
+    border-color: #e81cff;
+}
+
+.form-container .form-submit-btn {
+    position: relative;
+    left: 55%;
+    color: #717171;
+    font-weight: 900;
+    width: 30%;
+    background: #313131;
+    border: 3px solid #414141;
+    padding: 12px 16px;
+    font-size: inherit;
+    margin-top: 8px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.form-container .form-submit-btn:hover {
+    background-color: #fff;
+    border-color: #fff;
 }
 
 #footer{
@@ -1124,15 +1566,15 @@ header>nav>ol>li>a{
     position: absolute;
     width: 1349px;
     height: 240px;
-    bottom: -860%;
+    bottom: -900%;
 }
 
 #footer>section>img{
-    width: 150px;
-    aspect-ratio: 1/1;
+    width: 70px;
+    height: 50px;
     position: absolute;
-    left: 10%;
-    top: 10%;
+    left: 12.5%;
+    top: 22%;
 }
 
 #footer>section>h3{
@@ -1147,7 +1589,7 @@ header>nav>ol>li>a{
 #footer>section>h4{
     position: absolute;
     left: 30%;
-    top: -18.5%;
+    top: -5.8%;
     font-size: 25px;
     color: white;
     opacity: 50%;
@@ -1156,7 +1598,7 @@ header>nav>ol>li>a{
 #footer>section>div{
     position: absolute;
     left: 70%;
-    top: 35%;
+    top: 33%;
 }
 
 #imgDiv1{
@@ -1166,13 +1608,11 @@ header>nav>ol>li>a{
 #footer>section>h6{
     position: absolute;
     right: 17.5%;
-    top: 35%;
-    font-size: 22px;
+    top: 53%;
+    font-size: 20px;
     color:#D2D2D2;
     font-family: "Book Antiqua";
 }
-
-
 
 /*
 @media all and (max-width: 1440px){
@@ -1183,11 +1623,12 @@ header>nav>ol>li>a{
         position: fixed;
     }
 
-   !* #main{
+   /* #main{
         position: relative;
         width: 1440px;
         height: 627px;
-    }*!
+    }*/
+/*
 
     #main1{
         position: relative;
@@ -1353,20 +1794,23 @@ header>nav>ol>li>a{
 }
 */
 
-
-
 @media all and (max-width: 1024px){
     header{
         width: 1024px;
+        padding: 0.1%;
     }
 
-    header>img{
+    .navbar>a{
+        font-size: 10px;
+    }
+
+    /*header>img{
         width: 60px;
         position: absolute;
         top: -10%;
         left: 0;
     }
-
+*/
     #main{
         width: 1024px;
         height: 565px;
@@ -1378,7 +1822,6 @@ header>nav>ol>li>a{
         top: 105px;
     }
 
-
     #homeDiv{
         top: 15%;
         left: 4%;
@@ -1386,7 +1829,7 @@ header>nav>ol>li>a{
     }
 
     #homeDiv>h1{
-        top: 6%;
+        top: 22%;
         font-size: 58px;
     }
 
@@ -1401,13 +1844,13 @@ header>nav>ol>li>a{
     }*/
 
     .container {
-        top: 148%;
+        top: 400%;
         left: 11.5%;
         font-size: 38px;
     }
 
     #imgDiv{
-        top: 200%;
+        top: 550%;
         right: 60%;
     }
 
@@ -1597,11 +2040,15 @@ header>nav>ol>li>a{
         top: 406px;
     }
 
+    .Ecard>.second-content>h4{
+        font-size: 15px;
+    }
+
     #institute{
         position: absolute;
         left: 7%;
-        top: 40%;
-        font-size: 13px;
+        top: 36%;
+        font-size: 12px;
     }
 
     .second-content>h4{
@@ -1625,17 +2072,17 @@ header>nav>ol>li>a{
 
 
     #scl,#scl1{
-        font-size: 15px;
+        font-size: 14px;
         position: absolute;
         left: 7%;
-        top: 11%;
+        top: 30%;
     }
 
     #year1,#year2{
         font-size: 15px;
         position: absolute;
         left: 36%;
-        top: 35%;
+        top: 50%;
     }
 
     .Ecard3{
@@ -1696,12 +2143,12 @@ header>nav>ol>li>a{
 
     #app{
         left: 10%;
-        top: 22%;
+        top: 25%;
     }
 
     #progress{
         top: 3%;
-        left: 100%;
+        left: 170%;
     }
 
     #progress>li:nth-child(1){
@@ -1743,8 +2190,23 @@ header>nav>ol>li>a{
     #chat>h5{
         width: 450px;
         left: 42px;
-        top: 26px;
+        top: 45px;
         font-size: 16px;
+    }
+
+    .button2{
+        margin-top: 140px;
+        margin-left: 60%;
+    }
+
+    .button3{
+        margin-top: 130px;
+        margin-left: 50%;
+    }
+
+    .button4{
+        margin-top: -8px;
+        margin-left: 25%;
     }
 
     #bookShop{
@@ -1771,7 +2233,7 @@ header>nav>ol>li>a{
     #bookShop>h5{
         width: 450px;
         right: -2%;
-        top: 24px;
+        top: 40px;
         font-size: 16px;
     }
 
@@ -1797,7 +2259,7 @@ header>nav>ol>li>a{
     #game>h5{
         width: 555px;
         left: 60px;
-        top: 26px;
+        top: 45px;
         font-size: 16px;
     }
 
@@ -1820,9 +2282,9 @@ header>nav>ol>li>a{
     }
 
     #main5>section>h3{
-        left: 18%;
-        top: 27%;
-        font-size: 25px;
+        left: 17.2%;
+        top: 40%;
+        font-size: 22px;
     }
 
     #arrow,#arrow1{
@@ -1854,21 +2316,54 @@ header>nav>ol>li>a{
 
     #ass>h3{
         font-size: 22px;
-        top: 29%;
-        left: 16%;
+        top: 40%;
+        left: 11%;
     }
 
     #ass1>h3{
         font-size: 22px;
-        top: 29%;
-        right: 16%;
+        top: 40%;
+        right: 11%;
     }
 
-    #main5>section>div>a>button{
-        width: 116px;
-        font-size: 14px;
-        left: 28%;
-        top: 175%;
+    .learn-more {
+        top: 180%;
+        left: 20%;
+    }
+
+    .learn-more {
+        width: 12rem;
+        height: auto;
+    }
+
+    .learn-more .circle {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .learn-more .circle .icon.arrow {
+        left: 0.130rem;
+        width: 1.125rem;
+        height: 0.125rem;
+        background: none;
+    }
+
+    .learn-more .circle .icon.arrow::before {
+        position: absolute;
+        content: "";
+        top: -0.29rem;
+        right: 0.0625rem;
+        width: 0.625rem;
+        height: 0.625rem;
+        border-top: 0.125rem solid #fff;
+        border-right: 0.125rem solid #fff;
+        transform: rotate(45deg);
+    }
+
+    .learn-more .button-text {
+        width: 170px;
+        top: -20%;
+        left: 1%;
     }
 
     #main6{
@@ -1949,11 +2444,11 @@ header>nav>ol>li>a{
         top: 60px;
     }
 
-    #form{
+    /*#form{
         width: 395px;
         height: 430px;
         left: 25%;
-        top: 20%;
+        top: 10%;
     }
 
 
@@ -1972,54 +2467,45 @@ header>nav>ol>li>a{
     #message{
         height: 120px;
         top: 70%;
+    }*/
+    .form-container {
+        width: 450px;
+        left: 23%;
+        top: 20%;
     }
 
     #footer{
         position: absolute;
         width: 1024px;
         height: 230px;
-        bottom: -850%;
+        bottom: -900%;
     }
 
     #footer>section>img{
-        width: 110px;
-        aspect-ratio: 1/1;
-        position: absolute;
-        left: 10%;
-        top: 17%;
+        width: 80px;
+        left: 12%;
+        top: 25%;
     }
 
     #footer>section>h3{
-        position: absolute;
         left: 6%;
-        top: 44%;
-        color: white;
-        font-size: 25px;
-        font-family: "Lucida Bright";
+        top: 50%;
     }
 
     #footer>section>h4{
-        position: absolute;
         left: 30%;
-        top: -19.5%;
-        font-size: 23px;
-        color: white;
-        opacity: 50%;
+        top: -6.3%;
     }
 
     #footer>section>h6{
-        position: absolute;
-        right: 16%;
-        top: 37%;
-        font-size: 18px;
-        color:#D2D2D2;
-        font-family: "Book Antiqua";
+        right: 14%;
+        top: 53%;
     }
 
 }
 
 @media all and (max-width: 768px) {
-    header{
+    /*header{
         width: 768px;
         height: 50px;
     }
@@ -2041,6 +2527,40 @@ header>nav>ol>li>a{
 
     header>nav>ol>li>a{
         font-size: 18px;
+    }*/
+
+    #menu-icon{
+        position: absolute;
+        right: 30%;
+        display: block;
+        transition: all .4s ease;
+    }
+
+    #menu-icon.bx-x{
+        transform: rotate(180deg);
+    }
+
+    .navlist{
+        display: flex;
+        position: absolute;
+        top: -360px;
+        right: 0;
+        left: 0;
+        flex-direction: column;
+        background-color: black;
+        text-align: left;
+        padding: 0 5%;
+        transition: all .45s ease;
+    }
+
+    .navlist a{
+        display: block;
+        padding-bottom: 1rem;
+        font-size: 1rem;
+    }
+
+    .navlist.open{
+        top: 100%;
     }
 
     #main{
@@ -2049,7 +2569,7 @@ header>nav>ol>li>a{
     }
 
     #divPic>img{
-        width: 320px;
+        width: 300px;
         left: 53%;
         top: 120px;
     }
@@ -2065,7 +2585,7 @@ header>nav>ol>li>a{
         font-size: 21px;
     }
     #homeDiv>h1{
-        top: 17%;
+        top: 50%;
         font-size: 44px;
     }
 
@@ -2076,7 +2596,7 @@ header>nav>ol>li>a{
     }*/
 
     .container {
-        top: 140%;
+        top: 350%;
         left: 10.5%;
         font-size: 32px;
     }
@@ -2086,12 +2606,12 @@ header>nav>ol>li>a{
     }
 
     #imgDiv{
-        top: 185%;
+        top: 470%;
         right: 52.5%;
     }
 
     #homeDiv>h6{
-        top: 201px;
+        top: 213px;
         left: 22.5%;
     }
 
@@ -2102,7 +2622,7 @@ header>nav>ol>li>a{
 
     #btn{
         left: 20.3%;
-        top: 220px;
+        top: 270px;
         font-size: 17px;
     }
 
@@ -2266,19 +2786,20 @@ header>nav>ol>li>a{
 
     #institute{
         text-align: center;
-        left: 3%;
-        top: 30%;
-        font-size: 13px;
+        left: -3%;
+        top: 45%;
+        font-size: 12px;
     }
 
     .second-content>h4{
+        left: 5%;
         top: 8%;
-        font-size: 14px;
+        font-size: 10px;
     }
 
     #year{
-        left: 37%;
-        top: 62%;
+        left: 35%;
+        top: 75%;
         font-size: 12px;
     }
 
@@ -2292,13 +2813,13 @@ header>nav>ol>li>a{
         text-align: center;
         font-size: 15px;
         left: -1%;
-        top: 11%;
+        top: 20%;
     }
 
     #year1,#year2{
         font-size: 15px;
         left: 34%;
-        top: 50%;
+        top: 70%;
     }
 
     .Ecard3{
@@ -2359,6 +2880,15 @@ header>nav>ol>li>a{
         height: 35px;
     }
 
+    #app{
+        left: 15%;
+    }
+
+    #progress{
+        left: 200%;
+        top: 4.2%;
+    }
+
     #progress>li>img{
         width: 450px;
     }
@@ -2385,7 +2915,7 @@ header>nav>ol>li>a{
         width: 110px;
         height: 100px;
         left: 330px;
-        top: -50px;
+        top: -55px;
     }
 
     #chat>h3{
@@ -2395,14 +2925,31 @@ header>nav>ol>li>a{
 
     #chat>h5{
         width: 350px;
-        left: 47px;
-        top: 28px;
+        left: 45px;
+        top: 45px;
         font-size: 15px;
     }
 
-    #chat>div>button{
+    /*#chat>div>button{
         left: 33%;
         font-size: 13px;
+    }*/
+    .button2{
+        font-size: 10px;
+        margin-top: 135px;
+        margin-left: 60%;
+    }
+
+    .button3{
+        font-size: 10px;
+        margin-top: 135px;
+        margin-left: 50%;
+    }
+
+    .button4{
+        font-size: 10px;
+        margin-top: -8px;
+        margin-left: 25%;
     }
 
     #bookShop{
@@ -2421,15 +2968,15 @@ header>nav>ol>li>a{
 
     #bookShop>h3{
         left: 18%;
-        top: -5%;
+        top: 3%;
         font-size: 21px;
     }
 
     #bookShop>h5{
-        width: 350px;
-        height: 800px;
-        right: -5px;
-        top: 30px;
+        width: 320px;
+        height: 900px;
+        right: -2px;
+        top: 35px;
         font-size: 15px;
     }
 
@@ -2458,11 +3005,10 @@ header>nav>ol>li>a{
     }
 
     #game>h5{
-        position: absolute;
-        width: 50px;
-        left: 20px;
-        top: 35px;
-        color: white;
+        width: 320px;
+        height: 900px;
+        left: 40px;
+        top: 40px;
         font-size: 15px;
     }
 
@@ -2490,9 +3036,9 @@ header>nav>ol>li>a{
     }
 
     #main5>section>h3{
-        left: 19%;
-        top: 23%;
-        font-size: 21px;
+        left: 20%;
+        top: 40%;
+        font-size: 18px;
     }
     #arrow{
         width: 30px;
@@ -2505,13 +3051,6 @@ header>nav>ol>li>a{
         top: 40%;
     }
 
-    #main5>section>div>a>button{
-        width: 110px;
-        height: 26px;
-        left: 25%;
-        top: 180%;
-        font-size: 13px;
-    }
     #ass{
         width:150px ;
         height: 150px;
@@ -2524,12 +3063,17 @@ header>nav>ol>li>a{
     }
 
     #ass>h3{
-        font-size: 19px;
+        font-size: 17px;
         left: 10%;
     }
     #ass1>h3{
-        font-size: 19px;
+        font-size: 17px;
         right: 10%;
+    }
+
+    .learn-more {
+        top: 190%;
+        left: 5%;
     }
 
     #main6{
@@ -2614,34 +3158,39 @@ header>nav>ol>li>a{
         top: 48px;
     }
 
-    #form{
+    /*#form{
         position: absolute;
         left: 25%;
         top: 27%;
         border-radius: 40px;
+    }*/
+    .form-container {
+        width: 410px;
+        left: 23%;
+        top: 20%;
     }
 
     #footer{
         width: 768px;
         height: 200px;
-        bottom: -829%;
+        bottom: -875%;
     }
 
     #footer>section>img{
-        width: 90px;
-        left: 12%;
-        top: 18%;
+        width: 80px;
+        left: 13%;
+        top: 30%;
     }
 
     #footer>section>h3{
         left: 6%;
-        top: 46%;
+        top: 60%;
         font-size: 22px;
     }
 
     #footer>section>h4{
-        left: 31%;
-        top: -20%;
+        left: 27%;
+        top: -6%;
         font-size: 21px;
     }
 
@@ -2654,16 +3203,25 @@ header>nav>ol>li>a{
     #footer>section>h6{
         position: absolute;
         right: 11.5%;
-        top: 40%;
+        top: 55%;
         font-size: 15px;
     }
 
 
 }
 
+@media all and (max-width: 720px) {
+    header{
+        padding: 20px;
+    }
+
+    #menu-icon{
+        right: 40%;
+    }
+}
 
 @media all and (max-width: 425px) {
-    header {
+    /*header {
         width: 425px;
         height: 45px;
     }
@@ -2684,6 +3242,10 @@ header>nav>ol>li>a{
     header>nav{
         right: -1%;
         margin-top: -5px;
+    }*/
+
+    #menu-icon{
+        right: 63%;
     }
 
     #main{
@@ -2704,10 +3266,12 @@ header>nav>ol>li>a{
     }
 
     #HOME{
-        top: -6%;
+        left: -5%;
+        top: 50%;
         font-size: 20px;
     }
     #homeDiv>h1{
+        left: -5%;
         top: 21%;
         font-size: 35px;
     }
@@ -2720,8 +3284,8 @@ header>nav>ol>li>a{
     }*/
 
     .container {
-        top: 120%;
-        left: 14.3%;
+        top: 280%;
+        left: 12%;
         font-size: 26px;
     }
 
@@ -2730,15 +3294,15 @@ header>nav>ol>li>a{
     }
 
     #imgDiv{
-        width: 161px;
-        top: 165%;
-        right: 43.5%;
+        width: 163px;
+        top: 390%;
+        right: 44%;
     }
 
     #homeDiv>h6{
         font-size: 11px;
-        left: 27.8%;
-        top: 155px;
+        left: 28%;
+        top: 160px;
     }
     /*#btnDiv{
         top: 170px;
@@ -2746,7 +3310,8 @@ header>nav>ol>li>a{
     }*/
 
     #btn{
-        top: 150px;
+        top: 200px;
+        left: 21%;
         font-size: 13px;
     }
 
@@ -2930,7 +3495,7 @@ header>nav>ol>li>a{
     }
 
     #chat>h3{
-        top: 15%;
+        top: 17%;
         left: 18px;
         font-size: 19px;
     }
@@ -2938,14 +3503,31 @@ header>nav>ol>li>a{
     #chat>h5{
         width: 200px;
         left: 40px;
-        top: 52px;
+        top: 60px;
         font-size: 13px;
     }
 
-    #chat>div>button{
+    /*#chat>div>button{
         top: 95%;
         left: 40%;
         font-size: 13px;
+    }*/
+    .button2{
+        font-size: 11px;
+        margin-top: 185px;
+        margin-left: 35%;
+    }
+
+    .button3{
+        font-size: 11px;
+        margin-top: 184px;
+        margin-left: 35%;
+    }
+
+    .button4{
+        font-size: 10px;
+        margin-top: -8px;
+        margin-left: -8%;
     }
 
     #bookShop{
@@ -2963,7 +3545,7 @@ header>nav>ol>li>a{
     }
 
     #bookShop>h3{
-        top: 16%;
+        top: 22%;
         left: 20px;
         font-size: 19px;
     }
@@ -2971,7 +3553,7 @@ header>nav>ol>li>a{
     #bookShop>h5{
         width: 200px;
         left: 40px;
-        top: 54px;
+        top: 68px;
         font-size: 13px;
     }
 
@@ -3004,14 +3586,14 @@ header>nav>ol>li>a{
     #game>h5{
         width: 200px;
         left: 40px;
-        top: 42px;
+        top: 50px;
         font-size: 13px;
     }
 
     #game>div>button{
         top: 95%;
         left: 40%;
-        font-size: 13px;
+        font-size: 11px;
     }
 
     #main5{
@@ -3033,9 +3615,9 @@ header>nav>ol>li>a{
     }
 
     #main5>section>h3{
-        left: 16.5%;
-        top: 28%;
-        font-size: 15px;
+        left: 17%;
+        top: 35%;
+        font-size: 13px;
     }
     #arrow{
         width: 17px;
@@ -3048,13 +3630,11 @@ header>nav>ol>li>a{
         top: 42%;
     }
 
-    #main5>section>div>a>button{
-        width: 110px;
-        height: 26px;
-        left: 15%;
-        top: 180%;
-        font-size: 12px;
+    .learn-more {
+        top: 185%;
+        left: -20%;
     }
+
     #ass{
         width:80px ;
         height: 100px;
@@ -3153,7 +3733,7 @@ header>nav>ol>li>a{
         top: 45px;
     }
 
-    #form{
+    /*#form{
         width: 280px;
         height: 450px;
         left: 18%;
@@ -3206,18 +3786,33 @@ header>nav>ol>li>a{
         left: 70%;
         top: 87%;
         border-radius: 5px;
+    }*/
+    .form-container {
+        width: 270px;
+        height: 720px;
+        left: 20%;
+        top: 20%;
+    }
+
+    .form-container .form-submit-btn {
+        left: 35%;
+        top: 0.5%;
+        font-weight: 900;
+        width: 50%;
+        height: 6%;
     }
 
     #footer{
         width: 425px;
-        height: 150px;
-        bottom: -958.5%;
+        height: 120px;
+        bottom: -995%;
     }
 
     #footer>section>img{
-        width: 50px;
-        left: 10%;
-        top: 23%;
+        width: 40px;
+        height: 25px;
+        left: 12%;
+        top: 35%;
     }
 
     #wp1,#fb1,#git1,#linkedin1,#insta1{
@@ -3227,31 +3822,31 @@ header>nav>ol>li>a{
 
     #footer>section>h3{
         left: 4%;
-        top: 48%;
+        top: 62%;
         font-size: 12px;
     }
 
     #footer>section>h4{
-        left: 25%;
-        top: -18.5%;
+        left: 22%;
+        top: -7%;
         font-size: 15px;
     }
 
     #footer>section>div{
-        left: 63%;
+        left: 60%;
         top: 32%;
     }
 
     #footer>section>h6{
         position: absolute;
-        right: 13%;
-        top: 40%;
+        right: 15.5%;
+        top: 61%;
         font-size: 10px;
     }
 }
 
 @media all and (max-width: 375px) {
-    header {
+    /*header {
         width: 375px;
         height: 40px;
     }
@@ -3272,7 +3867,11 @@ header>nav>ol>li>a{
     header>nav{
         right: -1%;
         margin-top: -8px;
+    }*/
+    #menu-icon{
+        right: 68%;
     }
+
 
     /*.btn{
         position: absolute;
@@ -3298,14 +3897,15 @@ header>nav>ol>li>a{
     }*/
 
     .container {
-        top: 120%;
-        left: 14%;
+        top: 300%;
+        left: 12%;
         font-size: 24px;
     }
 
     #imgDiv{
         width: 143px;
-        right: 47%;
+        right: 48%;
+        top: 420%;
     }
 
     #imgDiv>a>img{
@@ -3313,11 +3913,8 @@ header>nav>ol>li>a{
     }
 
     #homeDiv>h6{
-        top: 145px;
-        left: 27%;
-    }
-    #btnDiv{
-        left: 26.5%;
+        top: 164px;
+        left: 26%;
     }
 
     #main1{
@@ -3422,9 +4019,13 @@ header>nav>ol>li>a{
         font-size: 28px;
     }
 
+    #app{
+        left: 20%;
+    }
+
     #progress{
         top: 3%;
-        left: 72%;
+        left: 155%;
     }
 
     #main4{
@@ -3450,7 +4051,7 @@ header>nav>ol>li>a{
     }
 
     #chat>h3{
-        top: 13%;
+        top: 18%;
         left: 18px;
         font-size: 15px;
     }
@@ -3458,12 +4059,25 @@ header>nav>ol>li>a{
     #chat>h5{
         width: 135px;
         left: 40px;
-        top: 48px;
+        top: 60px;
         font-size: 12px;
     }
 
-    #chat>div>button{
+   /* #chat>div>button{
         left: 37%;
+    }*/
+
+    .button2{
+       margin-left: 30%;
+        margin-top: 106%;
+    }
+    .button3{
+        margin-left: 30%;
+        margin-top: 106%;
+    }
+
+    .button4{
+        margin-left: -10%;
     }
 
     #bookShop{
@@ -3480,7 +4094,7 @@ header>nav>ol>li>a{
     }
 
     #bookShop>h3{
-        top: 15%;
+        top: 19%;
         left: 23px;
         font-size: 15px;
     }
@@ -3488,7 +4102,7 @@ header>nav>ol>li>a{
     #bookShop>h5{
         width: 135px;
         left: 40px;
-        top: 50px;
+        top: 65px;
         font-size: 12px;
     }
 
@@ -3518,7 +4132,7 @@ header>nav>ol>li>a{
     #game>h5{
         width: 135px;
         left: 40px;
-        top: 48px;
+        top: 55px;
         font-size: 12px;
     }
 
@@ -3540,32 +4154,32 @@ header>nav>ol>li>a{
     }
 
     #main5>section>h3{
-        font-size: 13px;
+        font-size: 12px;
     }
 
     #arrow,#arrow1{
         width: 15px;
     }
 
-    #main5>section>div>a>button{
-        width: 100px;
-        left: 14%;
-        font-size: 11px;
+    .learn-more {
+        top: 180%;
+        left: -25%;
     }
+
     #ass{
-        width:60px ;
+        width:62px ;
         left: 15%;
     }
     #ass1{
-        width: 60px ;
+        width: 62px ;
         right: 16%;
     }
 
     #ass>h3{
-        font-size: 10px;
+        font-size: 9px;
     }
     #ass1>h3{
-        font-size: 10px;
+        font-size: 9px;
         width:51px;
     }
 
@@ -3644,7 +4258,7 @@ header>nav>ol>li>a{
         font-size: 28px;
     }
 
-    #form{
+    /*#form{
         width: 220px;
         height: 430px;
         left: 21%;
@@ -3671,12 +4285,46 @@ header>nav>ol>li>a{
         font-size: 15px;
         left: 66%;
         top: 88%;
+    }*/
+    .form-container {
+        height: 620px;
+        width: 230px;
+        left: 18%;
+        top: 21%;
+    }
+
+    .form-container .form {
+        left: 3%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .form-container .form-group label {
+        font-size: 18px;
+    }
+
+    .form-container .form-group input {
+        width: 90%;
+        height: 10%;
+    }
+
+    .form-container .form-group textarea {
+        width: 90%;
+        height: 70px;
+    }
+
+    .form-container .form-submit-btn {
+        top: -2%;
+        left: 40%;
+        width: 50%;
+        margin-top: 12px;
     }
 
     #footer{
         width: 375px;
         height: 130px;
-        bottom: -902.9%;
+        bottom: -940%;
     }
 
     #footer>section>img{
@@ -3690,23 +4338,24 @@ header>nav>ol>li>a{
 
     #footer>section>h4{
         left: 20%;
-        top: -22%;
+        top: -7%;
     }
 
     #footer>section>div{
         left: 65%;
+        top: 38%;
     }
 
     #footer>section>h6{
-        right: 10.9%;
-        top: 38%;
+        right: 11%;
+        top: 60%;
         font-size: 9px;
     }
 }
 
 
 @media all and (max-width: 320px) {
-    header {
+    /*header {
         width: 320px;
     }
 
@@ -3717,6 +4366,9 @@ header>nav>ol>li>a{
 
     header>nav>ol>li>a{
         font-size: 7px;
+    }*/
+    #menu-icon{
+        right: 72%;
     }
 
     #main{
@@ -3725,17 +4377,18 @@ header>nav>ol>li>a{
     }
 
     #divPic>img{
+        top: 80px;
         width: 150px;
         left: 28%;
     }
 
     #homeDiv{
-        left: 14%;
+        left: 18%;
     }
 
     #homeDiv>h1{
         font-size: 28px;
-        top: 75%;
+        top: -40%;
     }
 
     #HOME{
@@ -3751,7 +4404,7 @@ header>nav>ol>li>a{
 
     .container {
         top: 490%;
-        left: 11%;
+        left: 7%;
         font-size: 21px;
     }
 
@@ -3760,16 +4413,16 @@ header>nav>ol>li>a{
     }
 
     #imgDiv{
-        width: 126px;
-        right: 55%;
-        top: 660%;
+        width: 128px;
+        right: 58%;
+        top: 665%;
     }
 
     #homeDiv>h6{
         position: absolute;
         font-size: 10px;
-        left: 21%;
-        top: 695%;
+        left: 20%;
+        top: 830%;
     }
 
     /*#btnDiv{
@@ -3788,6 +4441,7 @@ header>nav>ol>li>a{
     }
 
     #ABOUT_ME{
+        top: 11%;
         font-size: 24px;
     }
 
@@ -3824,6 +4478,7 @@ header>nav>ol>li>a{
     }
 
     #Education{
+        top: 11%;
         font-size: 24px;
     }
 
@@ -3948,8 +4603,8 @@ header>nav>ol>li>a{
     }
 
     #year{
-        left: 34%;
-        top: 60%;
+        left: 36%;
+        top: 80%;
         font-size: 10px;
     }
 
@@ -4001,12 +4656,13 @@ header>nav>ol>li>a{
     }
 
     #SKILLS{
+        top: 11%;
         font-size: 24px;
     }
 
     #app{
-        top: 18%;
-        left: 8%;
+        top: 20%;
+        left: 20%;
     }
 
     #progress>li>img{
@@ -4020,6 +4676,7 @@ header>nav>ol>li>a{
     }
 
     #PROJECTS{
+        top: 7%;
         font-size: 24px;
     }
 
@@ -4046,8 +4703,19 @@ header>nav>ol>li>a{
         font-size: 12px;
     }
 
-    #chat>div>button{
+    /*#chat>div>button{
         left: 36%;
+    }*/
+
+    .button2{
+        margin-left: 33%;
+        margin-top: 120%;
+        font-size: 8px;
+    }
+    .button3{
+        margin-left: 33%;
+        margin-top: 120%;
+        font-size: 8px;
     }
 
     #bookShop{
@@ -4099,7 +4767,9 @@ header>nav>ol>li>a{
     }
 
     #game>div>button{
-        left: 36%;
+        font-size: 9px;
+        left: 39%;
+        top: 97%;
     }
 
     #main5{
@@ -4108,6 +4778,7 @@ header>nav>ol>li>a{
     }
 
     #ASSIGNMENT{
+        top: 12%;
         font-size: 24px;
     }
 
@@ -4117,6 +4788,7 @@ header>nav>ol>li>a{
     }
 
     #main5>section>h3{
+        left: 11%;
         top: 27%;
         font-size: 11px;
     }
@@ -4125,11 +4797,11 @@ header>nav>ol>li>a{
         width: 13px;
     }
 
-    #main5>section>div>a>button{
-        width: 100px;
-        left: 2%;
-        font-size: 10px;
+    .learn-more {
+        top: 180%;
+        left: -50%;
     }
+
     #ass{
         width:60px ;
         left: 14%;
@@ -4140,10 +4812,10 @@ header>nav>ol>li>a{
     }
 
     #ass>h3{
-        font-size: 10px;
+        font-size: 9px;
     }
     #ass1>h3{
-        font-size: 10px;
+        font-size: 9px;
         width:51px;
     }
 
@@ -4153,6 +4825,7 @@ header>nav>ol>li>a{
     }
 
     #GALLERY{
+        top: 8%;
         font-size: 24px;
     }
 
@@ -4213,10 +4886,11 @@ header>nav>ol>li>a{
     }
 
     #CONTACT_ME{
+        top: 11%;
         font-size: 24px;
     }
 
-    #form{
+    /*#form{
         width: 190px;
         height: 400px;
     }
@@ -4235,12 +4909,26 @@ header>nav>ol>li>a{
 
     #form>button{
         left: 63%;
+    }*/
+    .form-container {
+        height: 600px;
+        width: 210px;
+        left: 18%;
+        top: 21%;
+        font-size: 11px;
     }
+
+    .form-container .form-submit-btn {
+        left: 40%;
+        width: 50%;
+        margin-top: 12px;
+    }
+
 
     #footer{
         width: 320px;
         height: 130px;
-        bottom: -901%;
+        bottom: -938%;
     }
 
     #footer>section>img{
@@ -4248,17 +4936,43 @@ header>nav>ol>li>a{
     }
 
     #footer>section>h4{
-        left: 15%;
-        top: -22%;
+        left: 10%;
+        top: -7%;
     }
 
     #footer>section>div{
-        left: 61%;
-        top: 34%;
+        left: 58%;
+        top: 39%;
     }
 
     #footer>section>h6{
-        right: 11%;
-        top: 40%;
+        right: 14%;
+        top: 62%;
     }
 }
+
+
+
+/*
+.scroll-scale{
+    opacity: 0;
+    transform: scale(.9);
+    transition: all 2s;
+}
+
+.scroll-bottom{
+    opacity: 0;
+    transform: translateY(300px);
+    transition: 3s;
+}
+
+.scroll-top{
+    opacity: 0;
+    transform: translateY(-300px);
+    transition: 3s;
+}
+
+.show-items{
+    opacity: 1;
+    transform: translateX(0);
+}*/
