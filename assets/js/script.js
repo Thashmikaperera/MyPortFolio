@@ -42,6 +42,8 @@ function sendEmail(){
     let message = document.querySelector('#message').value;
     let subject = document.querySelector('#subject').value;
 
+    let body = "Name :" + name + "<br/> Email :" + email + "<br/> Contact Number :" + contact + "<br/> Subject :" + subject + "<br/> Message:"+message;
+
     Email.send({
         Host : "smtp.elasticemail.com",
         Username : "pthashmika@gmail.com",
@@ -49,7 +51,7 @@ function sendEmail(){
         To : 'pthashmika@gmail.com',
         From : "pthashmika@gmail.com",
         Subject : "This is the subject",
-        Body : "And this is the body"
+        Body : body
     }).then(
         message => alert(message)
     );
@@ -77,6 +79,19 @@ const scrollTop = document.querySelectorAll(".scroll-top");
 scrollTop.forEach((e1)=>observer.observe(e1));
 */
 
+
+//Add scrolling animation
+ScrollReveal({
+    reset: true,
+    distance: '80px',
+    duration: 1800,
+});
+
+//home section
+ScrollReveal().reveal('#homeDiv,#name1,#address1,#contact1,#bookShop', {delay: 300, origin: 'left'});
+ScrollReveal().reveal('#progress,#ass,#ass1', {delay: 500, origin: 'bottom'});
+ScrollReveal().reveal('#divPic,#app,#assignment2', {delay: 500, origin: 'top'});
+ScrollReveal().reveal('#about,#birth,#gmail,#chat,#game', {delay: 900, origin: 'right'});
 
 
 

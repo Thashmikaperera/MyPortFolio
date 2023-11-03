@@ -513,6 +513,11 @@ header>nav>ol>li>a{
     left: 32%;
     top: 37%;
 }
+
+#about>h4{
+    margin-bottom: 20px;
+}
+
 /*
 #down>button{
     background-color: #292929;
@@ -524,7 +529,7 @@ header>nav>ol>li>a{
 }
 */
 
-.button {
+.buttonD {
     --main-focus: #2d8cf0;
     --font-color: #323232;
     --bg-color-sub: #dedede;
@@ -532,7 +537,7 @@ header>nav>ol>li>a{
     --main-color:  #dedede;
     position: relative;
     left: 15%;
-    top: 120px;
+    top: 30px;
     width: 190px;
     height: 40px;
     cursor: pointer;
@@ -546,17 +551,17 @@ header>nav>ol>li>a{
     font-size: 15px;
 }
 
-.button, .button__icon, .button__text {
+.buttonD, .button__icon, .button__text {
     transition: all 0.3s;
 }
 
-.button .button__text {
+.buttonD .button__text {
     transform: translateX(22px);
     color: #dedede;
     font-weight: 600;
 }
 
-.button .button__icon {
+.buttonD .button__icon {
     position: absolute;
     left: 25%;
     transform: translateX(109px);
@@ -568,25 +573,25 @@ header>nav>ol>li>a{
     justify-content: center;
 }
 
-.button .svg {
+.buttonD .svg {
     width: 20px;
     fill: var(--main-color);
 }
 
-.button:hover {
+.buttonD:hover {
     background: var(--bg-color);
 }
 
-.button:hover .button__text {
+.buttonD:hover .button__text {
     color: #dedede;
 }
 
-.button:hover .button__icon {
+.buttonD:hover .button__icon {
     width: 148px;
     transform: translateX(0);
 }
 
-.button:active {
+.buttonD:active {
     transform: translate(3px, 3px);
     box-shadow: 0px 0px var(--main-color);
 }
@@ -3344,8 +3349,8 @@ header>nav>ol>li>a{
     #about{
         width: 400px;
         font-size: 17px;
-        left: 20%;
-        top: 50%;
+        left: 17%;
+        top: 52%;
     }
     /*#down>button{
         border-radius: 7px;
@@ -3353,7 +3358,8 @@ header>nav>ol>li>a{
         top: 100%;
         font-size: 13px;
     }*/
-    .button {
+    .buttonD {
+        top: 8px;
         left: 15%;
         width: 120px;
         height: 25px;
@@ -3933,10 +3939,9 @@ header>nav>ol>li>a{
 
     #about{
         width: 400px;
-
-        font-size: 17px;
+        font-size: 15px;
         left: 20%;
-        top: 50%;
+        top: 55%;
     }
     /*#down>button{
         border-radius: 7px;
@@ -4452,21 +4457,22 @@ header>nav>ol>li>a{
     #myImg{
         width: 170px;
         height: 200px;
+        top: 10%;
     }
 
     #about{
         width: 250px;
         font-size: 15px;
-        left: 22%;
-        top: 43%;
+        left: 18%;
+        top: 50%;
     }
     /*#down>button{
         left: 14%;
         top: 110%;
         font-size: 12px;
     }*/
-    .button {
-        top: 20px;
+    .buttonD {
+        top: 18px;
         width: 123px;
         height: 25px;
         font-size: 11px;
