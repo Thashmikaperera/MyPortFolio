@@ -103,159 +103,6 @@ header.sticky{
     color: white;
     display: none;
 }
-/*
-header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 40px;
-    background-color: #0A0B0B;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.9%;
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
-    z-index: 999;
-}
-
-header .navbar{
-    position: absolute;
-    left: 32%;
-}
-
-header .logo{
-    position: relative;
-    width: 90px;
-}
-
-.navbar>a {
-    position: relative;
-    display: inline-block;
-    font-size: 23px;
-    color: white;
-    margin-left: 1.5rem;
-    text-decoration: none;
-}
-
-.navbar>a:hover{
-    color: #C36446;
-}
-
-#menuBtn{
-    display: none;
-    position: relative;
-    font-size: 1.5rem;
-    color: white;
-    cursor: pointer;
-}
-
-@media (max-width: 768px) {
-    header{
-        width: 768px;
-    }
-
-    #menuBtn{
-        display: block;
-    }
-
-    .toggle-btn.active::before{
-        content: '\f00d';
-    }
-
-    header .navbar{
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background-color: #0A0B0B;
-        padding: 0.5%;
-        transform: scale(0);
-        transition: .8s;
-        transform-origin: top center;
-        overflow: hidden;
-    }
-
-    header .navbar.active{
-        transform: scale(1);
-    }
-
-    header .navbar>a{
-        display: block;
-        margin: 0.8rem 0;
-        left: 110%;
-        transition: .5s;
-        transition-delay: calc(.1s * var(--i));
-    }
-
-    header .navbar.active>a{
-        left: 0;
-    }
-}
-
-@media (max-width: 425px) {
-    header.navbar>a{
-        font-size: 1.1rem;
-    }
-}
-
-@media (max-width: 375px) {
-    header.navbar>a{
-       padding: 0.2%;
-    }
-}*/
-
-/*
-
-body{
-    !important;
-    overflow-x: hidden;
-    background-color: black;
-}
-
-!*
-html{
-    overflow-x: hidden;
-    !important;
-    scroll-behavior: smooth;
-}
-*!
-
-header{
-    z-index: 20;
-    width: 1348px;
-    height: 50px;
-    position: fixed;
-    background-color: #0A0B0B;
-}
-header>nav{
-    position: absolute;
-    width: fit-content;
-    right: 1%;
-    padding: 1px;
-    margin-top: -2px;
-}
-
-header>img{
-    width: 80px;
-    aspect-ratio: 1/1;
-    position: absolute;
-    top: -30%;
-}
-
-
-header>nav>ol>li{
-    text-decoration: none;
-    display: inline-block;
-    margin-right: 20px;
-}
-
-header>nav>ol>li>a{
-    text-decoration: none;
-    color: white;
-    font-size: 22px
-}
-*/
 
 #main{
     width: 1348px;
@@ -394,18 +241,6 @@ header>nav>ol>li>a{
     }
 }
 
-/*
-#homeDiv>h3{
-    position: absolute;
-    color: #C36446;
-    top: 100px;
-    right: 60%;
-    font-size: 50px;
-    width: fit-content;
-    height: fit-content;
-}
-*/
-
 #imgDiv{
     position: absolute;
     top: 650%;
@@ -419,15 +254,6 @@ header>nav>ol>li>a{
     left: 19%;
     top: 285px;
 }
-/*#btnDiv{
-    position: relative;
-    top: 345px;
-    left: 22%;
-}
-
-#btn{
-    background-color: #C36446;
-}*/
 
 /* === removing default button style ===*/
 .button1 {
@@ -517,17 +343,6 @@ header>nav>ol>li>a{
 #about>h4{
     margin-bottom: 20px;
 }
-
-/*
-#down>button{
-    background-color: #292929;
-    position: absolute;
-    border-radius: 10px;
-    left: 20%;
-    top: 103%;
-    font-size: 23px;
-}
-*/
 
 .buttonD {
     --main-focus: #2d8cf0;
@@ -734,116 +549,6 @@ header>nav>ol>li>a{
     font-size: 16px;
 }
 
-/*
-#E1{
-    position: absolute;
-    background-color: #272727;
-    width: 310px;
-    height: 155px;
-    left: 145px;
-    top: 200px;
-    color: white;
-}
-
-#E1>h3{
-    position: absolute;
-    left: 28%;
-    top: -4%;
-}
-
-#E1>h4{
-    position: absolute;
-    left: 10%;
-    top: 11%;
-}
-
-#institute{
-    position: absolute;
-    left: 13%;
-    top: 50%;
-}
-
-#year{
-    position: absolute;
-    left: 35%;
-    top: 65%;
-}
-
-#E2{
-    position: absolute;
-    background-color: #272727;
-    width: 310px;
-    height: 155px;
-    left: 145px;
-    top: 470px;
-    color: white;
-}
-
-#E2>h3{
-   text-align: center;
-}
-
-#scl{
-    position: absolute;
-    left: 18%;
-    top: 47%;
-}
-
-#year1{
-    position: absolute;
-    left: 37%;
-    top: 60%;
-}
-
-#E3{
-    position: absolute;
-    background-color: #272727;
-    width: 310px;
-    height: 155px;
-    right: 184px;
-    top: 370px;
-    color: white;
-}
-
-#E3>h3{
-    text-align: center;
-}
-
-#scl1{
-    position: absolute;
-    left: 18%;
-    top: 47%;
-}
-
-#year2{
-    position: absolute;
-    left: 37%;
-    top: 60%;
-}
-
-#E4{
-    position: absolute;
-    background-color: #272727;
-    width: 310px;
-    height: 155px;
-    right: 184px;
-    top: 125px;
-    color: white;
-}
-
-#E4>h3{
-    text-align: center;
-    position: absolute;
-    top: -5%;
-}
-
-#E4>h5{
-    position: absolute;
-    top: 48%;
-    left: 15%;
-}
-*/
-
 #line1{
    width: 200px;
     height: 2px;
@@ -995,12 +700,6 @@ header>nav>ol>li>a{
     font-size: 18px;
 }
 
-/*#chat>div>button{
-    position: absolute;
-    left: 30%;
-    top: 92%;
-    border-radius: 8px;
-}*/
 .button2,.button3,.button4 {
     --color: white;
     padding: 0.8em 1.7em;
@@ -1619,186 +1318,6 @@ header>nav>ol>li>a{
     font-family: "Book Antiqua";
 }
 
-/*
-@media all and (max-width: 1440px){
-    header{
-        z-index: 20;
-        width: 1440px;
-        height: 50px;
-        position: fixed;
-    }
-
-   /* #main{
-        position: relative;
-        width: 1440px;
-        height: 627px;
-    }*/
-/*
-
-    #main1{
-        position: relative;
-        width: 1440px;
-        height: 627px;
-    }
-
-    #imgShadow{
-        width: 560px;
-        height: 590px;
-        position: absolute;
-        left: 10px;
-        top: 37px;
-    }
-
-    #myImg{
-        position: absolute;
-        left: 30px;
-        top: 50px;
-    }
-
-    #about{
-        position: absolute;
-        left: 28%;
-        top: 37%;
-    }
-
-    #down>button{
-        position: absolute;
-        left: 15%;
-        top: 103%;
-    }
-
-    #main2{
-        position: relative;
-        width: 1440px;
-        height: 627px;
-    }
-
-    #E1{
-        position: absolute;
-        width: 300px;
-        height: 155px;
-        left: 155px;
-        top: 200px;
-    }
-
-
-    #E2{
-        position: absolute;
-        width: 300px;
-        height: 155px;
-        left: 155px;
-        top: 440px;
-    }
-
-    #E3{
-        position: absolute;
-        width: 300px;
-        height: 155px;
-        right: 284px;
-        top: 350px;
-    }
-
-    #E4{
-        position: absolute;
-        width: 300px;
-        height: 155px;
-        right: 284px;
-        top: 110px;
-    }
-
-    #line1{
-        position: absolute;
-        left: 455px;
-        top: 277px;
-    }
-
-    #line2{
-        position: absolute;
-        left: 455px;
-        top: 520px;
-    }
-
-    #line3{
-        height: 350px;
-        position: absolute;
-        top: 172px;
-    }
-
-    #line4{
-        position: absolute;
-        right: 584px;
-        top: 172px;
-    }
-    #line5{
-        position: absolute;
-        right: 584px;
-        top: 420px;
-    }
-
-    #main3{
-        position: relative;
-        width: 1440px;
-        height: 627px;
-    }
-
-    #main4{
-        position: relative;
-        width: 1440px;
-        height: 1000px;
-    }
-
-    #chat{
-        position: absolute;
-        left: 480px;
-        top: 195px;
-    }
-
-    #bookShop{
-        position: absolute;
-        left: 250px;
-        top: 480px;
-    }
-
-    #game{
-        position: absolute;
-        left: 480px;
-        top: 755px;
-    }
-
-    #main5{
-        position: relative;
-        width: 1440px;
-        height: 627px;
-    }
-
-    #main6{
-        position: relative;
-        width: 1440px;
-        height: 1000px;
-    }
-
-    #main7{
-        position: relative;
-        width: 1440px;
-        height: 650px;
-    }
-
-    #footer{
-        position: absolute;
-        width: 1440px;
-        height: 240px;
-        bottom: -886%;
-    }
-
-    #footer>section>h4{
-        position: absolute;
-        left: 30%;
-        top: -20%;
-    }
-
-}
-*/
-
 @media all and (max-width: 1024px){
     header{
         width: 1024px;
@@ -1809,13 +1328,6 @@ header>nav>ol>li>a{
         font-size: 10px;
     }
 
-    /*header>img{
-        width: 60px;
-        position: absolute;
-        top: -10%;
-        left: 0;
-    }
-*/
     #main{
         width: 1024px;
         height: 565px;
@@ -1841,12 +1353,6 @@ header>nav>ol>li>a{
     #HOME{
         font-size: 22px;
     }
-
-   /* #homeDiv>h3{
-        top: 100%;
-        right: 56%;
-        font-size: 38px;
-    }*/
 
     .container {
         top: 400%;
@@ -1908,11 +1414,6 @@ header>nav>ol>li>a{
         top: 42%;
     }
 
-    /*#down>button{
-        left: 15%;
-        top: 100%;
-        font-size: 17px;
-    }*/
     .button {
         left: 15%;
         width: 150px;
@@ -1940,96 +1441,6 @@ header>nav>ol>li>a{
         left: 70px;
         top: 60px;
     }
-
-    /*#E1{
-        width: 248px;
-        height: 120px;
-        left: 145px;
-        top: 200px;
-    }
-
-    #E1>h3{
-        left: 24%;
-        top: -8%;
-    }
-
-    #E1>h4{
-        left: 5%;
-        top: 9%;
-    }
-
-    #institute{
-        left: 6%;
-        top: 45%;
-    }
-
-    #year{
-        left: 36%;
-        top: 60%;
-    }
-
-    #E2{
-        width: 248px;
-        height: 120px;
-        left: 145px;
-        top: 400px;
-    }
-
-    #E2>h3{
-        font-size: 18px;
-        top: -5%;
-        left: 15%;
-    }
-
-    #scl{
-        left: 11%;
-        top: 46%;
-    }
-
-    #year1{
-        left: 37%;
-        top: 61%;
-    }
-
-    #E3{
-        width: 248px;
-        height: 120px;
-        right: 164px;
-        top: 340px;
-    }
-
-    #E3>h3{
-        font-size: 18px;
-        top: -5%;
-        left: 15%;
-    }
-
-    #scl1{
-        left: 11%;
-        top: 45%;
-    }
-
-    #year2{
-        left: 37%;
-        top: 60%;
-    }
-
-    #E4{
-        width: 248px;
-        height: 120px;
-        right: 164px;
-        top: 120px;
-    }
-
-    #E4>h3{
-        font-size: 13px;
-    }
-
-    #E4>h5{
-        font-size: 12px;
-        top: 43%;
-        left: 17%;
-    }*/
 
     .Ecard,.Ecard1,.Ecard2,.Ecard3 {
         width: 248px;
@@ -2449,30 +1860,6 @@ header>nav>ol>li>a{
         top: 60px;
     }
 
-    /*#form{
-        width: 395px;
-        height: 430px;
-        left: 25%;
-        top: 10%;
-    }
-
-
-    #form>div>label{
-        font-size: 20px;
-    }
-
-
-    #Name,#email,#contact,#message{
-        width: 200px;
-        height: 20px;
-        left: 110%;
-        font-size: 14px;
-    }
-
-    #message{
-        height: 120px;
-        top: 70%;
-    }*/
     .form-container {
         width: 450px;
         left: 23%;
@@ -2510,29 +1897,6 @@ header>nav>ol>li>a{
 }
 
 @media all and (max-width: 768px) {
-    /*header{
-        width: 768px;
-        height: 50px;
-    }
-
-    header>nav{
-        right: 0;
-        padding: 1px;
-        margin-top: -2px;
-    }
-
-    header>img{
-        width: 55px;
-        top: -7%;
-    }
-
-    header>nav>ol>li{
-        margin-right: 13px;
-    }
-
-    header>nav>ol>li>a{
-        font-size: 18px;
-    }*/
 
     #menu-icon{
         position: absolute;
@@ -2594,12 +1958,6 @@ header>nav>ol>li>a{
         font-size: 44px;
     }
 
-    /*#homeDiv>h3{
-        top: 95%;
-        right: 47.3%;
-        font-size: 32px;
-    }*/
-
     .container {
         top: 350%;
         left: 10.5%;
@@ -2619,11 +1977,6 @@ header>nav>ol>li>a{
         top: 213px;
         left: 22.5%;
     }
-
-    /*#btnDiv{
-        top: 230px;
-        left: 25%;
-    }*/
 
     #btn{
         left: 20.3%;
@@ -2661,12 +2014,6 @@ header>nav>ol>li>a{
         left: 40%;
         top: 42%;
     }
-    /*#down>button{
-        border-radius: 8px;
-        left: 15%;
-        top: 105%;
-        font-size: 15px;
-    }*/
 
     #main2{
         width: 768px;
@@ -2678,103 +2025,6 @@ header>nav>ol>li>a{
         left: 67px;
         top: 48px;
     }
-
-    /*#E1{
-        width: 205px;
-        height: 120px;
-        left: 130px;
-        top: 185px;
-    }
-
-    #E1>h3{
-        font-size: 18px;
-        left: 22%;
-        top: -5%;
-    }
-
-    #E1>h4{
-        font-size: 13px;
-        left: 5%;
-        top: 14%;
-    }
-
-    #institute{
-        font-size: 11px;
-        left: 6%;
-        top: 50%;
-    }
-
-    #year{
-        font-size: 11px;
-        left: 35%;
-        top: 63%;
-    }
-
-    #E2{
-        width: 205px;
-        height: 120px;
-        left: 130px;
-        top: 400px;
-    }
-
-    #E2>h3{
-        font-size: 18px;
-        position: absolute;
-        left: 8%;
-        top: -7%;
-    }
-
-    #scl{
-        font-size: 11px;
-        left: 11%;
-        top: 47%;
-    }
-
-    #year1{
-        font-size: 11px;
-        left: 35%;
-        top: 60.5%;
-    }
-
-    #E3{
-        width: 205px;
-        height: 120px;
-        right: 110px;
-        top: 340px;
-    }
-
-    #E3>h3{
-        font-size: 18px;
-        position: absolute;
-        top: -7%;
-        left: 7%;
-    }
-
-    #scl1{
-        font-size: 11px;
-        left: 11%;
-        top: 47%;
-    }
-
-    #year2{
-        font-size: 11px;
-        left: 35%;
-        top: 60.5%;
-    }
-
-
-    #E4{
-        width: 205px;
-        height: 120px;
-        right: 110px;
-        top: 120px
-    }
-
-    #E4>h5{
-        font-size: 11px;
-        top: 42%;
-        left: 9%;
-    }*/
 
     .Ecard,.Ecard1,.Ecard2,.Ecard3 {
         width: 205px;
@@ -2935,10 +2185,6 @@ header>nav>ol>li>a{
         font-size: 15px;
     }
 
-    /*#chat>div>button{
-        left: 33%;
-        font-size: 13px;
-    }*/
     .button2{
         font-size: 10px;
         margin-top: 135px;
@@ -3163,12 +2409,6 @@ header>nav>ol>li>a{
         top: 48px;
     }
 
-    /*#form{
-        position: absolute;
-        left: 25%;
-        top: 27%;
-        border-radius: 40px;
-    }*/
     .form-container {
         width: 410px;
         left: 23%;
@@ -3211,8 +2451,6 @@ header>nav>ol>li>a{
         top: 55%;
         font-size: 15px;
     }
-
-
 }
 
 @media all and (max-width: 720px) {
@@ -3226,29 +2464,6 @@ header>nav>ol>li>a{
 }
 
 @media all and (max-width: 425px) {
-    /*header {
-        width: 425px;
-        height: 45px;
-    }
-
-    header>img{
-        width: 50px;
-        top: -8%;
-    }
-
-    header>nav>ol>li{
-        margin-right: 10px;
-    }
-
-    header>nav>ol>li>a{
-        font-size: 9px;
-    }
-
-    header>nav{
-        right: -1%;
-        margin-top: -5px;
-    }*/
-
     #menu-icon{
         right: 63%;
     }
@@ -3281,13 +2496,6 @@ header>nav>ol>li>a{
         font-size: 35px;
     }
 
-    /*#homeDiv>h3{
-        top: 90%;
-        right: 35%;
-        font-size: 25px;
-        width: 200px;
-    }*/
-
     .container {
         top: 280%;
         left: 12%;
@@ -3309,10 +2517,6 @@ header>nav>ol>li>a{
         left: 28%;
         top: 160px;
     }
-    /*#btnDiv{
-        top: 170px;
-        left: 29%;
-    }*/
 
     #btn{
         top: 200px;
@@ -3352,12 +2556,7 @@ header>nav>ol>li>a{
         left: 17%;
         top: 52%;
     }
-    /*#down>button{
-        border-radius: 7px;
-        left: 12%;
-        top: 100%;
-        font-size: 13px;
-    }*/
+
     .buttonD {
         top: 8px;
         left: 15%;
@@ -3386,27 +2585,6 @@ header>nav>ol>li>a{
         left: 40px;
         top: 42px;
     }
-
-    /*#E1{
-        left: 150px;
-        top: 540px;
-    }
-
-    #E2{
-        left: 150px;
-        top: 120px;
-    }
-
-    #E3{
-        left: 150px;
-        top: 260px;
-    }
-
-    #E4{
-        left: 150px;
-        top: 400px;
-    }
-*/
 
     .Ecard,.Ecard1,.Ecard2,.Ecard3 {
         width: 205px;
@@ -3513,11 +2691,7 @@ header>nav>ol>li>a{
         font-size: 13px;
     }
 
-    /*#chat>div>button{
-        top: 95%;
-        left: 40%;
-        font-size: 13px;
-    }*/
+
     .button2{
         font-size: 11px;
         margin-top: 185px;
@@ -3739,60 +2913,6 @@ header>nav>ol>li>a{
         top: 45px;
     }
 
-    /*#form{
-        width: 280px;
-        height: 450px;
-        left: 18%;
-        top: 18%;
-        border-radius: 25px;
-    }
-
-    #form>div{
-        position: absolute;
-        left:  10%;
-        top: 6%;
-    }
-
-    #form>div>label{
-        font-size: 20px;
-        color: white;
-    }
-
-    #Name{
-        width: 220px;
-        left: -2%;
-        top: 8%;
-        border-radius: 8px;
-    }
-
-    #email{
-        width: 220px;
-        left: -2%;
-        top: 32%;
-        border-radius: 8px;
-    }
-
-    #contact{
-        width: 220px;
-        left: -2%;
-        top: 55%;
-        border-radius: 8px;
-    }
-
-    #message{
-        width: 220px;
-        left: -2%;
-        top: 80%;
-        border-radius: 8px;
-    }
-
-
-    #form>button{
-        font-size: 18px;
-        left: 70%;
-        top: 87%;
-        border-radius: 5px;
-    }*/
     .form-container {
         width: 270px;
         height: 720px;
@@ -3852,38 +2972,9 @@ header>nav>ol>li>a{
 }
 
 @media all and (max-width: 375px) {
-    /*header {
-        width: 375px;
-        height: 40px;
-    }
-
-    header>img{
-        width: 45px;
-        top: -8%;
-    }
-
-    header>nav>ol>li{
-        margin-right:6px;
-    }
-
-    header>nav>ol>li>a{
-        font-size: 9px;
-    }
-
-    header>nav{
-        right: -1%;
-        margin-top: -8px;
-    }*/
     #menu-icon{
         right: 68%;
     }
-
-
-    /*.btn{
-        position: absolute;
-        right: 1.5%;
-        display: flex;
-    }*/
 
     #main{
         width: 375px;
@@ -3897,10 +2988,6 @@ header>nav>ol>li>a{
     #homeDiv{
         left: 14%;
     }
-
-    /*#homeDiv>h3{
-        right: 37%;
-    }*/
 
     .container {
         top: 300%;
@@ -3943,13 +3030,6 @@ header>nav>ol>li>a{
         left: 20%;
         top: 55%;
     }
-    /*#down>button{
-        border-radius: 7px;
-        left: 12%;
-        top: 100%;
-        font-size: 13px;
-    }*/
-
 
     #main2{
         width: 425px;
@@ -3959,22 +3039,6 @@ header>nav>ol>li>a{
     #Education{
         font-size: 28px;
     }
-
-    /*#E1{
-        left: 105px;
-    }
-
-    #E2{
-        left: 105px;
-    }
-
-    #E3{
-        left: 105px;
-    }
-
-    #E4{
-        left: 105px;
-    }*/
 
     .Ecard {
         left: 24.8%;
@@ -4067,10 +3131,6 @@ header>nav>ol>li>a{
         top: 60px;
         font-size: 12px;
     }
-
-   /* #chat>div>button{
-        left: 37%;
-    }*/
 
     .button2{
        margin-left: 30%;
@@ -4253,7 +3313,6 @@ header>nav>ol>li>a{
         bottom: 27%;
     }
 
-
     #main7{
         width: 375px;
         height: 580px;
@@ -4263,34 +3322,6 @@ header>nav>ol>li>a{
         font-size: 28px;
     }
 
-    /*#form{
-        width: 220px;
-        height: 430px;
-        left: 21%;
-        top: 20%;
-    }
-
-    #form>div{
-        left:  12%;
-    }
-
-    #form>div>label{
-        font-size: 18px;
-    }
-
-    #Name,#email,#contact,#message{
-        width: 160px
-    }
-
-    #message{
-        height: 130px;
-    }
-
-    #form>button{
-        font-size: 15px;
-        left: 66%;
-        top: 88%;
-    }*/
     .form-container {
         height: 620px;
         width: 230px;
@@ -4358,20 +3389,7 @@ header>nav>ol>li>a{
     }
 }
 
-
 @media all and (max-width: 320px) {
-    /*header {
-        width: 320px;
-    }
-
-    header>img{
-        width: 40px;
-        top: -1%;
-    }
-
-    header>nav>ol>li>a{
-        font-size: 7px;
-    }*/
     #menu-icon{
         right: 72%;
     }
@@ -4401,12 +3419,6 @@ header>nav>ol>li>a{
         top: 2%;
     }
 
-   /* #homeDiv>h3{
-        font-size: 21px;
-        top: 350%;
-        right: 40%;
-    }*/
-
     .container {
         top: 490%;
         left: 7%;
@@ -4429,11 +3441,6 @@ header>nav>ol>li>a{
         left: 20%;
         top: 830%;
     }
-
-    /*#btnDiv{
-        top: 220px;
-        left: 21.8%;
-    }*/
 
     #btn{
         top: 210px;
@@ -4466,11 +3473,7 @@ header>nav>ol>li>a{
         left: 18%;
         top: 50%;
     }
-    /*#down>button{
-        left: 14%;
-        top: 110%;
-        font-size: 12px;
-    }*/
+
     .buttonD {
         top: 18px;
         width: 123px;
@@ -4487,100 +3490,6 @@ header>nav>ol>li>a{
         top: 11%;
         font-size: 24px;
     }
-
-    /*#E1{
-        width: 160px;
-        height: 140px;
-        left: 100px;
-        top: 665px;
-    }
-
-    #E1>h3{
-        left: 14%;
-    }
-
-    #E1>h4{
-        left: 8%;
-        top: 16%;
-    }
-
-    #institute{
-        font-size: 12px;
-        top: 45%;
-        left: 8%;
-    }
-
-    #year{
-        font-size: 11px;
-        left: 60%;
-        top: 71%;
-    }
-
-    #E2{
-        width: 160px;
-        height: 140px;
-        left: 100px;
-        top: 140px;
-    }
-
-    #E2>h3{
-        font-size: 15px;
-        left: 5%;
-        top: -3%;
-    }
-
-    #scl{
-        font-size: 12px;
-        top: 43%;
-    }
-
-    #year1{
-        left: 60%;
-        top: 68%;
-    }
-
-    #E3{
-        width: 160px;
-        height: 140px;
-        left: 100px;
-        top: 315px;
-    }
-
-    #E3>h3{
-        font-size: 15px;
-        left: 5%;
-        top: -3%;
-    }
-
-    #scl1{
-        font-size: 12px;
-        top: 43%;
-    }
-
-    #year2{
-        left: 60%;
-        top: 68%;
-    }
-
-    #E4{
-        width: 160px;
-        height: 140px;
-        left: 100px;
-        top: 490px
-    }
-
-    #E4>h3{
-        width: 140px;
-        font-size: 12px;
-        left: 6%;
-        top: 1%;
-    }
-
-    #E4>h5{
-        font-size: 10px;
-        top: 53%;
-        left: 9%;
-    }*/
 
     .Ecard,.Ecard1,.Ecard2,.Ecard3 {
         width: 160px;
@@ -4708,10 +3617,6 @@ header>nav>ol>li>a{
         left: 33px;
         font-size: 12px;
     }
-
-    /*#chat>div>button{
-        left: 36%;
-    }*/
 
     .button2{
         margin-left: 33%;
@@ -4896,26 +3801,6 @@ header>nav>ol>li>a{
         font-size: 24px;
     }
 
-    /*#form{
-        width: 190px;
-        height: 400px;
-    }
-
-    #form>div{
-        left:  11%;
-    }
-
-    #Name,#email,#contact,#message{
-        width: 140px
-    }
-
-    #message{
-        height: 110px;
-    }
-
-    #form>button{
-        left: 63%;
-    }*/
     .form-container {
         height: 600px;
         width: 210px;
@@ -4929,7 +3814,6 @@ header>nav>ol>li>a{
         width: 50%;
         margin-top: 12px;
     }
-
 
     #footer{
         width: 320px;
@@ -4956,29 +3840,3 @@ header>nav>ol>li>a{
         top: 62%;
     }
 }
-
-
-
-/*
-.scroll-scale{
-    opacity: 0;
-    transform: scale(.9);
-    transition: all 2s;
-}
-
-.scroll-bottom{
-    opacity: 0;
-    transform: translateY(300px);
-    transition: 3s;
-}
-
-.scroll-top{
-    opacity: 0;
-    transform: translateY(-300px);
-    transition: 3s;
-}
-
-.show-items{
-    opacity: 1;
-    transform: translateX(0);
-}*/
