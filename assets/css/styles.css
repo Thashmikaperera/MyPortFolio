@@ -120,6 +120,10 @@ header.sticky{
     top: 130px;
 }
 
+#divPic>img:hover{
+    transform: translateY(-.9rem);
+}
+
 #homeDiv{
     position: absolute;
     top: 17%;
@@ -246,6 +250,9 @@ header.sticky{
     top: 650%;
     right: 68%;
     border-bottom: 2px solid white;
+}
+#imgDiv>a>img:hover{
+    transform: translateY(-.5rem);
 }
 
 #homeDiv>h6{
@@ -1077,6 +1084,10 @@ header.sticky{
     left: 25%;
 }
 
+#main6>section>img:hover{
+    transform: translateY(-.7rem);
+}
+
 #pic1{
     width: 400px;
     height: 260px;
@@ -1897,7 +1908,6 @@ header.sticky{
 }
 
 @media all and (max-width: 768px) {
-
     #menu-icon{
         position: absolute;
         right: 30%;
@@ -2450,6 +2460,116 @@ header.sticky{
         right: 11.5%;
         top: 55%;
         font-size: 15px;
+    }
+}
+
+@media all and (max-width: 1006px) {
+    .logo{
+        position: relative;
+        left: 50px;
+    }
+    #menu-icon{
+        position: absolute;
+        right: 40%;
+        display: block;
+        transition: all .4s ease;
+    }
+
+    .navlist{
+        display: flex;
+        position: absolute;
+        top: -360px;
+        right: 0;
+        left: 0;
+        flex-direction: column;
+        background-color: black;
+        text-align: left;
+        padding: 0 5%;
+        transition: all .45s ease;
+    }
+
+    .navlist a{
+        display: block;
+        padding-bottom: 1rem;
+        font-size: 1rem;
+    }
+
+}
+
+@media all and (max-width: 948px) {
+    #divPic>img{
+        left: 50%;
+        width: 300px;
+    }
+
+    #HOME{
+        top: 35px;
+        font-size: 20px;
+    }
+    #homeDiv>h1{
+        top: 26%;
+        font-size:53px;
+    }
+    .container{
+        font-size: 35px;
+        left: 8%;
+    }
+    #imgDiv{
+        width: 206px;
+        left: 11%;
+    }
+    #homeDiv>h6{
+        left: 18.5%;
+    }
+    #btn{
+        top: 320px;
+        left: 17%;
+    }
+}
+
+@media all and (max-width: 926px) {
+    #chat{
+        left: 22%;
+    }
+
+    #bookShop{
+        left: 16%;
+    }
+
+    #game{
+        left: 22%;
+    }
+
+    .Ecard{
+        left: 10%;
+    }
+    .Ecard1{
+        left: 10%;
+    }
+    .Ecard2{
+        left: 55.6%;
+    }
+    .Ecard3{
+        left: 55.6%;
+    }
+
+    #line1{
+        left: 34.2%;
+    }
+    #line2{
+        left: 34.2%;
+    }
+    #line3{
+        left: 44.8%;
+    }
+    #line4{
+        left: 44.8%;
+    }
+    #line5{
+        left: 44.8%;
+    }
+    #progress>li>img{
+        width: 400px;
     }
 }
 
